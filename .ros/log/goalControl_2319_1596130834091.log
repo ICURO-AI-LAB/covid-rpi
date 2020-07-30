@@ -1,0 +1,18 @@
+[rospy.client][INFO] 2020-07-30 17:40:34,175: init_node, name[/goalControl_2319_1596130834091], pid[2319]
+[xmlrpc][INFO] 2020-07-30 17:40:34,177: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-07-30 17:40:34,178: Started XML-RPC server [http://ubiquityrobot.local:40189/]
+[rospy.init][INFO] 2020-07-30 17:40:34,178: ROS Slave URI: [http://ubiquityrobot.local:40189/]
+[rospy.impl.masterslave][INFO] 2020-07-30 17:40:34,178: _ready: http://ubiquityrobot.local:40189/
+[rospy.registration][INFO] 2020-07-30 17:40:34,180: Registering with master node http://10.0.0.236:11311
+[xmlrpc][INFO] 2020-07-30 17:40:34,180: xml rpc node: starting XML-RPC server
+[rospy.init][INFO] 2020-07-30 17:40:34,279: registered with master
+[rospy.rosout][INFO] 2020-07-30 17:40:34,279: initializing /rosout core topic
+[rospy.rosout][INFO] 2020-07-30 17:40:34,284: connected to core topic /rosout
+[rospy.simtime][INFO] 2020-07-30 17:40:34,288: /use_sim_time is not set, will not subscribe to simulated time [/clock] topic
+[rospy.internal][INFO] 2020-07-30 17:40:34,490: topic[/rosout] adding connection to [/rosout], count 0
+[rospy.core][INFO] 2020-07-30 17:40:38,607: signal_shutdown [signal-2]
+[rospy.internal][INFO] 2020-07-30 17:40:38,621: topic[/rosout] removing connection to /rosout
+[rospy.impl.masterslave][INFO] 2020-07-30 17:40:38,622: signal-2
+[rospy.core][INFO] 2020-07-30 17:40:38,726: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-07-30 17:40:38,859: signal_shutdown [signal-2]
+[rospy.core][INFO] 2020-07-30 17:40:39,264: signal_shutdown [atexit]
