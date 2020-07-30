@@ -1,0 +1,61 @@
+[roslaunch][INFO] 2020-07-30 18:04:45,109: Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+[roslaunch][INFO] 2020-07-30 18:04:45,134: Done checking log file disk usage. Usage is <1GB.
+[roslaunch][INFO] 2020-07-30 18:04:45,134: roslaunch starting with args ['roscore', '--core']
+[roslaunch][INFO] 2020-07-30 18:04:45,135: roslaunch env is {'ROS_LOG_FILENAME': '/home/ubuntu/.ros/log/25ec0b62-d28f-11ea-9845-bd977eaed04c/roslaunch-ubiquityrobot-690.log', 'SHELL': '/bin/bash', 'ROS_DISTRO': 'kinetic', 'PYTHONPATH': '/opt/ros/kinetic/lib/python2.7/dist-packages', 'PWD': '/', 'ROS_MASTER_URI': 'http://ubiquityrobot.local:11311', 'ROS_ROOT': '/opt/ros/kinetic/share/ros', 'PATH': '/opt/ros/kinetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin', 'ROS_HOSTNAME': 'ubiquityrobot.local', 'ROSLISP_PACKAGE_DIRECTORIES': '', 'ROS_ETC_DIR': '/opt/ros/kinetic/etc/ros', 'USER': 'ubuntu', 'ROS_VERSION': '1', 'HOME': '/home/ubuntu', 'PKG_CONFIG_PATH': '/opt/ros/kinetic/lib/pkgconfig:/opt/ros/kinetic/lib/arm-linux-gnueabihf/pkgconfig', 'ROS_PACKAGE_PATH': '/opt/ros/kinetic/share', 'LOGNAME': 'ubuntu', 'CMAKE_PREFIX_PATH': '/opt/ros/kinetic', 'LD_LIBRARY_PATH': '/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/arm-linux-gnueabihf', 'ROS_PYTHON_VERSION': '2'}
+[roslaunch][INFO] 2020-07-30 18:04:45,135: starting in server mode
+[roslaunch.parent][INFO] 2020-07-30 18:04:45,136: starting roslaunch parent run
+[roslaunch][INFO] 2020-07-30 18:04:45,137: loading roscore config file /opt/ros/kinetic/etc/ros/roscore.xml
+[roslaunch][INFO] 2020-07-30 18:04:46,630: Added core node of type [rosout/rosout] in namespace [/]
+[roslaunch.pmon][INFO] 2020-07-30 18:04:46,630: start_process_monitor: creating ProcessMonitor
+[roslaunch.pmon][INFO] 2020-07-30 18:04:46,631: created process monitor <ProcessMonitor(ProcessMonitor-1, initial daemon)>
+[roslaunch.pmon][INFO] 2020-07-30 18:04:46,631: start_process_monitor: ProcessMonitor started
+[roslaunch.parent][INFO] 2020-07-30 18:04:46,631: starting parent XML-RPC server
+[roslaunch.server][INFO] 2020-07-30 18:04:46,632: starting roslaunch XML-RPC server
+[roslaunch.server][INFO] 2020-07-30 18:04:46,632: waiting for roslaunch XML-RPC server to initialize
+[xmlrpc][INFO] 2020-07-30 18:04:46,632: XML-RPC server binding to 0.0.0.0:0
+[xmlrpc][INFO] 2020-07-30 18:04:46,633: Started XML-RPC server [http://ubiquityrobot.local:42041/]
+[xmlrpc][INFO] 2020-07-30 18:04:46,634: xml rpc node: starting XML-RPC server
+[roslaunch][INFO] 2020-07-30 18:04:46,646: started roslaunch server http://ubiquityrobot.local:42041/
+[roslaunch.parent][INFO] 2020-07-30 18:04:46,646: ... parent XML-RPC server started
+[roslaunch][INFO] 2020-07-30 18:04:46,647: master.is_running[http://ubiquityrobot.local:11311/]
+[roslaunch][INFO] 2020-07-30 18:04:46,651: auto-starting new master
+[roslaunch][INFO] 2020-07-30 18:04:46,651: create_master_process: rosmaster, /opt/ros/kinetic/share/ros, 11311, 3, None
+[roslaunch][INFO] 2020-07-30 18:04:46,652: process[master]: launching with args [['rosmaster', '--core', '-p', '11311', '-w', '3']]
+[roslaunch.pmon][INFO] 2020-07-30 18:04:46,652: ProcessMonitor.register[master]
+[roslaunch.pmon][INFO] 2020-07-30 18:04:46,652: ProcessMonitor.register[master] complete
+[roslaunch][INFO] 2020-07-30 18:04:46,652: process[master]: starting os process
+[roslaunch][INFO] 2020-07-30 18:04:46,653: process[master]: start w/ args [['rosmaster', '--core', '-p', '11311', '-w', '3', '__log:=/home/ubuntu/.ros/log/25ec0b62-d28f-11ea-9845-bd977eaed04c/master.log']]
+[roslaunch][INFO] 2020-07-30 18:04:46,653: process[master]: cwd will be [/home/ubuntu/.ros]
+[roslaunch][INFO] 2020-07-30 18:04:46,661: process[master]: started with pid [751]
+[roslaunch][INFO] 2020-07-30 18:04:46,662: master.is_running[http://ubiquityrobot.local:11311/]
+[roslaunch][INFO] 2020-07-30 18:04:46,764: master.is_running[http://ubiquityrobot.local:11311/]
+[roslaunch][INFO] 2020-07-30 18:04:46,865: master.is_running[http://ubiquityrobot.local:11311/]
+[roslaunch][INFO] 2020-07-30 18:04:46,967: master.is_running[http://ubiquityrobot.local:11311/]
+[roslaunch][INFO] 2020-07-30 18:04:47,068: master.is_running[http://ubiquityrobot.local:11311/]
+[roslaunch][INFO] 2020-07-30 18:04:47,170: master.is_running[http://ubiquityrobot.local:11311/]
+[roslaunch][INFO] 2020-07-30 18:04:47,272: master.is_running[http://ubiquityrobot.local:11311/]
+[roslaunch][INFO] 2020-07-30 18:04:47,275: master.is_running[http://ubiquityrobot.local:11311/]
+[roslaunch][INFO] 2020-07-30 18:04:47,277: ROS_MASTER_URI=http://ubiquityrobot.local:11311/
+[roslaunch][INFO] 2020-07-30 18:04:47,280: setting /run_id to 25ec0b62-d28f-11ea-9845-bd977eaed04c
+[roslaunch][INFO] 2020-07-30 18:04:47,283: setting /roslaunch/uris/host_ubiquityrobot_local__42041' to http://ubiquityrobot.local:42041/
+[roslaunch][INFO] 2020-07-30 18:04:47,288: ... preparing to launch node of type [rosout/rosout]
+[roslaunch][INFO] 2020-07-30 18:04:47,289: create_node_process: package[rosout] type[rosout] machine[Machine(name[] env_loader[None] address[localhost] ssh_port[22] user[None] assignable[True] timeout[10.0])] master_uri[http://ubiquityrobot.local:11311/]
+[roslaunch][INFO] 2020-07-30 18:04:47,289: process[rosout-1]: env[{'LD_LIBRARY_PATH': '/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/arm-linux-gnueabihf', 'SHELL': '/bin/bash', 'ROS_DISTRO': 'kinetic', 'PYTHONPATH': '/opt/ros/kinetic/lib/python2.7/dist-packages', 'ROSLISP_PACKAGE_DIRECTORIES': '', 'ROS_ETC_DIR': '/opt/ros/kinetic/etc/ros', 'ROS_ROOT': '/opt/ros/kinetic/share/ros', 'PKG_CONFIG_PATH': '/opt/ros/kinetic/lib/pkgconfig:/opt/ros/kinetic/lib/arm-linux-gnueabihf/pkgconfig', 'PWD': '/', 'ROS_MASTER_URI': 'http://ubiquityrobot.local:11311/', 'USER': 'ubuntu', 'ROS_VERSION': '1', 'HOME': '/home/ubuntu', 'ROS_HOSTNAME': 'ubiquityrobot.local', 'PATH': '/opt/ros/kinetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin', 'ROS_PACKAGE_PATH': '/opt/ros/kinetic/share', 'CMAKE_PREFIX_PATH': '/opt/ros/kinetic', 'ROS_LOG_FILENAME': '/home/ubuntu/.ros/log/25ec0b62-d28f-11ea-9845-bd977eaed04c/roslaunch-ubiquityrobot-690.log', 'ROS_PYTHON_VERSION': '2', 'LOGNAME': 'ubuntu'}]
+[roslaunch][INFO] 2020-07-30 18:04:47,364: process[rosout-1]: args[[u'/opt/ros/kinetic/lib/rosout/rosout', u'__name:=rosout']]
+[roslaunch][INFO] 2020-07-30 18:04:47,365: ... created process [rosout-1]
+[roslaunch.pmon][INFO] 2020-07-30 18:04:47,365: ProcessMonitor.register[rosout-1]
+[roslaunch.pmon][INFO] 2020-07-30 18:04:47,366: ProcessMonitor.register[rosout-1] complete
+[roslaunch][INFO] 2020-07-30 18:04:47,366: ... registered process [rosout-1]
+[roslaunch][INFO] 2020-07-30 18:04:47,366: process[rosout-1]: starting os process
+[roslaunch][INFO] 2020-07-30 18:04:47,367: process[rosout-1]: start w/ args [[u'/opt/ros/kinetic/lib/rosout/rosout', u'__name:=rosout', u'__log:=/home/ubuntu/.ros/log/25ec0b62-d28f-11ea-9845-bd977eaed04c/rosout-1.log']]
+[roslaunch][INFO] 2020-07-30 18:04:47,367: process[rosout-1]: cwd will be [/home/ubuntu/.ros]
+[roslaunch][INFO] 2020-07-30 18:04:47,381: process[rosout-1]: started with pid [769]
+[roslaunch][INFO] 2020-07-30 18:04:47,382: ... successfully launched [rosout-1]
+[roslaunch][INFO] 2020-07-30 18:04:47,384: load_parameters starting ...
+[roslaunch][INFO] 2020-07-30 18:04:47,395: ... load_parameters complete
+[roslaunch][INFO] 2020-07-30 18:04:47,396: launch_nodes: launching local nodes ...
+[roslaunch][INFO] 2020-07-30 18:04:47,396: ... launch_nodes complete
+[roslaunch.pmon][INFO] 2020-07-30 18:04:47,397: registrations completed <ProcessMonitor(ProcessMonitor-1, started daemon -1237326736)>
+[roslaunch.parent][INFO] 2020-07-30 18:04:47,397: ... roslaunch parent running, waiting for process exit
+[roslaunch][INFO] 2020-07-30 18:04:47,398: spin

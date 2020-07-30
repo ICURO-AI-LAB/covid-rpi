@@ -58,3 +58,21 @@ Press Ctrl-C to interrupt
 [roslaunch.pmon][INFO] 2020-07-30 17:26:20,184: registrations completed <ProcessMonitor(ProcessMonitor-1, started daemon -1238010768)>
 [roslaunch.parent][INFO] 2020-07-30 17:26:20,184: ... roslaunch parent running, waiting for process exit
 [roslaunch][INFO] 2020-07-30 17:26:20,184: spin
+[roslaunch.pmon][INFO] 2020-07-30 18:04:20,823: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, started daemon -1238010768)>
+[roslaunch.pmon][INFO] 2020-07-30 18:04:20,882: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon -1238010768)>
+[roslaunch.pmon][INFO] 2020-07-30 18:04:20,883: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon -1238010768)>: remaining procs are [<roslaunch.nodeprocess.LocalProcess object at 0xb637e630>, <roslaunch.nodeprocess.LocalProcess object at 0xb6362d10>]
+[roslaunch.pmon][INFO] 2020-07-30 18:04:20,885: ProcessMonitor exit: killing rosout-1
+[roslaunch][INFO] 2020-07-30 18:04:20,886: [rosout-1] killing on exit
+[roslaunch.pmon][INFO] 2020-07-30 18:04:20,886: ProcessMonitor exit: killing master
+[roslaunch][INFO] 2020-07-30 18:04:20,886: [master] killing on exit
+[roslaunch.pmon][INFO] 2020-07-30 18:04:20,887: ProcessMonitor exit: cleaning up data structures and signals
+[roslaunch.pmon][INFO] 2020-07-30 18:04:20,887: ProcessMonitor exit: pmon has shutdown
+[roslaunch][INFO] 2020-07-30 18:04:20,890: process monitor is done spinning, initiating full shutdown
+[roslaunch][INFO] 2020-07-30 18:04:20,890: runner.stop()
+[roslaunch][INFO] 2020-07-30 18:04:20,890: shutting down processing monitor...
+[roslaunch][INFO] 2020-07-30 18:04:20,890: shutting down processing monitor <ProcessMonitor(ProcessMonitor-1, stopped daemon -1238010768)>
+[roslaunch.pmon][INFO] 2020-07-30 18:04:20,891: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon -1238010768)>
+[roslaunch][INFO] 2020-07-30 18:04:20,891: ... shutting down processing monitor complete
+[roslaunch][INFO] 2020-07-30 18:04:20,891: done
+[roslaunch.pmon][INFO] 2020-07-30 18:04:20,892: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon -1238010768)>
+[rospy.core][INFO] 2020-07-30 18:04:20,892: signal_shutdown [atexit]

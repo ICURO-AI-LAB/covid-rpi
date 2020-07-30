@@ -1,0 +1,240 @@
+[rosmaster.main][INFO] 2020-07-30 18:04:47,207: initialization complete, waiting for shutdown
+[rosmaster.main][INFO] 2020-07-30 18:04:47,208: Starting ROS Master Node
+[xmlrpc][INFO] 2020-07-30 18:04:47,209: XML-RPC server binding to 0.0.0.0:11311
+[rosmaster.master][INFO] 2020-07-30 18:04:47,210: Master initialized: port[11311], uri[http://ubiquityrobot.local:11311/]
+[xmlrpc][INFO] 2020-07-30 18:04:47,210: Started XML-RPC server [http://ubiquityrobot.local:11311/]
+[xmlrpc][INFO] 2020-07-30 18:04:47,211: xml rpc node: starting XML-RPC server
+[rosmaster.master][INFO] 2020-07-30 18:04:47,282: +PARAM [/run_id] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:47,285: +PARAM [/roslaunch/uris/host_ubiquityrobot_local__42041] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:47,393: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:47,393: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:47,571: +SERVICE [/rosout/get_loggers] /rosout http://ubiquityrobot.local:35127/
+[rosmaster.master][INFO] 2020-07-30 18:04:47,574: +SERVICE [/rosout/set_logger_level] /rosout http://ubiquityrobot.local:35127/
+[rosmaster.master][INFO] 2020-07-30 18:04:47,582: +PUB [/rosout_agg] /rosout http://ubiquityrobot.local:35127/
+[rosmaster.master][INFO] 2020-07-30 18:04:47,594: +SUB [/rosout] /rosout http://ubiquityrobot.local:35127/
+[rosmaster.master][INFO] 2020-07-30 18:04:49,570: +PARAM [/roslaunch/uris/host_ubiquityrobot_local__45297] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,586: +PARAM [/rosbridge_ws/rosapi/topics_glob] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,586: +PARAM [/joy_node/dev] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,586: +PARAM [/rosbridge_wss/rosbridge_websocket/certfile] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,586: +PARAM [/teleop_twist_joy/enable_button] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,587: +PARAM [/teleop_twist_joy/axis_linear] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,587: +PARAM [/teleop_twist_joy/enable_turbo_button] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,587: +PARAM [/rosbridge_wss/rosbridge_websocket/topics_glob] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,587: +PARAM [/rosbridge_ws/rosbridge_websocket/max_message_size] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,588: +PARAM [/rosbridge_wss/rosbridge_websocket/delay_between_messages] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,588: +PARAM [/rosbridge_ws/rosbridge_websocket/address] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,588: +PARAM [/teleop_twist_joy/scale_linear_turbo] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,588: +PARAM [/rosbridge_wss/rosbridge_websocket/params_glob] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,589: +PARAM [/rosbridge_ws/rosbridge_websocket/authenticate] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,589: +PARAM [/rosbridge_ws/rosbridge_websocket/bson_only_mode] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,589: +PARAM [/rosbridge_ws/rosapi/params_glob] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,589: +PARAM [/teleop_twist_joy/scale_linear] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,589: +PARAM [/rosbridge_wss/rosbridge_websocket/retry_startup_delay] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,590: +PARAM [/rosbridge_wss/rosbridge_websocket/max_message_size] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,590: +PARAM [/ubiquity_robot_mode] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,590: +PARAM [/rosbridge_ws/rosbridge_websocket/topics_glob] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,590: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,590: +PARAM [/rosbridge_wss/rosbridge_websocket/services_glob] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,591: +PARAM [/rosbridge_wss/rosbridge_websocket/address] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,591: +PARAM [/rosbridge_ws/rosbridge_websocket/use_compression] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,591: +PARAM [/rosbridge_wss/rosbridge_websocket/fragment_timeout] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,591: +PARAM [/rosbridge_ws/rosbridge_websocket/retry_startup_delay] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,592: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,592: +PARAM [/rosbridge_ws/rosbridge_websocket/unregister_timeout] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,592: +PARAM [/rosbridge_wss/rosbridge_websocket/authenticate] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,592: +PARAM [/rosbridge_ws/rosbridge_websocket/params_glob] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,593: +PARAM [/joy_node/autorepeat_rate] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,593: +PARAM [/teleop_twist_joy/scale_angular] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,593: +PARAM [/rosbridge_ws/rosbridge_websocket/port] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,593: +PARAM [/rosbridge_ws/rosapi/services_glob] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,593: +PARAM [/rosbridge_ws/rosbridge_websocket/fragment_timeout] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,594: +PARAM [/rosbridge_ws/rosbridge_websocket/services_glob] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,594: +PARAM [/rosbridge_wss/rosbridge_websocket/keyfile] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,594: +PARAM [/rosbridge_wss/rosbridge_websocket/port] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,594: +PARAM [/rosbridge_wss/rosapi/services_glob] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,594: +PARAM [/rosbridge_wss/rosbridge_websocket/unregister_timeout] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,595: +PARAM [/rosbridge_wss/rosapi/topics_glob] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,595: +PARAM [/teleop_twist_joy/axis_angular] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,595: +PARAM [/rosbridge_ws/rosbridge_websocket/delay_between_messages] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,595: +PARAM [/rosbridge_wss/rosapi/params_glob] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,596: +PARAM [/rosbridge_wss/rosbridge_websocket/use_compression] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:04:49,753: +PUB [/rosout] /joy_node http://ubiquityrobot.local:44887/
+[rosmaster.master][INFO] 2020-07-30 18:04:49,757: +SERVICE [/joy_node/get_loggers] /joy_node http://ubiquityrobot.local:44887/
+[rosmaster.master][INFO] 2020-07-30 18:04:49,763: +SERVICE [/joy_node/set_logger_level] /joy_node http://ubiquityrobot.local:44887/
+[rosmaster.master][INFO] 2020-07-30 18:04:49,769: +PUB [/diagnostics] /joy_node http://ubiquityrobot.local:44887/
+[rosmaster.master][INFO] 2020-07-30 18:04:49,779: +PUB [/rosout] /teleop_twist_joy http://ubiquityrobot.local:46377/
+[rosmaster.master][INFO] 2020-07-30 18:04:49,783: +SERVICE [/teleop_twist_joy/get_loggers] /teleop_twist_joy http://ubiquityrobot.local:46377/
+[rosmaster.master][INFO] 2020-07-30 18:04:49,793: +SERVICE [/teleop_twist_joy/set_logger_level] /teleop_twist_joy http://ubiquityrobot.local:46377/
+[rosmaster.master][INFO] 2020-07-30 18:04:49,810: +PUB [/joy] /joy_node http://ubiquityrobot.local:44887/
+[rosmaster.master][INFO] 2020-07-30 18:04:49,813: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/']
+[rosmaster.master][INFO] 2020-07-30 18:04:49,818: +PUB [/cmd_vel] /teleop_twist_joy http://ubiquityrobot.local:46377/
+[rosmaster.master][INFO] 2020-07-30 18:04:49,821: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/']: sec=0.01, result=[1, '', 0]
+[rosmaster.master][INFO] 2020-07-30 18:04:49,821: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/']
+[rosmaster.master][INFO] 2020-07-30 18:04:49,824: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2020-07-30 18:04:49,871: +SUB [/joy/set_feedback] /joy_node http://ubiquityrobot.local:44887/
+[rosmaster.master][INFO] 2020-07-30 18:04:49,874: +SUB [/joy] /teleop_twist_joy http://ubiquityrobot.local:46377/
+[rosmaster.master][INFO] 2020-07-30 18:04:49,984: +PUB [/rosout] /tf2_web_republisher http://ubiquityrobot.local:36809/
+[rosmaster.master][INFO] 2020-07-30 18:04:49,988: +SERVICE [/tf2_web_republisher/get_loggers] /tf2_web_republisher http://ubiquityrobot.local:36809/
+[rosmaster.master][INFO] 2020-07-30 18:04:49,994: +SERVICE [/tf2_web_republisher/set_logger_level] /tf2_web_republisher http://ubiquityrobot.local:36809/
+[rosmaster.master][INFO] 2020-07-30 18:04:50,016: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/']
+[rosmaster.master][INFO] 2020-07-30 18:04:50,021: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2020-07-30 18:04:50,047: +SUB [/tf] /tf2_web_republisher http://ubiquityrobot.local:36809/
+[rosmaster.master][INFO] 2020-07-30 18:04:50,085: +SUB [/tf_static] /tf2_web_republisher http://ubiquityrobot.local:36809/
+[rosmaster.master][INFO] 2020-07-30 18:04:50,104: +SERVICE [/republish_tfs] /tf2_web_republisher http://ubiquityrobot.local:36809/
+[rosmaster.master][INFO] 2020-07-30 18:04:50,120: +PUB [/tf2_web_republisher/result] /tf2_web_republisher http://ubiquityrobot.local:36809/
+[rosmaster.master][INFO] 2020-07-30 18:04:50,124: +PUB [/tf2_web_republisher/feedback] /tf2_web_republisher http://ubiquityrobot.local:36809/
+[rosmaster.master][INFO] 2020-07-30 18:04:50,128: +PUB [/tf2_web_republisher/status] /tf2_web_republisher http://ubiquityrobot.local:36809/
+[rosmaster.master][INFO] 2020-07-30 18:04:50,174: +SUB [/tf2_web_republisher/goal] /tf2_web_republisher http://ubiquityrobot.local:36809/
+[rosmaster.master][INFO] 2020-07-30 18:04:50,206: +SUB [/tf2_web_republisher/cancel] /tf2_web_republisher http://ubiquityrobot.local:36809/
+[rosmaster.master][INFO] 2020-07-30 18:04:50,949: +PUB [/rosout] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:50,961: +SERVICE [/rosbridge_wss/rosapi/get_loggers] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:50,965: +SERVICE [/rosbridge_wss/rosapi/set_logger_level] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:50,978: +SERVICE [/rosapi/topics] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:50,981: +SERVICE [/rosapi/topics_for_type] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:50,985: +SERVICE [/rosapi/services] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:50,989: +SERVICE [/rosapi/services_for_type] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:50,993: +SERVICE [/rosapi/nodes] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:50,996: +SERVICE [/rosapi/node_details] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:50,999: +SERVICE [/rosapi/action_servers] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,003: +SERVICE [/rosapi/topic_type] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,007: +SERVICE [/rosapi/service_type] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,010: +SERVICE [/rosapi/publishers] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,014: +SERVICE [/rosapi/subscribers] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,017: +SERVICE [/rosapi/service_providers] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,020: +SERVICE [/rosapi/service_node] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,023: +SERVICE [/rosapi/service_host] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,024: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/', 'http://ubiquityrobot.local:41163/']
+[rosmaster.master][INFO] 2020-07-30 18:04:51,026: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/', 'http://ubiquityrobot.local:41163/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2020-07-30 18:04:51,029: +SERVICE [/rosapi/message_details] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,033: +SERVICE [/rosapi/service_request_details] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,036: +SERVICE [/rosapi/service_response_details] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,039: +SERVICE [/rosapi/set_param] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,044: +SERVICE [/rosapi/get_param] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,045: +PUB [/rosout] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,048: +SERVICE [/rosapi/has_param] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,054: +SERVICE [/rosapi/search_param] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,056: +SERVICE [/rosbridge_ws/rosapi/get_loggers] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,059: +SERVICE [/rosapi/delete_param] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,061: +SERVICE [/rosbridge_ws/rosapi/set_logger_level] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,064: +SERVICE [/rosapi/get_param_names] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,068: +SERVICE [/rosapi/get_time] /rosbridge_wss/rosapi http://ubiquityrobot.local:41163/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,076: +SERVICE [/rosapi/topics] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,080: +SERVICE [/rosapi/topics_for_type] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,084: +SERVICE [/rosapi/services] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,087: +SERVICE [/rosapi/services_for_type] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,091: +SERVICE [/rosapi/nodes] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,095: +SERVICE [/rosapi/node_details] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,103: +SERVICE [/rosapi/action_servers] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,107: +SERVICE [/rosapi/topic_type] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,111: +SERVICE [/rosapi/service_type] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,114: +SERVICE [/rosapi/publishers] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,118: +SERVICE [/rosapi/subscribers] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,121: +SERVICE [/rosapi/service_providers] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,124: +SERVICE [/rosapi/service_node] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,128: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/', 'http://ubiquityrobot.local:41163/', 'http://ubiquityrobot.local:32977/']
+[rosmaster.master][INFO] 2020-07-30 18:04:51,130: +SERVICE [/rosapi/service_host] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,133: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/', 'http://ubiquityrobot.local:41163/', 'http://ubiquityrobot.local:32977/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2020-07-30 18:04:51,135: +SERVICE [/rosapi/message_details] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,138: +SERVICE [/rosapi/service_request_details] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,141: +SERVICE [/rosapi/service_response_details] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,146: +SERVICE [/rosapi/set_param] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,150: +SERVICE [/rosapi/get_param] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,153: +SERVICE [/rosapi/has_param] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,157: +SERVICE [/rosapi/search_param] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,160: +SERVICE [/rosapi/delete_param] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,164: +SERVICE [/rosapi/get_param_names] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,168: +SERVICE [/rosapi/get_time] /rosbridge_ws/rosapi http://ubiquityrobot.local:32977/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,791: +PUB [/rosout] /rosbridge_ws/rosbridge_websocket http://ubiquityrobot.local:37583/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,793: +PUB [/rosout] /rosbridge_wss/rosbridge_websocket http://ubiquityrobot.local:43951/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,800: +SERVICE [/rosbridge_ws/rosbridge_websocket/get_loggers] /rosbridge_ws/rosbridge_websocket http://ubiquityrobot.local:37583/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,804: +SERVICE [/rosbridge_ws/rosbridge_websocket/set_logger_level] /rosbridge_ws/rosbridge_websocket http://ubiquityrobot.local:37583/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,805: +SERVICE [/rosbridge_wss/rosbridge_websocket/get_loggers] /rosbridge_wss/rosbridge_websocket http://ubiquityrobot.local:43951/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,810: +SERVICE [/rosbridge_wss/rosbridge_websocket/set_logger_level] /rosbridge_wss/rosbridge_websocket http://ubiquityrobot.local:43951/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,834: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/', 'http://ubiquityrobot.local:41163/', 'http://ubiquityrobot.local:32977/', 'http://ubiquityrobot.local:37583/']
+[rosmaster.master][INFO] 2020-07-30 18:04:51,837: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/', 'http://ubiquityrobot.local:41163/', 'http://ubiquityrobot.local:32977/', 'http://ubiquityrobot.local:37583/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2020-07-30 18:04:51,838: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/', 'http://ubiquityrobot.local:41163/', 'http://ubiquityrobot.local:32977/', 'http://ubiquityrobot.local:37583/', 'http://ubiquityrobot.local:43951/']
+[rosmaster.master][INFO] 2020-07-30 18:04:51,839: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/', 'http://ubiquityrobot.local:41163/', 'http://ubiquityrobot.local:32977/', 'http://ubiquityrobot.local:37583/', 'http://ubiquityrobot.local:43951/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2020-07-30 18:04:51,855: +PUB [/rosbridge_ws/client_count] /rosbridge_ws/rosbridge_websocket http://ubiquityrobot.local:37583/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,859: +PUB [/rosbridge_wss/client_count] /rosbridge_wss/rosbridge_websocket http://ubiquityrobot.local:43951/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,860: +PUB [/rosbridge_ws/connected_clients] /rosbridge_ws/rosbridge_websocket http://ubiquityrobot.local:37583/
+[rosmaster.master][INFO] 2020-07-30 18:04:51,864: +PUB [/rosbridge_wss/connected_clients] /rosbridge_wss/rosbridge_websocket http://ubiquityrobot.local:43951/
+[rosmaster.master][INFO] 2020-07-30 18:05:25,998: +PARAM [/roslaunch/uris/host_ubiquityrobot_local__44823] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:05:26,005: +PARAM [/rplidarNode/angle_compensate] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:05:26,005: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:05:26,005: +PARAM [/rplidarNode/frame_id] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:05:26,006: +PARAM [/rplidarNode/serial_port] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:05:26,006: +PARAM [/rplidarNode/serial_baudrate] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:05:26,006: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:05:26,006: +PARAM [/rplidarNode/inverted] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:05:26,149: +PUB [/rosout] /laser_broadcaster http://ubiquityrobot.local:43075/
+[rosmaster.master][INFO] 2020-07-30 18:05:26,152: +SERVICE [/laser_broadcaster/get_loggers] /laser_broadcaster http://ubiquityrobot.local:43075/
+[rosmaster.master][INFO] 2020-07-30 18:05:26,154: +SERVICE [/laser_broadcaster/set_logger_level] /laser_broadcaster http://ubiquityrobot.local:43075/
+[rosmaster.master][INFO] 2020-07-30 18:05:26,158: +PUB [/tf] /laser_broadcaster http://ubiquityrobot.local:43075/
+[rosmaster.master][INFO] 2020-07-30 18:05:26,174: +PUB [/rosout] /rplidarNode http://ubiquityrobot.local:46749/
+[rosmaster.master][INFO] 2020-07-30 18:05:26,176: +SERVICE [/rplidarNode/get_loggers] /rplidarNode http://ubiquityrobot.local:46749/
+[rosmaster.master][INFO] 2020-07-30 18:05:26,178: +SERVICE [/rplidarNode/set_logger_level] /rplidarNode http://ubiquityrobot.local:46749/
+[rosmaster.master][INFO] 2020-07-30 18:05:26,181: +PUB [/scan] /rplidarNode http://ubiquityrobot.local:46749/
+[rosmaster.master][INFO] 2020-07-30 18:05:26,193: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/', 'http://ubiquityrobot.local:41163/', 'http://ubiquityrobot.local:32977/', 'http://ubiquityrobot.local:37583/', 'http://ubiquityrobot.local:43951/', 'http://ubiquityrobot.local:43075/']
+[rosmaster.master][INFO] 2020-07-30 18:05:26,194: publisherUpdate[/tf] -> http://ubiquityrobot.local:36809/ ['http://ubiquityrobot.local:43075/']
+[rosmaster.master][INFO] 2020-07-30 18:05:26,196: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/', 'http://ubiquityrobot.local:41163/', 'http://ubiquityrobot.local:32977/', 'http://ubiquityrobot.local:37583/', 'http://ubiquityrobot.local:43951/', 'http://ubiquityrobot.local:43075/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2020-07-30 18:05:26,197: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/', 'http://ubiquityrobot.local:41163/', 'http://ubiquityrobot.local:32977/', 'http://ubiquityrobot.local:37583/', 'http://ubiquityrobot.local:43951/', 'http://ubiquityrobot.local:43075/', 'http://ubiquityrobot.local:46749/']
+[rosmaster.master][INFO] 2020-07-30 18:05:26,199: publisherUpdate[/tf] -> http://ubiquityrobot.local:36809/ ['http://ubiquityrobot.local:43075/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2020-07-30 18:05:26,200: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/', 'http://ubiquityrobot.local:41163/', 'http://ubiquityrobot.local:32977/', 'http://ubiquityrobot.local:37583/', 'http://ubiquityrobot.local:43951/', 'http://ubiquityrobot.local:43075/', 'http://ubiquityrobot.local:46749/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2020-07-30 18:05:26,725: +SERVICE [/stop_motor] /rplidarNode http://ubiquityrobot.local:46749/
+[rosmaster.master][INFO] 2020-07-30 18:05:26,728: +SERVICE [/start_motor] /rplidarNode http://ubiquityrobot.local:46749/
+[rosmaster.master][INFO] 2020-07-30 18:05:38,223: -PUB [/rosout] /rplidarNode http://ubiquityrobot.local:46749/
+[rosmaster.master][INFO] 2020-07-30 18:05:38,227: -PUB [/scan] /rplidarNode http://ubiquityrobot.local:46749/
+[rosmaster.master][INFO] 2020-07-30 18:05:38,230: -SERVICE [/rplidarNode/get_loggers] /rplidarNode rosrpc://ubiquityrobot.local:47437
+[rosmaster.master][INFO] 2020-07-30 18:05:38,234: -SERVICE [/rplidarNode/set_logger_level] /rplidarNode rosrpc://ubiquityrobot.local:47437
+[rosmaster.master][INFO] 2020-07-30 18:05:38,238: -SERVICE [/stop_motor] /rplidarNode rosrpc://ubiquityrobot.local:47437
+[rosmaster.master][INFO] 2020-07-30 18:05:38,241: -SERVICE [/start_motor] /rplidarNode rosrpc://ubiquityrobot.local:47437
+[rosmaster.master][INFO] 2020-07-30 18:05:38,316: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/', 'http://ubiquityrobot.local:41163/', 'http://ubiquityrobot.local:32977/', 'http://ubiquityrobot.local:37583/', 'http://ubiquityrobot.local:43951/', 'http://ubiquityrobot.local:43075/']
+[rosmaster.master][INFO] 2020-07-30 18:05:38,319: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/', 'http://ubiquityrobot.local:41163/', 'http://ubiquityrobot.local:32977/', 'http://ubiquityrobot.local:37583/', 'http://ubiquityrobot.local:43951/', 'http://ubiquityrobot.local:43075/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2020-07-30 18:05:38,322: -PUB [/rosout] /laser_broadcaster http://ubiquityrobot.local:43075/
+[rosmaster.master][INFO] 2020-07-30 18:05:38,327: -PUB [/tf] /laser_broadcaster http://ubiquityrobot.local:43075/
+[rosmaster.master][INFO] 2020-07-30 18:05:38,331: -SERVICE [/laser_broadcaster/get_loggers] /laser_broadcaster rosrpc://ubiquityrobot.local:33973
+[rosmaster.master][INFO] 2020-07-30 18:05:38,335: -SERVICE [/laser_broadcaster/set_logger_level] /laser_broadcaster rosrpc://ubiquityrobot.local:33973
+[rosmaster.master][INFO] 2020-07-30 18:05:38,420: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/', 'http://ubiquityrobot.local:41163/', 'http://ubiquityrobot.local:32977/', 'http://ubiquityrobot.local:37583/', 'http://ubiquityrobot.local:43951/']
+[rosmaster.master][INFO] 2020-07-30 18:05:38,420: publisherUpdate[/tf] -> http://ubiquityrobot.local:36809/ []
+[rosmaster.master][INFO] 2020-07-30 18:05:38,424: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/', 'http://ubiquityrobot.local:41163/', 'http://ubiquityrobot.local:32977/', 'http://ubiquityrobot.local:37583/', 'http://ubiquityrobot.local:43951/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2020-07-30 18:05:38,426: publisherUpdate[/tf] -> http://ubiquityrobot.local:36809/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2020-07-30 18:05:42,160: +PARAM [/roslaunch/uris/host_ubiquityrobot_local__39973] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:05:42,167: +PARAM [/rplidarNode/angle_compensate] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:05:42,167: +PARAM [/rosdistro] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:05:42,168: +PARAM [/rplidarNode/frame_id] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:05:42,168: +PARAM [/rplidarNode/serial_port] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:05:42,168: +PARAM [/rplidarNode/serial_baudrate] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:05:42,168: +PARAM [/rosversion] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:05:42,169: +PARAM [/rplidarNode/inverted] by /roslaunch
+[rosmaster.master][INFO] 2020-07-30 18:05:42,303: +PUB [/rosout] /laser_broadcaster http://ubiquityrobot.local:45373/
+[rosmaster.master][INFO] 2020-07-30 18:05:42,306: +SERVICE [/laser_broadcaster/get_loggers] /laser_broadcaster http://ubiquityrobot.local:45373/
+[rosmaster.master][INFO] 2020-07-30 18:05:42,308: +SERVICE [/laser_broadcaster/set_logger_level] /laser_broadcaster http://ubiquityrobot.local:45373/
+[rosmaster.master][INFO] 2020-07-30 18:05:42,312: +PUB [/tf] /laser_broadcaster http://ubiquityrobot.local:45373/
+[rosmaster.master][INFO] 2020-07-30 18:05:42,321: +PUB [/rosout] /rplidarNode http://ubiquityrobot.local:40499/
+[rosmaster.master][INFO] 2020-07-30 18:05:42,323: +SERVICE [/rplidarNode/get_loggers] /rplidarNode http://ubiquityrobot.local:40499/
+[rosmaster.master][INFO] 2020-07-30 18:05:42,325: +SERVICE [/rplidarNode/set_logger_level] /rplidarNode http://ubiquityrobot.local:40499/
+[rosmaster.master][INFO] 2020-07-30 18:05:42,327: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/', 'http://ubiquityrobot.local:41163/', 'http://ubiquityrobot.local:32977/', 'http://ubiquityrobot.local:37583/', 'http://ubiquityrobot.local:43951/', 'http://ubiquityrobot.local:45373/']
+[rosmaster.master][INFO] 2020-07-30 18:05:42,329: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/', 'http://ubiquityrobot.local:41163/', 'http://ubiquityrobot.local:32977/', 'http://ubiquityrobot.local:37583/', 'http://ubiquityrobot.local:43951/', 'http://ubiquityrobot.local:45373/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2020-07-30 18:05:42,330: +PUB [/scan] /rplidarNode http://ubiquityrobot.local:40499/
+[rosmaster.master][INFO] 2020-07-30 18:05:42,331: publisherUpdate[/tf] -> http://ubiquityrobot.local:36809/ ['http://ubiquityrobot.local:45373/']
+[rosmaster.master][INFO] 2020-07-30 18:05:42,333: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/', 'http://ubiquityrobot.local:41163/', 'http://ubiquityrobot.local:32977/', 'http://ubiquityrobot.local:37583/', 'http://ubiquityrobot.local:43951/', 'http://ubiquityrobot.local:45373/', 'http://ubiquityrobot.local:40499/']
+[rosmaster.master][INFO] 2020-07-30 18:05:42,334: publisherUpdate[/tf] -> http://ubiquityrobot.local:36809/ ['http://ubiquityrobot.local:45373/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2020-07-30 18:05:42,336: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/', 'http://ubiquityrobot.local:41163/', 'http://ubiquityrobot.local:32977/', 'http://ubiquityrobot.local:37583/', 'http://ubiquityrobot.local:43951/', 'http://ubiquityrobot.local:45373/', 'http://ubiquityrobot.local:40499/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2020-07-30 18:05:42,872: +SERVICE [/stop_motor] /rplidarNode http://ubiquityrobot.local:40499/
+[rosmaster.master][INFO] 2020-07-30 18:05:42,876: +SERVICE [/start_motor] /rplidarNode http://ubiquityrobot.local:40499/
+[rosmaster.master][INFO] 2020-07-30 18:05:49,652: -PUB [/rosout] /laser_broadcaster http://ubiquityrobot.local:45373/
+[rosmaster.master][INFO] 2020-07-30 18:05:49,656: -PUB [/rosout] /rplidarNode http://ubiquityrobot.local:40499/
+[rosmaster.master][INFO] 2020-07-30 18:05:49,661: -PUB [/tf] /laser_broadcaster http://ubiquityrobot.local:45373/
+[rosmaster.master][INFO] 2020-07-30 18:05:49,665: -PUB [/scan] /rplidarNode http://ubiquityrobot.local:40499/
+[rosmaster.master][INFO] 2020-07-30 18:05:49,668: -SERVICE [/laser_broadcaster/get_loggers] /laser_broadcaster rosrpc://ubiquityrobot.local:40187
+[rosmaster.master][INFO] 2020-07-30 18:05:49,673: -SERVICE [/laser_broadcaster/set_logger_level] /laser_broadcaster rosrpc://ubiquityrobot.local:40187
+[rosmaster.master][INFO] 2020-07-30 18:05:49,676: -SERVICE [/rplidarNode/get_loggers] /rplidarNode rosrpc://ubiquityrobot.local:53709
+[rosmaster.master][INFO] 2020-07-30 18:05:49,679: -SERVICE [/rplidarNode/set_logger_level] /rplidarNode rosrpc://ubiquityrobot.local:53709
+[rosmaster.master][INFO] 2020-07-30 18:05:49,683: -SERVICE [/stop_motor] /rplidarNode rosrpc://ubiquityrobot.local:53709
+[rosmaster.master][INFO] 2020-07-30 18:05:49,687: -SERVICE [/start_motor] /rplidarNode rosrpc://ubiquityrobot.local:53709
+[rosmaster.master][INFO] 2020-07-30 18:05:49,746: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/', 'http://ubiquityrobot.local:41163/', 'http://ubiquityrobot.local:32977/', 'http://ubiquityrobot.local:37583/', 'http://ubiquityrobot.local:43951/', 'http://ubiquityrobot.local:40499/']
+[rosmaster.master][INFO] 2020-07-30 18:05:49,750: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/', 'http://ubiquityrobot.local:41163/', 'http://ubiquityrobot.local:32977/', 'http://ubiquityrobot.local:37583/', 'http://ubiquityrobot.local:43951/', 'http://ubiquityrobot.local:40499/']: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2020-07-30 18:05:49,750: publisherUpdate[/tf] -> http://ubiquityrobot.local:36809/ []
+[rosmaster.master][INFO] 2020-07-30 18:05:49,751: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/', 'http://ubiquityrobot.local:41163/', 'http://ubiquityrobot.local:32977/', 'http://ubiquityrobot.local:37583/', 'http://ubiquityrobot.local:43951/']
+[rosmaster.master][INFO] 2020-07-30 18:05:49,754: publisherUpdate[/tf] -> http://ubiquityrobot.local:36809/ []: sec=0.00, result=[1, '', 0]
+[rosmaster.master][INFO] 2020-07-30 18:05:49,756: publisherUpdate[/rosout] -> http://ubiquityrobot.local:35127/ ['http://ubiquityrobot.local:44887/', 'http://ubiquityrobot.local:46377/', 'http://ubiquityrobot.local:36809/', 'http://ubiquityrobot.local:41163/', 'http://ubiquityrobot.local:32977/', 'http://ubiquityrobot.local:37583/', 'http://ubiquityrobot.local:43951/']: sec=0.00, result=[1, '', 0]

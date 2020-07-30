@@ -60,3 +60,27 @@ Press Ctrl-C to interrupt
 [roslaunch.pmon][INFO] 2020-07-30 17:58:59,560: registrations completed <ProcessMonitor(ProcessMonitor-1, started daemon -1238469520)>
 [roslaunch.parent][INFO] 2020-07-30 17:58:59,561: ... roslaunch parent running, waiting for process exit
 [roslaunch][INFO] 2020-07-30 17:58:59,561: spin
+[roslaunch][ERROR] 2020-07-30 17:59:04,290: [rplidarNode-2] process has died [pid 3667, exit code 255, cmd /home/ubuntu/catkin_ws/devel/lib/rplidar_ros/rplidarNode __name:=rplidarNode __log:=/home/ubuntu/.ros/log/c6d41228-d289-11ea-9a6d-fdccc649b925/rplidarNode-2.log].
+log file: /home/ubuntu/.ros/log/c6d41228-d289-11ea-9a6d-fdccc649b925/rplidarNode-2*.log
+[roslaunch.pmon][INFO] 2020-07-30 17:59:04,290: ProcessMonitor.unregister[rplidarNode-2] starting
+[roslaunch.pmon][INFO] 2020-07-30 17:59:04,291: ProcessMonitor.unregister[rplidarNode-2] complete
+[roslaunch.pmon][INFO] 2020-07-30 17:59:46,405: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, started daemon -1238469520)>
+[roslaunch.pmon][INFO] 2020-07-30 17:59:46,500: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon -1238469520)>
+[roslaunch.pmon][INFO] 2020-07-30 17:59:46,501: ProcessMonitor._post_run <ProcessMonitor(ProcessMonitor-1, started daemon -1238469520)>: remaining procs are [<roslaunch.nodeprocess.LocalProcess object at 0xb6314670>]
+[roslaunch.pmon][INFO] 2020-07-30 17:59:46,502: ProcessMonitor exit: killing laser_broadcaster-1
+[roslaunch][INFO] 2020-07-30 17:59:46,503: [laser_broadcaster-1] killing on exit
+[roslaunch][INFO] 2020-07-30 17:59:46,505: process[laser_broadcaster-1]: killing os process with pid[3666] pgid[3666]
+[roslaunch][INFO] 2020-07-30 17:59:46,505: [laser_broadcaster-1] sending SIGINT to pgid [3666]
+[roslaunch][INFO] 2020-07-30 17:59:46,506: [laser_broadcaster-1] sent SIGINT to pgid [3666]
+[roslaunch][INFO] 2020-07-30 17:59:46,909: process[laser_broadcaster-1]: SIGINT killed with return value 0
+[roslaunch.pmon][INFO] 2020-07-30 17:59:46,911: ProcessMonitor exit: cleaning up data structures and signals
+[roslaunch.pmon][INFO] 2020-07-30 17:59:46,912: ProcessMonitor exit: pmon has shutdown
+[roslaunch][INFO] 2020-07-30 17:59:46,941: process monitor is done spinning, initiating full shutdown
+[roslaunch][INFO] 2020-07-30 17:59:46,942: runner.stop()
+[roslaunch][INFO] 2020-07-30 17:59:46,942: shutting down processing monitor...
+[roslaunch][INFO] 2020-07-30 17:59:46,943: shutting down processing monitor <ProcessMonitor(ProcessMonitor-1, stopped daemon -1238469520)>
+[roslaunch.pmon][INFO] 2020-07-30 17:59:46,943: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon -1238469520)>
+[roslaunch][INFO] 2020-07-30 17:59:46,944: ... shutting down processing monitor complete
+[roslaunch][INFO] 2020-07-30 17:59:46,944: done
+[roslaunch.pmon][INFO] 2020-07-30 17:59:46,945: ProcessMonitor.shutdown <ProcessMonitor(ProcessMonitor-1, stopped daemon -1238469520)>
+[rospy.core][INFO] 2020-07-30 17:59:46,946: signal_shutdown [atexit]

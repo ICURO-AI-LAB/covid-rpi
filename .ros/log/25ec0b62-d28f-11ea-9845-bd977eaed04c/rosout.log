@@ -1,0 +1,19 @@
+
+
+1596132287.577824533  Node Startup
+1596132289.959019106 INFO [/tmp/binarydeb/ros-kinetic-teleop-twist-joy-0.1.3/src/teleop_twist_joy.cpp:121(TeleopTwistJoy::TeleopTwistJoy) [topics: /rosout, /cmd_vel] Turbo for angular axis yaw is scale 1.000000.
+1596132289.933201328 ERROR [/tmp/binarydeb/ros-kinetic-joy-1.13.0/src/joy_node.cpp:289(main) [topics: /rosout, /diagnostics, /joy] Couldn't open joystick /dev/input/js0. Will retry every second.
+1596132291.070921897 INFO [rosapi_node:195(<module>) [topics: /rosout] Rosapi started
+1596132291.170260906 INFO [rosapi_node:195(<module>) [topics: /rosout] Rosapi started
+1596132291.880182981 INFO [rosbridge_websocket:250(<module>) [topics: /rosbridge_wss/connected_clients, /rosout, /rosbridge_wss/client_count] Rosbridge WebSocket server started on port 9443
+1596132291.877921104 INFO [rosbridge_websocket:250(<module>) [topics: /rosbridge_ws/connected_clients, /rosout, /rosbridge_ws/client_count] Rosbridge WebSocket server started on port 9090
+1596132326.207035796 INFO [/home/ubuntu/catkin_ws/src/rplidar_ros/src/node.cpp:212(main) [topics: /rosout, /scan] RPLIDAR running on ROS package rplidar_ros. SDK Version:1.12.0
+1596132326.719680539 INFO [/home/ubuntu/catkin_ws/src/rplidar_ros/src/node.cpp:128(standalone::rplidar::RPlidarDriver*)) [topics: /rosout, /scan] Firmware Ver: 1.25
+1596132326.720008016 INFO [/home/ubuntu/catkin_ws/src/rplidar_ros/src/node.cpp:129(standalone::rplidar::RPlidarDriver*)) [topics: /rosout, /scan] Hardware Rev: 5
+1596132326.722396804 INFO [/home/ubuntu/catkin_ws/src/rplidar_ros/src/node.cpp:139(standalone::rplidar::RPlidarDriver*)) [topics: /rosout, /scan] RPLidar health status : 0
+1596132327.298821858 INFO [/home/ubuntu/catkin_ws/src/rplidar_ros/src/node.cpp:302(main) [topics: /rosout, /scan] current scan mode: Express, max_distance: 12.0 m, Point number: 4.0K , angle_compensate: 1
+1596132342.355473988 INFO [/home/ubuntu/catkin_ws/src/rplidar_ros/src/node.cpp:212(main) [topics: /rosout, /scan] RPLIDAR running on ROS package rplidar_ros. SDK Version:1.12.0
+1596132342.867786827 INFO [/home/ubuntu/catkin_ws/src/rplidar_ros/src/node.cpp:128(standalone::rplidar::RPlidarDriver*)) [topics: /rosout, /scan] Firmware Ver: 1.25
+1596132342.867907548 INFO [/home/ubuntu/catkin_ws/src/rplidar_ros/src/node.cpp:129(standalone::rplidar::RPlidarDriver*)) [topics: /rosout, /scan] Hardware Rev: 5
+1596132342.870115504 INFO [/home/ubuntu/catkin_ws/src/rplidar_ros/src/node.cpp:139(standalone::rplidar::RPlidarDriver*)) [topics: /rosout, /scan] RPLidar health status : 0
+1596132343.447103200 INFO [/home/ubuntu/catkin_ws/src/rplidar_ros/src/node.cpp:302(main) [topics: /rosout, /scan] current scan mode: Express, max_distance: 12.0 m, Point number: 4.0K , angle_compensate: 1
