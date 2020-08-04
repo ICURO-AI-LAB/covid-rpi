@@ -108,5 +108,9 @@ def goalControl():
 if __name__ == '__main__':   
 	try:
 		goalControl()
-	except rospy.ROSInterruptException:
+	except KeyboardInterrupt:
+		command = "a,0,0,0,0,0,0,0,0"
+		ser.write(command.encode())
+	else:
 		pass
+		
