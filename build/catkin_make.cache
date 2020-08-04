@@ -1,2 +1,2 @@
-demos/dnn_rotate:demos/docking:demos/fiducial_follow:demos/move_demo:rplidar_ros
--DCATKIN_DEVEL_PREFIX=/home/ubuntu/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/catkin_ws/install -G Unix Makefiles
+testing_pubsub
+-DCATKIN_DEVEL_PREFIX=/home/ubuntu/Ubiquity-Pi/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Ubiquity-Pi/install -G Unix Makefiles
