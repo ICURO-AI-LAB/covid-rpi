@@ -1,0 +1,2 @@
+testing_pubsub
+-DCATKIN_DEVEL_PREFIX=/home/ubuntu/Ubiquity-Pi/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Ubiquity-Pi/install -G Unix Makefiles
