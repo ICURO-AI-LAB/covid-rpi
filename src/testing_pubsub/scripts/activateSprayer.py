@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 import serial
 import rospy
+import tty
+import sys
+import termios
 import actionlib
 from actionlib_msgs.msg import GoalStatusArray
 #from std_msgs.msg import String, UInt8 
@@ -8,7 +11,13 @@ from actionlib_msgs.msg import GoalStatusArray
  
 ser = serial.Serial('/dev/ttyUSB0', baudrate=9600) # Set Serial Link
 
+NOT_GOAL = 0
+GOAL = 1
+
 def callback(data):
+	global NOT_GOAL
+	global GOAL
+	
 	print "hello"
 	status_list = data.status_list	
 	
@@ -37,14 +46,19 @@ def activateSprayer():
  	rospy.Subscriber("/move_base/status", GoalStatusArray, callback)
 	
 	#Set Duration Times
-	two_seconds = rospy.Duration.from_sec(2.5)
-	five_seconds = rospy.Duration.from_sec(5)
-
+	two_seconds = rospy.Duration.from_sec(2.)
+	five_seconds = rospy.Duration.from_sec(5.)
+	twenty_seconds = rospy.Duration.from_sec(20.)
+	thirty_seconds = rospy.Duration.from_sec(30.)
+	sixty_seconds = rospy.Duration.from_sec(60.)
 
 	#Save current times and set stop times
 	time_now = rospy.Time.now()
 	time_after_2secs = time_now + two_seconds
-	time_after_7secs = time_after_2secs + five_seconds 
+	time_after_7secs = time_after_2secs + five_seconds
+	time_after_20secs = time_now + twenty_seconds
+	time_after_30secs = time_now + thirty_seconds 
+	time_after_60secs = time_now + sixty_seconds 
 	
 	
 	#primary_counter = 0
@@ -52,11 +66,11 @@ def activateSprayer():
 	
 	rospy.sleep(.5)
 	
-	while(time_now < time_after_7secs): #Time for full spraying actuation
+	while(time_now < time_after_30secs): #Time for full spraying actuation
 		if (time_now < time_after_2secs):
 			print "Trigger 1	"
 			time_now = rospy.Time.now()
-			init_command = "a,0,0,1,1,1,1,0,0" #Trigger relay actuation 
+			init_command = "a,1,1,1,1,1,1,0,0" #Trigger relay actuation 
 			ser.write(init_command.encode())
 		else:
 			print "Trigger 2"
@@ -88,7 +102,7 @@ def activateSprayer():
 		#print primary_counter
 		#print sub_counter 
 
-	command = "a,1,0,0,0,0,0,0,0"
+	command = "a,0,0,0,0,0,0,0,0"
 	print "Trigger 3"
 	print command 
 	ser.write(command.encode())	
