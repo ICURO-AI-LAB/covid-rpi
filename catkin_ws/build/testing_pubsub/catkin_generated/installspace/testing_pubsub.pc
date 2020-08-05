@@ -1,8 +1,0 @@
-prefix=/home/ubuntu/catkin_ws/install
-
-Name: testing_pubsub
-Description: Description of testing_pubsub
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
