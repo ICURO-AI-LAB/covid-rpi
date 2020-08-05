@@ -1,21 +1,22 @@
 #!/usr/bin/env python
 import serial
 import rospy
-#import actionlib
-from std_msgs.msg import String, UInt8 
+import actionlib
+from actionlib_msgs.msg import GoalStatusArray
+#from std_msgs.msg import String, UInt8 
 #from move_base_msg.msg import MoveBaseGoal 
  
 ser = serial.Serial('/dev/ttyUSB2', baudrate=9600) # Set Serial Link
 
 
-def callback(status_list):
-	rospy.loginfo(rospy.get_caller_id() + "I heard %d", status_list.status)
+def callback(data):
+	#rospy.loginfo(rospy.get_caller_id() + "I heard %s", data)
 	#command = status_list.status
 	#print command 
 	#ser.write(command.encode())      	
 
-	#primary_counter = 0
-	#sub_counter = 0	
+	primary_counter = 0
+	sub_counter = 0	
 	
 	#init_command = "a,0,0,0,0,0,0,0,0"
 	#ser.write(init_command.encode())
@@ -58,7 +59,7 @@ def callback(status_list):
 
 def goalControl():
 	rospy.init_node('goalControl', anonymous=True)
- 	rospy.Subscriber("/move_base/status", UInt8, callback)
+ 	rospy.Subscriber("/move_base/status", GoalStatusArray, callback)
 	
 	seconds = rospy.get_time()
 	duration = rospy.Duration.from_sec(3.) 
