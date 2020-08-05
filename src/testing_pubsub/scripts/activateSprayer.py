@@ -6,66 +6,109 @@ from actionlib_msgs.msg import GoalStatusArray
 #from std_msgs.msg import String, UInt8 
 #from move_base_msg.msg import MoveBaseGoal 
  
-#ser = serial.Serial('/dev/ttyUSB2', baudrate=9600) # Set Serial Link
+ser = serial.Serial('/dev/ttyUSB0', baudrate=9600) # Set Serial Link
 
 def callback(data):
 	print "hello"
+	status_list = data.status_list	
+	
+	print('-----')
+        if (len(status_list) == 1):
+                for status in status_list:
+                        if(status.status == 1):
+                                current_state = NOT_GOAL
+                                print "moving"
+                        else:
+                                current_state = GOAL
+                                print "stopped"
+                        #print(status.text)
+                        #print(status.status)
+        elif (len(status_list) <= 2):
+                for status in status_list:
+                        current_state = NOT_GOAL
+                        print "moving"
+                        #print(status.text)
+                        #print(status.status)   
+        print('----')
+
 
 def activateSprayer():
 	rospy.init_node('activateSprayer', anonymous=True)
  	rospy.Subscriber("/move_base/status", GoalStatusArray, callback)
 	
-	seconds = rospy.get_time()
-	duration = rospy.Duration.from_sec(3.) 
+	#Set Duration Times
+	two_seconds = rospy.Duration.from_sec(2.5)
+	five_seconds = rospy.Duration.from_sec(5)
+
+
+	#Save current times and set stop times
+	time_now = rospy.Time.now()
+	time_after_2secs = time_now + two_seconds
+	time_after_7secs = time_after_2secs + five_seconds 
 	
-	primary_counter = 0
-	sub_counter = 0	
 	
-	init_command = "a,0,0,0,0,0,0,0,0"
-	#ser.write(init_command.encode())
-	rospy.sleep(1.)
-
-	while(primary_counter < 700):
-		
-		#time_now = rospy.get_time()
-		#if (time_now - seconds) < 2.0:
-		#	print "Trigger 1"
-
-		#else : 
-		#	print "Trigger 2"
-		
-		
-
-		if (sub_counter < 200):
-			command = "a,0,0,1,1,1,1,0,0"
-			print "Trigger 1"
-			print command
-			#ser.write(command.encode())
+	#primary_counter = 0
+	#sub_counter = 0	
+	
+	rospy.sleep(.5)
+	
+	while(time_now < time_after_7secs): #Time for full spraying actuation
+		if (time_now < time_after_2secs):
+			print "Trigger 1	"
+			time_now = rospy.Time.now()
+			init_command = "a,0,0,1,1,1,1,0,0" #Trigger relay actuation 
+			ser.write(init_command.encode())
 		else:
-			command = "a,1,1,1,1,1,1,255,0"
 			print "Trigger 2"
-			print command	
+			time_now = rospy.Time.now()
+			init_command = "a,1,1,1,1,1,1,255,0" #Turn on PWM signals 
+			ser.write(init_command.encode())
+
+		time_now = rospy.Time.now() #Upate current time 
+
+		
+
+		
+
+	#while(primary_counter < 700):		
+
+		#if (sub_counter < 200):
+			#command = "a,0,0,1,1,1,1,0,0"
+			#print "Trigger 1"
+			#print command
+			#ser.write(command.encode())
+		#else:
+			#command = "a,1,1,1,1,1,1,255,0"
+			#print "Trigger 2"
+			#print command	
 			#ser.write(command.encode())
 		
-		primary_counter += 1
-		sub_counter += 1
-		print primary_counter
-		print sub_counter 
-	
-	
-	command = "a,0,0,0,0,0,0,0,0"
+		#primary_counter += 1
+		#sub_counter += 1
+		#print primary_counter
+		#print sub_counter 
+
+	command = "a,1,0,0,0,0,0,0,0"
 	print "Trigger 3"
 	print command 
-	#ser.write(command.encode())	
+	ser.write(command.encode())	
+
+				
 	print "Exitted Loop"
-	#rospy.spin()
+	rospy.spin()
+	command = "a,0,0,0,0,0,0,0,0"
+	print "Safety Off Trigger"
+	print command 
+	ser.write(command.encode())	
+
  
 if __name__ == '__main__':   
 	try:
 		activateSprayer()
-	except KeyboardInterrupt:
-		command = "a,0,0,0,0,0,0,0,0"
-		#ser.write(command.encode())
-	else:
+	except rospy.ROSInterruptException:
 		pass
-		
+	#except KeyboardInterrupt:
+		#command = "a,0,0,0,0,0,0,0,0"
+		#ser.write(command.encode())
+	#else:
+		#pass

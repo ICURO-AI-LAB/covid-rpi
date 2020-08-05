@@ -262,6 +262,9 @@ _gtest_INCLUDES:FILEPATH=/usr/include/gtest/gtest.h
 //Path to a file.
 _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 
+//Path to a file.
+_path_name:FILEPATH=/home/ubuntu/Ubiquity-Pi/src/rqt_graph/test/dotcode_test.py
+
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/kinetic/share/catkin/cmake
 
@@ -392,6 +395,12 @@ rplidar_ros_BINARY_DIR:STATIC=/home/ubuntu/catkin_ws/build/rplidar_ros
 //Value Computed by CMake
 rplidar_ros_SOURCE_DIR:STATIC=/home/ubuntu/catkin_ws/src/rplidar_ros
 
+//Value Computed by CMake
+rqt_graph_BINARY_DIR:STATIC=/home/ubuntu/Ubiquity-Pi/build/rqt_graph
+
+//Value Computed by CMake
+rqt_graph_SOURCE_DIR:STATIC=/home/ubuntu/Ubiquity-Pi/src/rqt_graph
+
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/kinetic/share/sensor_msgs/cmake
 
@@ -509,7 +518,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

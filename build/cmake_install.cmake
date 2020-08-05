@@ -1,8 +1,8 @@
-# Install script for directory: /home/ubuntu/catkin_ws/src
+# Install script for directory: /home/ubuntu/Ubiquity-Pi/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/Ubiquity-Pi/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,93 +44,90 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ubuntu/catkin_ws/install/_setup_util.py")
+   "/home/ubuntu/Ubiquity-Pi/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ubuntu/catkin_ws/install" TYPE PROGRAM FILES "/home/ubuntu/catkin_ws/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/ubuntu/Ubiquity-Pi/install" TYPE PROGRAM FILES "/home/ubuntu/Ubiquity-Pi/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ubuntu/catkin_ws/install/env.sh")
+   "/home/ubuntu/Ubiquity-Pi/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ubuntu/catkin_ws/install" TYPE PROGRAM FILES "/home/ubuntu/catkin_ws/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/ubuntu/Ubiquity-Pi/install" TYPE PROGRAM FILES "/home/ubuntu/Ubiquity-Pi/build/catkin_generated/installspace/env.sh")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ubuntu/catkin_ws/install/setup.bash;/home/ubuntu/catkin_ws/install/local_setup.bash")
+   "/home/ubuntu/Ubiquity-Pi/install/setup.bash;/home/ubuntu/Ubiquity-Pi/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ubuntu/catkin_ws/install" TYPE FILE FILES
-    "/home/ubuntu/catkin_ws/build/catkin_generated/installspace/setup.bash"
-    "/home/ubuntu/catkin_ws/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/ubuntu/Ubiquity-Pi/install" TYPE FILE FILES
+    "/home/ubuntu/Ubiquity-Pi/build/catkin_generated/installspace/setup.bash"
+    "/home/ubuntu/Ubiquity-Pi/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ubuntu/catkin_ws/install/setup.sh;/home/ubuntu/catkin_ws/install/local_setup.sh")
+   "/home/ubuntu/Ubiquity-Pi/install/setup.sh;/home/ubuntu/Ubiquity-Pi/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ubuntu/catkin_ws/install" TYPE FILE FILES
-    "/home/ubuntu/catkin_ws/build/catkin_generated/installspace/setup.sh"
-    "/home/ubuntu/catkin_ws/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/ubuntu/Ubiquity-Pi/install" TYPE FILE FILES
+    "/home/ubuntu/Ubiquity-Pi/build/catkin_generated/installspace/setup.sh"
+    "/home/ubuntu/Ubiquity-Pi/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ubuntu/catkin_ws/install/setup.zsh;/home/ubuntu/catkin_ws/install/local_setup.zsh")
+   "/home/ubuntu/Ubiquity-Pi/install/setup.zsh;/home/ubuntu/Ubiquity-Pi/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ubuntu/catkin_ws/install" TYPE FILE FILES
-    "/home/ubuntu/catkin_ws/build/catkin_generated/installspace/setup.zsh"
-    "/home/ubuntu/catkin_ws/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/ubuntu/Ubiquity-Pi/install" TYPE FILE FILES
+    "/home/ubuntu/Ubiquity-Pi/build/catkin_generated/installspace/setup.zsh"
+    "/home/ubuntu/Ubiquity-Pi/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/ubuntu/catkin_ws/install/.rosinstall")
+   "/home/ubuntu/Ubiquity-Pi/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/ubuntu/catkin_ws/install" TYPE FILE FILES "/home/ubuntu/catkin_ws/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/ubuntu/Ubiquity-Pi/install" TYPE FILE FILES "/home/ubuntu/Ubiquity-Pi/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ubuntu/catkin_ws/build/gtest/cmake_install.cmake")
-  include("/home/ubuntu/catkin_ws/build/demos/dnn_rotate/cmake_install.cmake")
-  include("/home/ubuntu/catkin_ws/build/demos/docking/cmake_install.cmake")
-  include("/home/ubuntu/catkin_ws/build/demos/fiducial_follow/cmake_install.cmake")
-  include("/home/ubuntu/catkin_ws/build/demos/move_demo/cmake_install.cmake")
-  include("/home/ubuntu/catkin_ws/build/rplidar_ros/cmake_install.cmake")
+  include("/home/ubuntu/Ubiquity-Pi/build/gtest/cmake_install.cmake")
+  include("/home/ubuntu/Ubiquity-Pi/build/rqt_graph/cmake_install.cmake")
+  include("/home/ubuntu/Ubiquity-Pi/build/testing_pubsub/cmake_install.cmake")
 
 endif()
 
@@ -142,5 +139,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ubuntu/catkin_ws/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ubuntu/Ubiquity-Pi/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
