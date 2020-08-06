@@ -11,7 +11,7 @@ GPIO.setup(14, GPIO.IN)
 def solution_level():
         pub = rospy.Publisher('Solution_Level', String, queue_size=1)
         rospy.init_node('Solution_Level', anonymous=True)
-        rate = rospy.Rate(10) # 10hz
+        rate = rospy.Rate(1) # 1hz
 	while not rospy.is_shutdown():
 		if GPIO.input(14):
 	    		indication = "Pin 8 is HIGH, Water Level Is Chilling Dawg"
