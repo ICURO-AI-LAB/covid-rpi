@@ -2,17 +2,30 @@
 import serial
 import rospy
 from std_msgs.msg import String
+from sensor_msgs.msg import BatteryState
  
-ser = serial.Serial('/dev/ttyUSB0', baudrate=9600)
+#ser = serial.Serial('/dev/ttyUSB0', baudrate=9600)
 
 
 def callback(data):
-	rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
-	command = data.data
+	#rospy.loginfo(rospy.get_caller_id() + "I heard %s", data)
 
-	print command 
+	status = data
+
+	voltage = status.voltage
+	percentage = status.percentage 
+	
+	print '------'
+#	print status
+	print voltage 
+	print percentage
+	print '------'
+
+	#command = data.data
+
+	#print command 
  
-	ser.write(command.encode())  
+	#ser.write(command.encode())  
 
 	#command = data.data 
 
@@ -22,11 +35,11 @@ def callback(data):
     	
 
 
-def listener():
-	rospy.init_node('listener', anonymous=True)
- 	rospy.Subscriber("chatter", String, callback)
+def batteryMonitor():
+	rospy.init_node('batteryMonitor', anonymous=True)
+ 	rospy.Subscriber("/battery_state", BatteryState, callback)
 
 	rospy.spin()
   
 if __name__ == '__main__':   
-	listener()
+	batteryMonitor()
