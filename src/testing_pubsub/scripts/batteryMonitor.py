@@ -15,25 +15,10 @@ def callback(data):
 	voltage = status.voltage
 	percentage = status.percentage 
 	
-	print '------'
-#	print status
-	print voltage 
-	print percentage
-	print '------'
-
-	#command = data.data
-
-	#print command 
- 
-	#ser.write(command.encode())  
-
-	#command = data.data 
-
-	#if command != last_command: 
-	#	ser.write(command.encode())	
-	#	last_command = command 
-    	
-
+	print '------battery_info------'
+	print voltage, 'V' 
+	print percentage, '%'
+	print '------------------------'
 
 def batteryMonitor():
 	rospy.init_node('batteryMonitor', anonymous=True)
