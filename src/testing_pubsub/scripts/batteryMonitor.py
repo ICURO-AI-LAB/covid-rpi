@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 import serial
 import rospy
+import time
+from datetime import datetime 
 from std_msgs.msg import String
 from sensor_msgs.msg import BatteryState
  
@@ -13,20 +15,28 @@ def callback(data):
 	#rospy.loginfo(rospy.get_caller_id() + "I heard %s", data)
 	global pub
 	status = data
+	
+	t = time.localtime()
+	#now = datetime.now.time()
+	current_time = time.strftime("%D:%H:%M:%S",t)
+
+	
 
 	voltage = status.voltage
 	percentage = status.percentage 
 	
 	print '------battery_info------'
-	v_string = voltage, 'V' 
-	p_string = percentage, '%'
+	print ("Current Time =", current_time)
+	v_string = str(voltage) + " V" 
+	p_string = str(percentage) + " %"
 	print v_string
 	print p_string
 	print '------------------------'
 
 	pub.publish("------battery_info------")
-	#pub.publish(v_string)
-	#pub.publish(p_string)
+	pub.publish(current_time)
+	pub.publish(v_string)
+	pub.publish(p_string)
 	pub.publish("------------------------")
         rospy.sleep(1)
 
