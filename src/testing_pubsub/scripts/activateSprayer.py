@@ -48,6 +48,7 @@ def activateSprayer():
 	#Set Duration Times
 	two_seconds = rospy.Duration.from_sec(2.)
 	five_seconds = rospy.Duration.from_sec(5.)
+	fifteen_seconds = rospy.Duration.from_sec(15.)
 	twenty_seconds = rospy.Duration.from_sec(20.)
 	thirty_seconds = rospy.Duration.from_sec(30.)
 	sixty_seconds = rospy.Duration.from_sec(60.)
@@ -56,6 +57,7 @@ def activateSprayer():
 	time_now = rospy.Time.now()
 	time_after_2secs = time_now + two_seconds
 	time_after_7secs = time_after_2secs + five_seconds
+	time_after_15secs = time_now + fifteen_seconds
 	time_after_20secs = time_now + twenty_seconds
 	time_after_30secs = time_now + thirty_seconds 
 	time_after_60secs = time_now + sixty_seconds 
@@ -66,7 +68,7 @@ def activateSprayer():
 	
 	rospy.sleep(.5)
 	
-	while(time_now < time_after_30secs): #Time for full spraying actuation
+	while(time_now < time_after_15secs): #Time for full spraying actuation
 		if (time_now < time_after_2secs):
 			print "Trigger 1	"
 			time_now = rospy.Time.now()
