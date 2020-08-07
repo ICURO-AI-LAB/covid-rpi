@@ -18,8 +18,8 @@ def callback(data):
 	percentage = status.percentage 
 	
 	print '------battery_info------'
-	v_string = voltage, 'V' 
-	p_string = percentage, '%'
+	v_string = str(voltage), 'V' 
+	p_string = str(percentage), '%'
 	print v_string
 	print p_string
 	print '------------------------'
