@@ -1,0 +1,11 @@
+<launch>
+
+	<node name="batteryMonitor" pkg="sanitation_control" type="batteryMonitor.py"  output="screen"/>
+
+	<node name="Solution_Level" pkg="sanitation_control" type="solutionLevel.py"  output="screen"/>
+
+	<node name="goalControl" pkg="sanitation_control" type="goalControl.py"  output="screen"/>
+
+
+	
+</launch>

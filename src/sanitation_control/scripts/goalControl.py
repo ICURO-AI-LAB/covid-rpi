@@ -85,11 +85,11 @@ def callback(data):
 	#if(ACTIVATE_SPRAY):
 	
 		
-def goalStatusUpdate():
-	rospy.init_node('goalStatusUpdate', anonymous=True)
+def goalControl():
+	rospy.init_node('goalControl', anonymous=True)
  	rospy.Subscriber("/move_base/status", GoalStatusArray, callback)	
 	
-	
+	"Testing Launch File"	
 	#Spraying_Actuated = FALSE
 
 	#if( (current_state!= prev_state)
@@ -104,7 +104,7 @@ def goalStatusUpdate():
  
 if __name__ == '__main__':   
 	try:
-		goalStatusUpdate()
+		goalControl()
 	except rospy.ROSInterruptException:
 		pass
 

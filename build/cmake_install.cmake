@@ -127,7 +127,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/ubuntu/Ubiquity-Pi/build/gtest/cmake_install.cmake")
   include("/home/ubuntu/Ubiquity-Pi/build/rqt_graph/cmake_install.cmake")
-  include("/home/ubuntu/Ubiquity-Pi/build/testing_pubsub/cmake_install.cmake")
+  include("/home/ubuntu/Ubiquity-Pi/build/sanitation_control/cmake_install.cmake")
 
 endif()
 

@@ -401,6 +401,12 @@ rqt_graph_BINARY_DIR:STATIC=/home/ubuntu/Ubiquity-Pi/build/rqt_graph
 //Value Computed by CMake
 rqt_graph_SOURCE_DIR:STATIC=/home/ubuntu/Ubiquity-Pi/src/rqt_graph
 
+//Value Computed by CMake
+sanitation_control_BINARY_DIR:STATIC=/home/ubuntu/Ubiquity-Pi/build/sanitation_control
+
+//Value Computed by CMake
+sanitation_control_SOURCE_DIR:STATIC=/home/ubuntu/Ubiquity-Pi/src/sanitation_control
+
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/kinetic/share/sensor_msgs/cmake
 
@@ -408,10 +414,10 @@ sensor_msgs_DIR:PATH=/opt/ros/kinetic/share/sensor_msgs/cmake
 std_msgs_DIR:PATH=/opt/ros/kinetic/share/std_msgs/cmake
 
 //Value Computed by CMake
-testing_pubsub_BINARY_DIR:STATIC=/home/ubuntu/Ubiquity-Pi/build/testing_pubsub
+testing_pubsub_BINARY_DIR:STATIC=/home/ubuntu/Ubiquity-Pi/build/sanitation_control
 
 //Value Computed by CMake
-testing_pubsub_SOURCE_DIR:STATIC=/home/ubuntu/Ubiquity-Pi/src/testing_pubsub
+testing_pubsub_SOURCE_DIR:STATIC=/home/ubuntu/Ubiquity-Pi/src/sanitation_control
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/kinetic/share/xmlrpcpp/cmake
