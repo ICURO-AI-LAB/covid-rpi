@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/Ubiquity-Pi/devel
+
+Name: sanitation_msgs
+Description: Description of sanitation_msgs
+Version: 0.0.0
+Cflags: -I/home/ubuntu/Ubiquity-Pi/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime

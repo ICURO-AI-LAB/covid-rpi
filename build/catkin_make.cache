@@ -1,2 +1,2 @@
-rqt_graph:sanitation_control
+rqt_graph:sanitation_control:sanitation_msgs
 -DCATKIN_DEVEL_PREFIX=/home/ubuntu/Ubiquity-Pi/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Ubiquity-Pi/install -G Unix Makefiles

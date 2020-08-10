@@ -10,7 +10,7 @@ import RPi.GPIO as GPIO
 
 
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(14, GPIO.IN)
+GPIO.setup(16, GPIO.IN)
 
 def solution_level():
         pub = rospy.Publisher('solution_level', solution, queue_size=1)
@@ -22,7 +22,7 @@ def solution_level():
         current_time = time.strftime("%D-%H:%M:%S",t)
 	
 	while not rospy.is_shutdown():
-		if GPIO.input(14):
+		if GPIO.input(16):
 	    		solution_message.status = "-------Water Level Is Chilling Dawg--------"
 			#print solution_message.status
 		else:

@@ -1,4 +1,16 @@
 # Hashes of file build rules.
+2da18b9c502079a3b015df095062e1ae /home/ubuntu/Ubiquity-Pi/devel/include/sanitation_msgs/battery.h
+d4b983a9d08b764726915d3dd3d248d5 /home/ubuntu/Ubiquity-Pi/devel/include/sanitation_msgs/solution.h
+5b54c1e6115b1d2f41e9b8c9b8af3839 /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_msgs/msg/__init__.py
+cb261b4c42b624e6c78a61d85088de4b /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_msgs/msg/_battery.py
+2e3ab5873b463e051eed8ee15699ca6e /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_msgs/msg/_solution.py
+c6db41bef3f5a171a5a3206f0dcc2033 /home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/sanitation_msgs/msg/battery.lisp
+1b307392d59fe49fa0b6286360f08290 /home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/sanitation_msgs/msg/solution.lisp
+89f40c637327bfcbd995dcfe9a3f5e89 /home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/sanitation_msgs/msg/battery.js
+3676618b0da770e3e7d63f937a2e0904 /home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/sanitation_msgs/msg/solution.js
+02ffc8827e1fbac4176e77412c9175a9 /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_msgs/manifest.l
+9c6f82bcb0c558167823ed975fb3d710 /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_msgs/msg/battery.l
+c7d62fdbe58161baf83d139828970f8d /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_msgs/msg/solution.l
 9d0122a0e3f0374cd13c1ba242580e45 /home/ubuntu/catkin_ws/devel/include/dnn_rotate/StringTrigger.h
 53d89e3b04d66019f8b3b0bb9744e98c /home/ubuntu/catkin_ws/devel/include/docking/Dock.h
 390b1757bcd9734300df29716df61ba4 /home/ubuntu/catkin_ws/devel/lib/python2.7/dist-packages/dnn_rotate/srv/_StringTrigger.py
@@ -17,3 +29,10 @@ db2da705c4640f1de3f5db648932fdf5 /home/ubuntu/catkin_ws/devel/share/roseus/ros/d
 7d9d7549a172b4b0ca9846a65e455236 rqt_graph/CMakeFiles/_run_tests_rqt_graph_nosetests_test.dotcode_test.py
 06a7d2b83455a1696b2813f9a82b2ab5 rqt_graph/CMakeFiles/clean_test_results_rqt_graph
 7d9d7549a172b4b0ca9846a65e455236 rqt_graph/CMakeFiles/run_tests_rqt_graph_nosetests_test.dotcode_test.py
+cde6920296f8835298fd6ccfa26a3b7f sanitation_msgs/CMakeFiles/_sanitation_msgs_generate_messages_check_deps_battery
+4f17bd0801310dbd29b24431c2fb605c sanitation_msgs/CMakeFiles/_sanitation_msgs_generate_messages_check_deps_solution
+8e12a650be58688a443594becd11dc6e sanitation_msgs/CMakeFiles/sanitation_msgs_generate_messages_cpp
+8e12a650be58688a443594becd11dc6e sanitation_msgs/CMakeFiles/sanitation_msgs_generate_messages_eus
+8e12a650be58688a443594becd11dc6e sanitation_msgs/CMakeFiles/sanitation_msgs_generate_messages_lisp
+8e12a650be58688a443594becd11dc6e sanitation_msgs/CMakeFiles/sanitation_msgs_generate_messages_nodejs
+8e12a650be58688a443594becd11dc6e sanitation_msgs/CMakeFiles/sanitation_msgs_generate_messages_py

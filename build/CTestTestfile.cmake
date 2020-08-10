@@ -7,3 +7,4 @@
 subdirs(gtest)
 subdirs(rqt_graph)
 subdirs(sanitation_control)
+subdirs(sanitation_msgs)

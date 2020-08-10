@@ -8,7 +8,7 @@ from std_msgs.msg import String, UInt8
 #from move_base_msg.msg import MoveBaseGoal
 
 
-ser = serial.Serial('/dev/ttyUSB2', baudrate=9600) # Set Serial Link
+ser = serial.Serial('/dev/ttyUSB0', baudrate=9600) # Set Serial Link
 
 TRUE = 1
 FALSE = 0

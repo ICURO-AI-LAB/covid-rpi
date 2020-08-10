@@ -128,6 +128,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/ubuntu/Ubiquity-Pi/build/gtest/cmake_install.cmake")
   include("/home/ubuntu/Ubiquity-Pi/build/rqt_graph/cmake_install.cmake")
   include("/home/ubuntu/Ubiquity-Pi/build/sanitation_control/cmake_install.cmake")
+  include("/home/ubuntu/Ubiquity-Pi/build/sanitation_msgs/cmake_install.cmake")
 
 endif()
 
