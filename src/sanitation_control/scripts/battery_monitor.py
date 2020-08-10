@@ -4,7 +4,7 @@ import rospy
 import time
 from datetime import datetime 
 from std_msgs.msg import String
-from sanitation_msgs.msg import battery
+from custom_msgs.msg import battery
 from sensor_msgs.msg import BatteryState
  
 #ser = serial.Serial('/dev/ttyUSB0', baudrate=9600)
@@ -53,7 +53,7 @@ def callback(data):
         #rospy.sleep(1)
 
 def batteryMonitor():
-       	rospy.init_node('batteryMonitor', anonymous=True)
+       	rospy.init_node('battery_monitor', anonymous=True)
 	rospy.Subscriber("/battery_state", BatteryState, callback)	
 	rospy.spin()
   	rate = rospy.Rate(1) # 1hz

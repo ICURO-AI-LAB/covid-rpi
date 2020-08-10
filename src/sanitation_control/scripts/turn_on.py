@@ -6,7 +6,7 @@ from std_msgs.msg import String
 
 def talker():
         pub = rospy.Publisher('chatter', String, queue_size=1)
-        rospy.init_node('turnon', anonymous=True)
+        rospy.init_node('turn_on', anonymous=True)
         rate = rospy.Rate(10) # 10hz
       
         #command_str = "a,1,1,0,0,1,1,255,0\n"

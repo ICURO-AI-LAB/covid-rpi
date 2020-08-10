@@ -30,19 +30,17 @@ def callback(data):
                         else:
                                 current_state = GOAL
                                 print "stopped"
-                        #print(status.text)
-                        #print(status.status)
+                        
         elif (len(status_list) <= 2):
                 for status in status_list:
                         current_state = NOT_GOAL
                         print "moving"
-                        #print(status.text)
-                        #print(status.status)   
+                           
         print('----')
 
 
 def activateSprayer():
-	rospy.init_node('activateSprayer', anonymous=True)
+	rospy.init_node('activate_sprayer', anonymous=True)
  	rospy.Subscriber("/move_base/status", GoalStatusArray, callback)
 	
 	#Set Duration Times
@@ -60,11 +58,7 @@ def activateSprayer():
 	time_after_15secs = time_now + fifteen_seconds
 	time_after_20secs = time_now + twenty_seconds
 	time_after_30secs = time_now + thirty_seconds 
-	time_after_60secs = time_now + sixty_seconds 
-	
-	
-	#primary_counter = 0
-	#sub_counter = 0	
+	time_after_60secs = time_now + sixty_seconds 	
 	
 	rospy.sleep(.5)
 	

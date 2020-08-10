@@ -5,7 +5,7 @@ import serial
 import rospy
 import time 
 from std_msgs.msg import String
-from sanitation_msgs.msg import solution
+from custom_msgs.msg import solution
 import RPi.GPIO as GPIO
 
 
@@ -22,6 +22,9 @@ def solution_level():
         current_time = time.strftime("%D-%H:%M:%S",t)
 	
 	while not rospy.is_shutdown():
+		t = time.localtime()
+        	current_time = time.strftime("%D-%H:%M:%S",t)
+
 		if GPIO.input(16):
 	    		solution_message.status = "-------Water Level Is Chilling Dawg--------"
 			#print solution_message.status
