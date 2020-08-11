@@ -6,5 +6,5 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs(gtest)
 subdirs(rqt_graph)
+subdirs(custom_msgs)
 subdirs(sanitation_control)
-subdirs(sanitation_msgs)

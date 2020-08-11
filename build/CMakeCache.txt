@@ -272,6 +272,12 @@ catkin_DIR:PATH=/opt/ros/kinetic/share/catkin/cmake
 cpp_common_DIR:PATH=/opt/ros/kinetic/share/cpp_common/cmake
 
 //Value Computed by CMake
+custom_msgs_BINARY_DIR:STATIC=/home/ubuntu/Ubiquity-Pi/build/custom_msgs
+
+//Value Computed by CMake
+custom_msgs_SOURCE_DIR:STATIC=/home/ubuntu/Ubiquity-Pi/src/custom_msgs
+
+//Value Computed by CMake
 dnn_rotate_BINARY_DIR:STATIC=/home/ubuntu/catkin_ws/build/demos/dnn_rotate
 
 //Value Computed by CMake
@@ -351,7 +357,7 @@ gtest_force_shared_crt:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/kinetic/lib/libxmlrpcpp.so
+lib:FILEPATH=/opt/ros/kinetic/lib/librostime.so
 
 //The directory containing a CMake configuration file for message_generation.
 message_generation_DIR:PATH=/opt/ros/kinetic/share/message_generation/cmake

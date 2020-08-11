@@ -7,8 +7,6 @@ from std_msgs.msg import String
 from custom_msgs.msg import battery
 from sensor_msgs.msg import BatteryState
  
-#ser = serial.Serial('/dev/ttyUSB0', baudrate=9600)
-
 
 pub = rospy.Publisher('battery_level', battery, queue_size=1)
 

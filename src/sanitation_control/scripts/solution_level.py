@@ -26,10 +26,12 @@ def solution_level():
         	current_time = time.strftime("%D-%H:%M:%S",t)
 
 		if GPIO.input(16):
-	    		solution_message.status = "-------Water Level Is Chilling Dawg--------"
+	    		#solution_message.status = "-------Water Level Is Chilling Dawg--------"
+			solution_message.status = "Water Level is good"
 			#print solution_message.status
 		else:
-   		 	solution_message.status = " ------Water Level Is Dangerous Dawg---------"
+   		 	#solution_message.status = " ------Water Level Is Dangerous Dawg---------"
+			solution_message.status = "Water Level is low"
 			#print solution_message.status
 		
 		solution_message.runtime = current_time

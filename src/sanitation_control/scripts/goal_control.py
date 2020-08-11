@@ -7,7 +7,7 @@ import time
 from actionlib_msgs.msg import GoalStatusArray
 from std_msgs.msg import String
 
-
+#Turned off command strings for testing
 
 ser = serial.Serial('/dev/ttyUSB0', baudrate=9600) # Set Serial Link
 
@@ -70,15 +70,17 @@ def callback(data):
 		while(time_now < time_after_7secs): #Time for full spraying actuation
               		if(time_now < time_after_2secs):
                         	time_now = rospy.Time.now()
-                        	command = "a,1,1,1,1,1,1,0,0"
-                                spray_status = "Trigger 1"
+                        	#command = "a,1,1,1,1,1,1,0,0"
+                                command = "a,0,0,0,0,0,0,0,0"
+				spray_status = "Trigger 1"
                                 pub.publish(spray_status)
                                 ser.write(command.encode())
 				
                		else:
                         	time_now = rospy.Time.now()
-                        	command = "a,1,1,1,1,1,1,255,0"
-                                spray_status = "Trigger 1"
+                        	#command = "a,1,1,1,1,1,1,255,0"
+                                command = "a,0,0,0,0,0,0,0,0"
+				spray_status = "Trigger 2"
                                 pub.publish(spray_status)
                                 ser.write(command.encode())
 			
