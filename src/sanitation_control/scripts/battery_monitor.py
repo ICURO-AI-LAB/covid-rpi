@@ -10,55 +10,70 @@ from sensor_msgs.msg import BatteryState
 
 pub = rospy.Publisher('battery_level', battery, queue_size=1)
 i = 0
+ 
+filter_size = 20
+v_filter = [0]*filter_size 
 
-def callback(data):
+MAX_VOLTAGE = 26
+MIN_VOLTAGE = 22
+
+# linearly map value s within range [a1,a2]
+# to range [b1,b2]
+
+def mapRange(s,a1,a2,b1,b2):
+	return b1 + ( (s - a1) * (b2 - b1) ) / (a2 - a1)
+
+def callback(magniBatMsg):
 
 	global pub
 	global i
 	global v_filter
+	global filter_size
+	global MAX_VOLTAGE
+	global MIN_VOTLAGE	
 
-
-
-	status = data
+	# create battery message type
 	battery_message = battery()
-	
+	pub = rospy.Publisher('battery_level', battery, queue_size=1)
+	# rate = rospy.Rate(1) # 1 Hz
+
+
 	t = time.localtime()
 	current_time = time.strftime("%D-%H:%M:%S",t)
-		
-	if(i >= 5 ):	
-		print "done"
-		filtered_voltage = sum(v_filter)/5
-		print filtered_voltage
-		i = 0
-	else:
-		v_filter[i] = status.voltage
-		print i
-		print v_filter[i]
-		i += 1
+	
+	# array has been filled
+	#print('---')
+	#for voltage in v_filter:
+	#	print(voltage)
+	#print('---')
 
-	#if(status.voltage > 26.5):
-	#	voltage  	
 
-	voltage = status.voltage
-	percentage = status.percentage
+	# only perform the moving average filter after the 
+	if ( v_filter[filter_size-1] != 0 ):		
 
-	if (voltage > 25.5):
-		battery_message.status = "------ battery is good ------"
-	else:
-		battery_message.status = "------ battery is low -------"
+		filtered_voltage = sum(v_filter)/filter_size
+		percentage = mapRange(filtered_voltage,MIN_VOLTAGE,MAX_VOLTAGE,0,100)
 
-	battery_message.runtime = current_time
-	battery_message.voltage = voltage
-	battery_message.percentage = percentage
+		if(magniBatMsg.voltage > MAX_VOLTAGE):
+			battery_status = "-- Battery is Fully Charged --"
+			percentage = 100.0
+		elif (magniBatMsg.voltage < MIN_VOTLAGE):
+			battery_status = "-- Battery is Low. Please Charge --"
+		else:
+			battery_status = "-- Battery is Partially Charged --"
 
-	pub.publish(battery_message)
-	#pub.publish("------battery_info------")
-	#pub.publish(current_time)
-	#pub.publish(v_string)
-	#pub.publish(p_string)
-	#pub.publish("------------------------")
-        #rospy.sleep(1)
+		battery_message.runtime = current_time
+		battery_message.voltage = filtered_voltage
+		battery_message.percentage = percentage
+		battery_message.status = battery_status
 
+		# publish current status once we have a filtered output
+		pub.publish(battery_message)
+
+	v_filter[i%filter_size] = magniBatMsg.voltage
+	i+=1
+	
+	
 def batteryMonitor():
        	rospy.init_node('battery_monitor', anonymous=True)
 	rospy.Subscriber("/battery_state", BatteryState, callback)	

@@ -5,7 +5,7 @@ from twilio.rest import Client
 import rospy
 from std_msgs.msg import String
 from sensor_msgs.msg import BatteryState
-from custom_msgs.msg import battery, solution
+from custom_msgs.msg import battery, solution, bat_and_sol
 
 voltage = 0
 percentage = 0
@@ -19,9 +19,10 @@ def callback(data):
  	global percentage
 	global flag 
 		
-	status = data
-	voltage = status.voltage
-	percentage = (status.percentage)*100	
+	voltage = data.voltage
+	percentage = data.battery_percentage	
+	battery_status = data.batStatus
+	solution_status = data.solStatus
 
 	if not flag:
 
@@ -38,7 +39,8 @@ def callback(data):
 		voltage_string = str(voltage)
 		percentage_string = str(percentage)
 			
-		system_string = "\n Hello Bipin. \n " + "Battery Level:" + voltage_string[:5] + "V  \n" + "Battery Percentage:" + percentage_string[:5] + "%"
+		system_string = "Hello. \n " + battery_status + "\n Battery Level: " + voltage_string[:5] + "V  \n" + "Battery Percentage: " + percentage_string[:5] + "%\n" + solution_status
+
  
 		#message = client.messages.create(to="+14084012774", from_="+16157518411", body=system_string) 
 		message = client.messages.create(to="+14084012774", from_="+16157518411", body=system_string) 
@@ -68,8 +70,8 @@ def twilio_test():
 
 	sub_once = None
 	
-	rospy.Subscriber("/battery_level", battery, callback, sub_once)
-	#rospy.Subscriber("/solution_level", solution, callback, sub_once)
+	#rospy.Subscriber("/battery_level", battery, callback, sub_once)
+	rospy.Subscriber("/battery_and_solution", bat_and_sol, callback, sub_once)
 
 	global voltage
 	global percentage

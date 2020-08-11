@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/battery.msg;/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/solution.msg"
+messages_str = "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/bat_and_sol.msg;/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/battery.msg;/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/solution.msg"
 services_str = ""
 pkg_name = "custom_msgs"
 dependencies_str = "std_msgs"

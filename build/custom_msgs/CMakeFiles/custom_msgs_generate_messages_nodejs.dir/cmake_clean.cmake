@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/custom_msgs_generate_messages_nodejs"
   "/home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/custom_msgs/msg/battery.js"
+  "/home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/custom_msgs/msg/bat_and_sol.js"
   "/home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/custom_msgs/msg/solution.js"
 )
 

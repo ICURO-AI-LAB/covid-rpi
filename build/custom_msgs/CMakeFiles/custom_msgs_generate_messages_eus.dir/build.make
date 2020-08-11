@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/ubuntu/Ubiquity-Pi/build
 include custom_msgs/CMakeFiles/custom_msgs_generate_messages_eus.dir/progress.make
 
 custom_msgs/CMakeFiles/custom_msgs_generate_messages_eus: /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/msg/battery.l
+custom_msgs/CMakeFiles/custom_msgs_generate_messages_eus: /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/msg/bat_and_sol.l
 custom_msgs/CMakeFiles/custom_msgs_generate_messages_eus: /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/msg/solution.l
 custom_msgs/CMakeFiles/custom_msgs_generate_messages_eus: /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/manifest.l
 
@@ -63,17 +64,23 @@ custom_msgs/CMakeFiles/custom_msgs_generate_messages_eus: /home/ubuntu/Ubiquity-
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from custom_msgs/battery.msg"
 	cd /home/ubuntu/Ubiquity-Pi/build/custom_msgs && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/battery.msg -Icustom_msgs:/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p custom_msgs -o /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/msg
 
+/home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/msg/bat_and_sol.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/msg/bat_and_sol.l: /home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/bat_and_sol.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from custom_msgs/bat_and_sol.msg"
+	cd /home/ubuntu/Ubiquity-Pi/build/custom_msgs && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/bat_and_sol.msg -Icustom_msgs:/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p custom_msgs -o /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/msg
+
 /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/msg/solution.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
 /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/msg/solution.l: /home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/solution.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from custom_msgs/solution.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from custom_msgs/solution.msg"
 	cd /home/ubuntu/Ubiquity-Pi/build/custom_msgs && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/solution.msg -Icustom_msgs:/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p custom_msgs -o /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/msg
 
 /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for custom_msgs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp manifest code for custom_msgs"
 	cd /home/ubuntu/Ubiquity-Pi/build/custom_msgs && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs custom_msgs std_msgs
 
 custom_msgs_generate_messages_eus: custom_msgs/CMakeFiles/custom_msgs_generate_messages_eus
 custom_msgs_generate_messages_eus: /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/msg/battery.l
+custom_msgs_generate_messages_eus: /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/msg/bat_and_sol.l
 custom_msgs_generate_messages_eus: /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/msg/solution.l
 custom_msgs_generate_messages_eus: /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/manifest.l
 custom_msgs_generate_messages_eus: custom_msgs/CMakeFiles/custom_msgs_generate_messages_eus.dir/build.make

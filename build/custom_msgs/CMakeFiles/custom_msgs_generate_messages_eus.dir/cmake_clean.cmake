@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/custom_msgs_generate_messages_eus"
   "/home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/msg/battery.l"
+  "/home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/msg/bat_and_sol.l"
   "/home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/msg/solution.l"
   "/home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/manifest.l"
 )

@@ -226,36 +226,6 @@ custom_msgs_generate_messages_lisp/fast:
 .PHONY : custom_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f CMakeFiles/Makefile2 custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f CMakeFiles/Makefile2 custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
 custom_msgs/CMakeFiles/custom_msgs_generate_messages_py.dir/rule:
 	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f CMakeFiles/Makefile2 custom_msgs/CMakeFiles/custom_msgs_generate_messages_py.dir/rule
 .PHONY : custom_msgs/CMakeFiles/custom_msgs_generate_messages_py.dir/rule
@@ -284,6 +254,36 @@ custom_msgs_geneus: custom_msgs/CMakeFiles/custom_msgs_geneus.dir/rule
 custom_msgs_geneus/fast:
 	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f custom_msgs/CMakeFiles/custom_msgs_geneus.dir/build.make custom_msgs/CMakeFiles/custom_msgs_geneus.dir/build
 .PHONY : custom_msgs_geneus/fast
+
+# Convenience name for target.
+custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f CMakeFiles/Makefile2 custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_lisp: custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f CMakeFiles/Makefile2 custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_cpp: custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 custom_msgs/CMakeFiles/custom_msgs_generate_messages_nodejs.dir/rule:
@@ -526,6 +526,21 @@ std_msgs_generate_messages_nodejs/fast:
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
+custom_msgs/CMakeFiles/_custom_msgs_generate_messages_check_deps_bat_and_sol.dir/rule:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f CMakeFiles/Makefile2 custom_msgs/CMakeFiles/_custom_msgs_generate_messages_check_deps_bat_and_sol.dir/rule
+.PHONY : custom_msgs/CMakeFiles/_custom_msgs_generate_messages_check_deps_bat_and_sol.dir/rule
+
+# Convenience name for target.
+_custom_msgs_generate_messages_check_deps_bat_and_sol: custom_msgs/CMakeFiles/_custom_msgs_generate_messages_check_deps_bat_and_sol.dir/rule
+
+.PHONY : _custom_msgs_generate_messages_check_deps_bat_and_sol
+
+# fast build rule for target.
+_custom_msgs_generate_messages_check_deps_bat_and_sol/fast:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f custom_msgs/CMakeFiles/_custom_msgs_generate_messages_check_deps_bat_and_sol.dir/build.make custom_msgs/CMakeFiles/_custom_msgs_generate_messages_check_deps_bat_and_sol.dir/build
+.PHONY : _custom_msgs_generate_messages_check_deps_bat_and_sol/fast
+
+# Convenience name for target.
 custom_msgs/CMakeFiles/custom_msgs_generate_messages_cpp.dir/rule:
 	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f CMakeFiles/Makefile2 custom_msgs/CMakeFiles/custom_msgs_generate_messages_cpp.dir/rule
 .PHONY : custom_msgs/CMakeFiles/custom_msgs_generate_messages_cpp.dir/rule
@@ -600,10 +615,10 @@ help:
 	@echo "... custom_msgs_genlisp"
 	@echo "... install/local"
 	@echo "... custom_msgs_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... custom_msgs_generate_messages_py"
 	@echo "... custom_msgs_geneus"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... install/strip"
 	@echo "... custom_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
@@ -622,6 +637,7 @@ help:
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... _custom_msgs_generate_messages_check_deps_bat_and_sol"
 	@echo "... custom_msgs_generate_messages_cpp"
 	@echo "... custom_msgs_generate_messages"
 	@echo "... custom_msgs_generate_messages_eus"

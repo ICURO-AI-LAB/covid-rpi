@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "custom_msgs: 2 messages, 0 services")
+message(STATUS "custom_msgs: 3 messages, 0 services")
 
 set(MSG_I_FLAGS "-Icustom_msgs:/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
 
@@ -22,6 +22,11 @@ add_custom_target(_custom_msgs_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "custom_msgs" "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/battery.msg" ""
 )
 
+get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/bat_and_sol.msg" NAME_WE)
+add_custom_target(_custom_msgs_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "custom_msgs" "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/bat_and_sol.msg" ""
+)
+
 get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/solution.msg" NAME_WE)
 add_custom_target(_custom_msgs_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "custom_msgs" "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/solution.msg" ""
@@ -35,6 +40,12 @@ add_custom_target(_custom_msgs_generate_messages_check_deps_${_filename}
 ### Generating Messages
 _generate_msg_cpp(custom_msgs
   "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/battery.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/custom_msgs
+)
+_generate_msg_cpp(custom_msgs
+  "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/bat_and_sol.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/custom_msgs
@@ -62,6 +73,8 @@ add_dependencies(custom_msgs_generate_messages custom_msgs_generate_messages_cpp
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/battery.msg" NAME_WE)
 add_dependencies(custom_msgs_generate_messages_cpp _custom_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/bat_and_sol.msg" NAME_WE)
+add_dependencies(custom_msgs_generate_messages_cpp _custom_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/solution.msg" NAME_WE)
 add_dependencies(custom_msgs_generate_messages_cpp _custom_msgs_generate_messages_check_deps_${_filename})
 
@@ -76,6 +89,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS custom_msgs_generate_messages_cpp)
 ### Generating Messages
 _generate_msg_eus(custom_msgs
   "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/battery.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/custom_msgs
+)
+_generate_msg_eus(custom_msgs
+  "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/bat_and_sol.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/custom_msgs
@@ -103,6 +122,8 @@ add_dependencies(custom_msgs_generate_messages custom_msgs_generate_messages_eus
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/battery.msg" NAME_WE)
 add_dependencies(custom_msgs_generate_messages_eus _custom_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/bat_and_sol.msg" NAME_WE)
+add_dependencies(custom_msgs_generate_messages_eus _custom_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/solution.msg" NAME_WE)
 add_dependencies(custom_msgs_generate_messages_eus _custom_msgs_generate_messages_check_deps_${_filename})
 
@@ -117,6 +138,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS custom_msgs_generate_messages_eus)
 ### Generating Messages
 _generate_msg_lisp(custom_msgs
   "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/battery.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/custom_msgs
+)
+_generate_msg_lisp(custom_msgs
+  "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/bat_and_sol.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/custom_msgs
@@ -144,6 +171,8 @@ add_dependencies(custom_msgs_generate_messages custom_msgs_generate_messages_lis
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/battery.msg" NAME_WE)
 add_dependencies(custom_msgs_generate_messages_lisp _custom_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/bat_and_sol.msg" NAME_WE)
+add_dependencies(custom_msgs_generate_messages_lisp _custom_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/solution.msg" NAME_WE)
 add_dependencies(custom_msgs_generate_messages_lisp _custom_msgs_generate_messages_check_deps_${_filename})
 
@@ -158,6 +187,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS custom_msgs_generate_messages_lisp)
 ### Generating Messages
 _generate_msg_nodejs(custom_msgs
   "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/battery.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/custom_msgs
+)
+_generate_msg_nodejs(custom_msgs
+  "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/bat_and_sol.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/custom_msgs
@@ -185,6 +220,8 @@ add_dependencies(custom_msgs_generate_messages custom_msgs_generate_messages_nod
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/battery.msg" NAME_WE)
 add_dependencies(custom_msgs_generate_messages_nodejs _custom_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/bat_and_sol.msg" NAME_WE)
+add_dependencies(custom_msgs_generate_messages_nodejs _custom_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/solution.msg" NAME_WE)
 add_dependencies(custom_msgs_generate_messages_nodejs _custom_msgs_generate_messages_check_deps_${_filename})
 
@@ -199,6 +236,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS custom_msgs_generate_messages_nodej
 ### Generating Messages
 _generate_msg_py(custom_msgs
   "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/battery.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/custom_msgs
+)
+_generate_msg_py(custom_msgs
+  "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/bat_and_sol.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/custom_msgs
@@ -225,6 +268,8 @@ add_dependencies(custom_msgs_generate_messages custom_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/battery.msg" NAME_WE)
+add_dependencies(custom_msgs_generate_messages_py _custom_msgs_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/bat_and_sol.msg" NAME_WE)
 add_dependencies(custom_msgs_generate_messages_py _custom_msgs_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/solution.msg" NAME_WE)
 add_dependencies(custom_msgs_generate_messages_py _custom_msgs_generate_messages_check_deps_${_filename})

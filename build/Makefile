@@ -439,32 +439,6 @@ custom_msgs_generate_messages_lisp/fast:
 .PHONY : custom_msgs_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_lisp
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_cpp
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_cpp
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-#=============================================================================
 # Target rules for targets named custom_msgs_generate_messages_py
 
 # Build rule for target.
@@ -489,6 +463,32 @@ custom_msgs_geneus: cmake_check_build_system
 custom_msgs_geneus/fast:
 	$(MAKE) -f custom_msgs/CMakeFiles/custom_msgs_geneus.dir/build.make custom_msgs/CMakeFiles/custom_msgs_geneus.dir/build
 .PHONY : custom_msgs_geneus/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_lisp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_cpp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_cpp
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make custom_msgs/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 #=============================================================================
 # Target rules for targets named custom_msgs_generate_messages_nodejs
@@ -699,6 +699,19 @@ std_msgs_generate_messages_nodejs/fast:
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
+# Target rules for targets named _custom_msgs_generate_messages_check_deps_bat_and_sol
+
+# Build rule for target.
+_custom_msgs_generate_messages_check_deps_bat_and_sol: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _custom_msgs_generate_messages_check_deps_bat_and_sol
+.PHONY : _custom_msgs_generate_messages_check_deps_bat_and_sol
+
+# fast build rule for target.
+_custom_msgs_generate_messages_check_deps_bat_and_sol/fast:
+	$(MAKE) -f custom_msgs/CMakeFiles/_custom_msgs_generate_messages_check_deps_bat_and_sol.dir/build.make custom_msgs/CMakeFiles/_custom_msgs_generate_messages_check_deps_bat_and_sol.dir/build
+.PHONY : _custom_msgs_generate_messages_check_deps_bat_and_sol/fast
+
+#=============================================================================
 # Target rules for targets named custom_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -784,10 +797,10 @@ help:
 	@echo "... custom_msgs_gennodejs"
 	@echo "... custom_msgs_genlisp"
 	@echo "... custom_msgs_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... custom_msgs_generate_messages_py"
 	@echo "... custom_msgs_geneus"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... custom_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_cpp"
@@ -804,6 +817,7 @@ help:
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... _custom_msgs_generate_messages_check_deps_bat_and_sol"
 	@echo "... custom_msgs_generate_messages_cpp"
 	@echo "... custom_msgs_generate_messages"
 	@echo "... custom_msgs_generate_messages_eus"

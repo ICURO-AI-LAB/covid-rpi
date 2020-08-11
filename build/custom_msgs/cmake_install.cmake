@@ -34,6 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/custom_msgs/msg" TYPE FILE FILES
+    "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/bat_and_sol.msg"
     "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/battery.msg"
     "/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/solution.msg"
     )

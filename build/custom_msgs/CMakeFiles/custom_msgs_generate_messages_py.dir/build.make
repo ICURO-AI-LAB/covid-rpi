@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/ubuntu/Ubiquity-Pi/build
 include custom_msgs/CMakeFiles/custom_msgs_generate_messages_py.dir/progress.make
 
 custom_msgs/CMakeFiles/custom_msgs_generate_messages_py: /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/_battery.py
+custom_msgs/CMakeFiles/custom_msgs_generate_messages_py: /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/_bat_and_sol.py
 custom_msgs/CMakeFiles/custom_msgs_generate_messages_py: /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/_solution.py
 custom_msgs/CMakeFiles/custom_msgs_generate_messages_py: /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/__init__.py
 
@@ -63,19 +64,26 @@ custom_msgs/CMakeFiles/custom_msgs_generate_messages_py: /home/ubuntu/Ubiquity-P
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG custom_msgs/battery"
 	cd /home/ubuntu/Ubiquity-Pi/build/custom_msgs && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/battery.msg -Icustom_msgs:/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p custom_msgs -o /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg
 
+/home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/_bat_and_sol.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/_bat_and_sol.py: /home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/bat_and_sol.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG custom_msgs/bat_and_sol"
+	cd /home/ubuntu/Ubiquity-Pi/build/custom_msgs && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/bat_and_sol.msg -Icustom_msgs:/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p custom_msgs -o /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg
+
 /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/_solution.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
 /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/_solution.py: /home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/solution.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG custom_msgs/solution"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG custom_msgs/solution"
 	cd /home/ubuntu/Ubiquity-Pi/build/custom_msgs && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg/solution.msg -Icustom_msgs:/home/ubuntu/Ubiquity-Pi/src/custom_msgs/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p custom_msgs -o /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg
 
 /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
 /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/__init__.py: /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/_battery.py
+/home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/__init__.py: /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/_bat_and_sol.py
 /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/__init__.py: /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/_solution.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for custom_msgs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python msg __init__.py for custom_msgs"
 	cd /home/ubuntu/Ubiquity-Pi/build/custom_msgs && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg --initpy
 
 custom_msgs_generate_messages_py: custom_msgs/CMakeFiles/custom_msgs_generate_messages_py
 custom_msgs_generate_messages_py: /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/_battery.py
+custom_msgs_generate_messages_py: /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/_bat_and_sol.py
 custom_msgs_generate_messages_py: /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/_solution.py
 custom_msgs_generate_messages_py: /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/__init__.py
 custom_msgs_generate_messages_py: custom_msgs/CMakeFiles/custom_msgs_generate_messages_py.dir/build.make

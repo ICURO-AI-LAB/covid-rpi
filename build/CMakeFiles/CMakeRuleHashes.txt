@@ -1,23 +1,28 @@
 # Hashes of file build rules.
+fa9edeebd950fb1af144be77860c6bff /home/ubuntu/Ubiquity-Pi/devel/include/custom_msgs/bat_and_sol.h
 9e3e7bb1b5234c1577ec1cba66c5362b /home/ubuntu/Ubiquity-Pi/devel/include/custom_msgs/battery.h
 d457dcea59f5a2dbb5ef814abef993a1 /home/ubuntu/Ubiquity-Pi/devel/include/custom_msgs/solution.h
 2da18b9c502079a3b015df095062e1ae /home/ubuntu/Ubiquity-Pi/devel/include/sanitation_msgs/battery.h
 d4b983a9d08b764726915d3dd3d248d5 /home/ubuntu/Ubiquity-Pi/devel/include/sanitation_msgs/solution.h
 4502917f57e5f2a8e641100fef05db6a /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/__init__.py
+056a600494154a0878f915eb036d2494 /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/_bat_and_sol.py
 f2f8d3ba4be511d7ab79088566e6f17b /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/_battery.py
 ec6fb638c6c3e34e081690797501a6e7 /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/_solution.py
 5b54c1e6115b1d2f41e9b8c9b8af3839 /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_msgs/msg/__init__.py
 cb261b4c42b624e6c78a61d85088de4b /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_msgs/msg/_battery.py
 2e3ab5873b463e051eed8ee15699ca6e /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_msgs/msg/_solution.py
+c5c95e59f8f7e7ea4d1571c2686ebcb9 /home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/custom_msgs/msg/bat_and_sol.lisp
 898b12521544e9797316e12728c913af /home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/custom_msgs/msg/battery.lisp
 9b490ea35abe47b58a87616dbbcf1277 /home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/custom_msgs/msg/solution.lisp
 c6db41bef3f5a171a5a3206f0dcc2033 /home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/sanitation_msgs/msg/battery.lisp
 1b307392d59fe49fa0b6286360f08290 /home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/sanitation_msgs/msg/solution.lisp
+52cec9697059105a989ec3403440f9ff /home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/custom_msgs/msg/bat_and_sol.js
 8434ed43dac49e9ffa8579b30818e4c4 /home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/custom_msgs/msg/battery.js
 64c4c24e02f097785cbdff1957f61286 /home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/custom_msgs/msg/solution.js
 89f40c637327bfcbd995dcfe9a3f5e89 /home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/sanitation_msgs/msg/battery.js
 3676618b0da770e3e7d63f937a2e0904 /home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/sanitation_msgs/msg/solution.js
 e6767bbf72151eb29ff3d909ce6ddc31 /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/manifest.l
+0d726fedff358c61ae70a540419d0441 /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/msg/bat_and_sol.l
 2239622dca4bb0d4874dab8cc5c191a2 /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/msg/battery.l
 395e5eb7bdfcc721eebf0eab083ccfbc /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/msg/solution.l
 02ffc8827e1fbac4176e77412c9175a9 /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_msgs/manifest.l
@@ -38,6 +43,7 @@ c5796d5118ef7451aad882eabe2fb1ea /home/ubuntu/catkin_ws/devel/share/roseus/ros/d
 c467c572fdee13ccba000c581767e50d /home/ubuntu/catkin_ws/devel/share/roseus/ros/docking/manifest.l
 db2da705c4640f1de3f5db648932fdf5 /home/ubuntu/catkin_ws/devel/share/roseus/ros/docking/srv/Dock.l
 133f069dfae8141951244da485c2a06a CMakeFiles/clean_test_results
+b0cc17c59dd5fd7be9acbbfffb63321e custom_msgs/CMakeFiles/_custom_msgs_generate_messages_check_deps_bat_and_sol
 268b7fb543753d5d01787bafdabfd3ba custom_msgs/CMakeFiles/_custom_msgs_generate_messages_check_deps_battery
 fe722e7c9ca1f3c618e459334b7aa9c5 custom_msgs/CMakeFiles/_custom_msgs_generate_messages_check_deps_solution
 6757e0d0ba0465e256fb399794ece0bf custom_msgs/CMakeFiles/custom_msgs_generate_messages_cpp
