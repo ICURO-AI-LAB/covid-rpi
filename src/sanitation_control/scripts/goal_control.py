@@ -19,6 +19,23 @@ GOAL = 1
 
 prev_state = GOAL 
 current_state = GOAL
+goalCounter = 0
+
+# takes in goal array msg, outputs whether we are at the goal or 
+# still moving
+def checkStatusArray(status_list):
+	returnStatus = NOT_GOAL
+	length = len(status_list)
+	if (length == 0):
+		return GOAL
+	else:
+		for status in status_list:
+			if status.status == 3:
+				returnStatus  = GOAL
+			else:
+				returnStatus = NOT_GOAL
+	return returnStatus
+
 
 def callback(data):	
 	pub = rospy.Publisher('spray_status', String, queue_size=1)
@@ -29,21 +46,14 @@ def callback(data):
 	global NOT_GOAL 
 	#primary_counter = 0
 	#sub_counter = 0 
+	global goalCounter
 		
 	status_list = data.status_list
-
 	
-	if (len(status_list) == 1):
-		for status in status_list: 
-			if(status.status == 1):
-				current_state = NOT_GOAL
-			
-			else:		
-				current_state = GOAL	
+	current_state = checkStatusArray(status_list)
 
-	elif (len(status_list) <= 2):
-		for status in status_list:
-			current_state = NOT_GOAL		
+	if ( current_state != prev_state ):
+		goalCounter = goalCounter + 1
 
 	if( (current_state != prev_state) and (current_state == GOAL)):
 			
@@ -86,33 +96,13 @@ def callback(data):
 			
 			time_now = rospy.Time.now()
 
-		command = "a,0,0,0,0,0,0,0,0"
-        	print "Trigger 3"
-        	print command
-        	ser.write(command.encode())
-
+	command = "a,0,0,0,0,0,0,0,0"
+	spray_status =  "Trigger 3"
+	#print command
+	pub.publish(spray_status)
+	ser.write(command.encode())
 	prev_state = current_state	
 
-		
-		#while(primary_counter < 500):	#Start loop for 5 seconds
-			#if (sub_counter < 200):
-                        	#command = "a,0,0,1,1,1,1,0,0"
-                        	#spray_status = "Trigger 1"
-				#pub.publish(spray_status)
-                        	#ser.write(command.encode())
-                	#else:
-                        	#command = "a,1,1,1,1,1,1,255,0"
-                        	#spray_status = "Trigger 2"
-                                #pub.publish(spray_status)
-                       		#ser.write(command.encode())
-
-                	#primary_counter += 1
-                	#sub_counter += 1
-				
-		#command = "a,0,0,0,0,0,0,0,0"
-	        #spray_status = "Trigger 3"
-		#pub.publish(spray_status)
-        	#ser.write(command.encode())
 		
 def goalControl():
 	rospy.init_node('goal_control', anonymous=True)

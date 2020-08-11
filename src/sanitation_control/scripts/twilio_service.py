@@ -6,15 +6,10 @@ import rospy
 from std_msgs.msg import String
 from sensor_msgs.msg import BatteryState
 from custom_msgs.msg import battery, solution
-
-voltage = 0
-percentage = 0
-solution_level = '0'
-flag = 0
+from beginner_tutorials.srv import AddTwoInts, AddTwoIntsResponse
 
 
-
-def callback(data):
+def send_twilio_msg(req):
 	global voltage
  	global percentage
 	global flag 
@@ -29,8 +24,9 @@ def callback(data):
 		print str(voltage)
 		print str(percentage)
 		flag = 1
+		
 		account = "ACd2ef8341685a82c7383519c77688b3c1"
-		token = "0a8a9269227957cfdc4e35f328127860"
+                token = "0a8a9269227957cfdc4e35f328127860"		
 	
 		client = Client(account,token)
 
@@ -41,30 +37,17 @@ def callback(data):
 		system_string = "\n Hello Bipin. \n " + "Battery Level:" + voltage_string[:5] + "V  \n" + "Battery Percentage:" + percentage_string[:5] + "%"
  
 		#message = client.messages.create(to="+14084012774", from_="+16157518411", body=system_string) 
+
 		message = client.messages.create(to="+14084012774", from_="+16157518411", body=system_string) 
 		
 		#message = client.messages.create(to="+13098689834", from_="+16157518411", body=system_string) 
 		
-
 		print(message.sid)
 
 
-
-		
-	
-	#subscriber.unregister()
-
-#def callback2(data, subscriber):
-#	global solution_level
-	
-#	solution_status = data
-#	solution_level =  solution_status.status
-#	subscriber.unregister()
-
-
-def twilio_test():	
-	pub = rospy.Publisher('twilio_test', String, queue_size=1)
-	rospy.init_node('twilio_test', anonymous=True)
+def twilio_service():	
+	rospy.init_node('twilio_service', anonymous=True)
+	s = rospy.Service('twilio_service', AddTwoInts, handle)
 
 	sub_once = None
 	
@@ -79,6 +62,6 @@ def twilio_test():
 
 if __name__ == '__main__':
 	try:
-		twilio_test()
+		twilio_service()
 	except rospy.ROSInterruptException:
  		pass

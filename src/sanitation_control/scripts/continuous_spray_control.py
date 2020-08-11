@@ -27,6 +27,21 @@ physical_testing = False
 
 goalCounter = 0
 
+# takes in goal array msg, outputs whether we are at the goal or 
+# still moving
+def checkStatusArray(status_list):
+	returnStatus = NOT_GOAL
+	length = len(status_list)
+	if (length == 0):
+		return GOAL
+	else:
+		for status in status_list:
+			if status.status == 3:
+				returnStatus  = GOAL
+			else:
+				returnStatus = NOT_GOAL
+	return returnStatus
+
 def callback(data):	
 	pub = rospy.Publisher('spray_status', String, queue_size=1)
 
@@ -41,18 +56,12 @@ def callback(data):
 	# define the status list from the incoming data received		
 	status_list = data.status_list
 	#print( 'status list len:' + str(len(status_list)) )
-	if (len(status_list)==1):
-		current_state = GOAL
-	elif ( len(status_list) >= 2):
-		for status in status_list:
-			if status.status == 1:
-				current_state = NOT_GOAL
-			else:
-				current_state = GOAL
-	else: # initializatoin
-		current_state = GOAL
+	#for i in range(0,len(status_list)):
+#		print(i)
+#		print(status_list[i])
 
 	
+	current_state = checkStatusArray(status_list)
 	# debugging print statements
 	#for status in status_list:
 	#	print(str(status.status))

@@ -9,29 +9,38 @@ from sensor_msgs.msg import BatteryState
  
 
 pub = rospy.Publisher('battery_level', battery, queue_size=1)
+i = 0
 
 def callback(data):
 
 	global pub
+	global i
+	global v_filter
+
+
+
 	status = data
 	battery_message = battery()
 	
 	t = time.localtime()
 	current_time = time.strftime("%D-%H:%M:%S",t)
-
 		
+	if(i >= 5 ):	
+		print "done"
+		filtered_voltage = sum(v_filter)/5
+		print filtered_voltage
+		i = 0
+	else:
+		v_filter[i] = status.voltage
+		print i
+		print v_filter[i]
+		i += 1
+
+	#if(status.voltage > 26.5):
+	#	voltage  	
 
 	voltage = status.voltage
-	percentage = status.percentage 
-	
-	#print '------battery_info-------'
-	#print ("Current Time =", current_time)
-	#v_string = str(voltage) + " V" 
-	#p_string = str(percentage) + " %"
-	#print v_string
-	#print p_string
-	#print '------------------------'
-
+	percentage = status.percentage
 
 	if (voltage > 25.5):
 		battery_message.status = "------ battery is good ------"
@@ -54,7 +63,7 @@ def batteryMonitor():
        	rospy.init_node('battery_monitor', anonymous=True)
 	rospy.Subscriber("/battery_state", BatteryState, callback)	
 	rospy.spin()
-  	rate = rospy.Rate(1) # 1hz
+  	#rate = rospy.Rate(1) # 1hz
 
 if __name__ == '__main__':   
 	batteryMonitor()
