@@ -53,15 +53,22 @@ CMAKE_BINARY_DIR = /home/ubuntu/Ubiquity-Pi/build
 # Include the progress variables for this target.
 include sanitation_control/CMakeFiles/sanitation_control_generate_messages_lisp.dir/progress.make
 
+sanitation_control/CMakeFiles/sanitation_control_generate_messages_lisp: /home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/sanitation_control/srv/trigger_text.lisp
 sanitation_control/CMakeFiles/sanitation_control_generate_messages_lisp: /home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/sanitation_control/srv/AddTwoInts.lisp
 
 
+/home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/sanitation_control/srv/trigger_text.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
+/home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/sanitation_control/srv/trigger_text.lisp: /home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/trigger_text.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from sanitation_control/trigger_text.srv"
+	cd /home/ubuntu/Ubiquity-Pi/build/sanitation_control && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/trigger_text.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p sanitation_control -o /home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/sanitation_control/srv
+
 /home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/sanitation_control/srv/AddTwoInts.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
 /home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/sanitation_control/srv/AddTwoInts.lisp: /home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/AddTwoInts.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from sanitation_control/AddTwoInts.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from sanitation_control/AddTwoInts.srv"
 	cd /home/ubuntu/Ubiquity-Pi/build/sanitation_control && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/AddTwoInts.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p sanitation_control -o /home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/sanitation_control/srv
 
 sanitation_control_generate_messages_lisp: sanitation_control/CMakeFiles/sanitation_control_generate_messages_lisp
+sanitation_control_generate_messages_lisp: /home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/sanitation_control/srv/trigger_text.lisp
 sanitation_control_generate_messages_lisp: /home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/sanitation_control/srv/AddTwoInts.lisp
 sanitation_control_generate_messages_lisp: sanitation_control/CMakeFiles/sanitation_control_generate_messages_lisp.dir/build.make
 

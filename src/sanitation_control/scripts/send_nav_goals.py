@@ -34,13 +34,27 @@ def goodToSendGoal(current_spray_status,prev_spray_status):
 	#print(result)
 	return result		
 
+def noSpraySendGoal(current_spray_status,prev_spray_status):
+	global i
+	global safe_spray_status
+	global spraying_status
+	# check the transition
+	result = None
+	# hard coded 
+	if ( safe_spray_status in current_spray_status and safe_spray_status in prev_spray_status and i == 3 ):
+		result = True
+	else: 
+		result = False
+
+	#print('no spray send goal: ' + str(result) )
+	return result		
 
 def sendNavGoal(navGoals):
 	global i
 	#rospy.sleep(2.5)	
-	#print('sent nav goal:')
-	#print(str(navGoals[i]))
-	#print('-----------------------')
+	print('sent nav goal['+str(i)+']')
+	print(str(navGoals[i]))
+	print('-----------------------')
 	navPublisher.publish(navGoals[i])
 	i = i + 1
 
@@ -61,8 +75,11 @@ def navGoalCallback(data):
 	# initialization
 	if ( i == 0 ):
 		sendNavGoal(navGoalArray)
-	elif goodToSendGoal(current_spray_status,prev_spray_status) and i < 5:
+	elif goodToSendGoal(current_spray_status,prev_spray_status) and i < len(navGoalArray):
 		sendNavGoal(navGoalArray)
+	elif noSpraySendGoal(current_spray_status,prev_spray_status) and i < len(navGoalArray):
+		sendNavGoal(navGoalArray)
+
 		# create move base goal
 	#print('i: ' + str(i))
 

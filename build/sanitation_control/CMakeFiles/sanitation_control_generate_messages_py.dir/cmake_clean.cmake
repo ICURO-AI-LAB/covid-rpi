@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sanitation_control_generate_messages_py"
+  "/home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_control/srv/_trigger_text.py"
   "/home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_control/srv/_AddTwoInts.py"
   "/home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_control/srv/__init__.py"
 )

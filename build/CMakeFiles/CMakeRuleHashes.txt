@@ -3,6 +3,7 @@ fa9edeebd950fb1af144be77860c6bff /home/ubuntu/Ubiquity-Pi/devel/include/custom_m
 9e3e7bb1b5234c1577ec1cba66c5362b /home/ubuntu/Ubiquity-Pi/devel/include/custom_msgs/battery.h
 d457dcea59f5a2dbb5ef814abef993a1 /home/ubuntu/Ubiquity-Pi/devel/include/custom_msgs/solution.h
 bb84c7e327158867f1a1d3445cdb1ee1 /home/ubuntu/Ubiquity-Pi/devel/include/sanitation_control/AddTwoInts.h
+0baa08c8d07a0abfdfe79a31c01d2985 /home/ubuntu/Ubiquity-Pi/devel/include/sanitation_control/trigger_text.h
 2da18b9c502079a3b015df095062e1ae /home/ubuntu/Ubiquity-Pi/devel/include/sanitation_msgs/battery.h
 d4b983a9d08b764726915d3dd3d248d5 /home/ubuntu/Ubiquity-Pi/devel/include/sanitation_msgs/solution.h
 4502917f57e5f2a8e641100fef05db6a /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/__init__.py
@@ -11,6 +12,7 @@ f2f8d3ba4be511d7ab79088566e6f17b /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/di
 ec6fb638c6c3e34e081690797501a6e7 /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/custom_msgs/msg/_solution.py
 30da936a5a4ac6255462e980e3044625 /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_control/srv/_AddTwoInts.py
 83a7a601275b18c2d794066a72a747e6 /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_control/srv/__init__.py
+1c5774fa16f06a95fc723e8dbf686f0e /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_control/srv/_trigger_text.py
 5b54c1e6115b1d2f41e9b8c9b8af3839 /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_msgs/msg/__init__.py
 cb261b4c42b624e6c78a61d85088de4b /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_msgs/msg/_battery.py
 2e3ab5873b463e051eed8ee15699ca6e /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_msgs/msg/_solution.py
@@ -18,12 +20,14 @@ c5c95e59f8f7e7ea4d1571c2686ebcb9 /home/ubuntu/Ubiquity-Pi/devel/share/common-lis
 898b12521544e9797316e12728c913af /home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/custom_msgs/msg/battery.lisp
 9b490ea35abe47b58a87616dbbcf1277 /home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/custom_msgs/msg/solution.lisp
 c88fed30939160b4b5a02819b2173b8f /home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/sanitation_control/srv/AddTwoInts.lisp
+36810e90b0cf5093602427e2218b2ad0 /home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/sanitation_control/srv/trigger_text.lisp
 c6db41bef3f5a171a5a3206f0dcc2033 /home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/sanitation_msgs/msg/battery.lisp
 1b307392d59fe49fa0b6286360f08290 /home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/sanitation_msgs/msg/solution.lisp
 52cec9697059105a989ec3403440f9ff /home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/custom_msgs/msg/bat_and_sol.js
 8434ed43dac49e9ffa8579b30818e4c4 /home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/custom_msgs/msg/battery.js
 64c4c24e02f097785cbdff1957f61286 /home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/custom_msgs/msg/solution.js
 054a569ba8e3853d699c5f0e44cb2439 /home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/sanitation_control/srv/AddTwoInts.js
+3df41fcbb3cc05c5a3e3a81870cd676e /home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/sanitation_control/srv/trigger_text.js
 89f40c637327bfcbd995dcfe9a3f5e89 /home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/sanitation_msgs/msg/battery.js
 3676618b0da770e3e7d63f937a2e0904 /home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/sanitation_msgs/msg/solution.js
 e6767bbf72151eb29ff3d909ce6ddc31 /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/manifest.l
@@ -32,6 +36,7 @@ e6767bbf72151eb29ff3d909ce6ddc31 /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros
 395e5eb7bdfcc721eebf0eab083ccfbc /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/custom_msgs/msg/solution.l
 6e6b18f3e02217cca3841cbee1e40770 /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_control/manifest.l
 5f44ba3f3cc8e44fa74a201c86605941 /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_control/srv/AddTwoInts.l
+dd518e4179046f9db50a310c6662c4d0 /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_control/srv/trigger_text.l
 02ffc8827e1fbac4176e77412c9175a9 /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_msgs/manifest.l
 9c6f82bcb0c558167823ed975fb3d710 /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_msgs/msg/battery.l
 c7d62fdbe58161baf83d139828970f8d /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_msgs/msg/solution.l
@@ -62,6 +67,7 @@ fe722e7c9ca1f3c618e459334b7aa9c5 custom_msgs/CMakeFiles/_custom_msgs_generate_me
 06a7d2b83455a1696b2813f9a82b2ab5 rqt_graph/CMakeFiles/clean_test_results_rqt_graph
 7d9d7549a172b4b0ca9846a65e455236 rqt_graph/CMakeFiles/run_tests_rqt_graph_nosetests_test.dotcode_test.py
 823b3b5612ed8334efe60dbbd107e2b4 sanitation_control/CMakeFiles/_sanitation_control_generate_messages_check_deps_AddTwoInts
+c8b0260f40790e7f2134b1b9e89b8c90 sanitation_control/CMakeFiles/_sanitation_control_generate_messages_check_deps_trigger_text
 58d2465f8980ae5f0eb36fbb94ed7a9a sanitation_control/CMakeFiles/sanitation_control_generate_messages_cpp
 58d2465f8980ae5f0eb36fbb94ed7a9a sanitation_control/CMakeFiles/sanitation_control_generate_messages_eus
 58d2465f8980ae5f0eb36fbb94ed7a9a sanitation_control/CMakeFiles/sanitation_control_generate_messages_lisp

@@ -21,7 +21,6 @@ current_state = GOAL
 
 preLoaded = False
 physical_testing = False
-
 goalCounter = 0
 
 def validSprayGoal():
@@ -70,7 +69,7 @@ def callback(data):
 	#for status in status_list:
 	#	print(str(status.status))
 
-	print('state: ' + current_state + ' ----- prev_state: ' + prev_state + ' ----- goalCounter: ' + str(goalCounter))	
+	#print('state: ' + current_state + ' -- prev_state: ' + prev_state + ' -- goalCounter: ' + str(goalCounter))	
 
 	# beginning the journey not preloaded water yet
 	if ( current_state != prev_state ):

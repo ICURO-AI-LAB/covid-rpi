@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "sanitation_control: 0 messages, 1 services")
+message(STATUS "sanitation_control: 0 messages, 2 services")
 
 set(MSG_I_FLAGS "-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
 
@@ -17,6 +17,11 @@ add_custom_target(sanitation_control_generate_messages ALL)
 
 
 
+get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/trigger_text.srv" NAME_WE)
+add_custom_target(_sanitation_control_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sanitation_control" "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/trigger_text.srv" ""
+)
+
 get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/AddTwoInts.srv" NAME_WE)
 add_custom_target(_sanitation_control_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "sanitation_control" "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/AddTwoInts.srv" ""
@@ -30,6 +35,12 @@ add_custom_target(_sanitation_control_generate_messages_check_deps_${_filename}
 ### Generating Messages
 
 ### Generating Services
+_generate_srv_cpp(sanitation_control
+  "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/trigger_text.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/sanitation_control
+)
 _generate_srv_cpp(sanitation_control
   "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/AddTwoInts.srv"
   "${MSG_I_FLAGS}"
@@ -49,6 +60,8 @@ add_custom_target(sanitation_control_generate_messages_cpp
 add_dependencies(sanitation_control_generate_messages sanitation_control_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/trigger_text.srv" NAME_WE)
+add_dependencies(sanitation_control_generate_messages_cpp _sanitation_control_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(sanitation_control_generate_messages_cpp _sanitation_control_generate_messages_check_deps_${_filename})
 
@@ -63,6 +76,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS sanitation_control_generate_message
 ### Generating Messages
 
 ### Generating Services
+_generate_srv_eus(sanitation_control
+  "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/trigger_text.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/sanitation_control
+)
 _generate_srv_eus(sanitation_control
   "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/AddTwoInts.srv"
   "${MSG_I_FLAGS}"
@@ -82,6 +101,8 @@ add_custom_target(sanitation_control_generate_messages_eus
 add_dependencies(sanitation_control_generate_messages sanitation_control_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/trigger_text.srv" NAME_WE)
+add_dependencies(sanitation_control_generate_messages_eus _sanitation_control_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(sanitation_control_generate_messages_eus _sanitation_control_generate_messages_check_deps_${_filename})
 
@@ -96,6 +117,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS sanitation_control_generate_message
 ### Generating Messages
 
 ### Generating Services
+_generate_srv_lisp(sanitation_control
+  "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/trigger_text.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/sanitation_control
+)
 _generate_srv_lisp(sanitation_control
   "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/AddTwoInts.srv"
   "${MSG_I_FLAGS}"
@@ -115,6 +142,8 @@ add_custom_target(sanitation_control_generate_messages_lisp
 add_dependencies(sanitation_control_generate_messages sanitation_control_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/trigger_text.srv" NAME_WE)
+add_dependencies(sanitation_control_generate_messages_lisp _sanitation_control_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(sanitation_control_generate_messages_lisp _sanitation_control_generate_messages_check_deps_${_filename})
 
@@ -129,6 +158,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS sanitation_control_generate_message
 ### Generating Messages
 
 ### Generating Services
+_generate_srv_nodejs(sanitation_control
+  "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/trigger_text.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/sanitation_control
+)
 _generate_srv_nodejs(sanitation_control
   "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/AddTwoInts.srv"
   "${MSG_I_FLAGS}"
@@ -148,6 +183,8 @@ add_custom_target(sanitation_control_generate_messages_nodejs
 add_dependencies(sanitation_control_generate_messages sanitation_control_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/trigger_text.srv" NAME_WE)
+add_dependencies(sanitation_control_generate_messages_nodejs _sanitation_control_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(sanitation_control_generate_messages_nodejs _sanitation_control_generate_messages_check_deps_${_filename})
 
@@ -162,6 +199,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS sanitation_control_generate_message
 ### Generating Messages
 
 ### Generating Services
+_generate_srv_py(sanitation_control
+  "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/trigger_text.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/sanitation_control
+)
 _generate_srv_py(sanitation_control
   "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/AddTwoInts.srv"
   "${MSG_I_FLAGS}"
@@ -181,6 +224,8 @@ add_custom_target(sanitation_control_generate_messages_py
 add_dependencies(sanitation_control_generate_messages sanitation_control_generate_messages_py)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/trigger_text.srv" NAME_WE)
+add_dependencies(sanitation_control_generate_messages_py _sanitation_control_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/AddTwoInts.srv" NAME_WE)
 add_dependencies(sanitation_control_generate_messages_py _sanitation_control_generate_messages_check_deps_${_filename})
 
