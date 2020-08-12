@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/ubuntu/Ubiquity-Pi/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -78,6 +67,17 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -88,17 +88,6 @@ install/strip: preinstall
 install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
@@ -112,17 +101,6 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -132,6 +110,28 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: install/local
+
+.PHONY : install/local/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -165,19 +165,211 @@ depend:
 	cd /home/ubuntu/Ubiquity-Pi/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+sanitation_control/CMakeFiles/sanitation_control_genpy.dir/rule:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f CMakeFiles/Makefile2 sanitation_control/CMakeFiles/sanitation_control_genpy.dir/rule
+.PHONY : sanitation_control/CMakeFiles/sanitation_control_genpy.dir/rule
+
+# Convenience name for target.
+sanitation_control_genpy: sanitation_control/CMakeFiles/sanitation_control_genpy.dir/rule
+
+.PHONY : sanitation_control_genpy
+
+# fast build rule for target.
+sanitation_control_genpy/fast:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f sanitation_control/CMakeFiles/sanitation_control_genpy.dir/build.make sanitation_control/CMakeFiles/sanitation_control_genpy.dir/build
+.PHONY : sanitation_control_genpy/fast
+
+# Convenience name for target.
+sanitation_control/CMakeFiles/sanitation_control_geneus.dir/rule:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f CMakeFiles/Makefile2 sanitation_control/CMakeFiles/sanitation_control_geneus.dir/rule
+.PHONY : sanitation_control/CMakeFiles/sanitation_control_geneus.dir/rule
+
+# Convenience name for target.
+sanitation_control_geneus: sanitation_control/CMakeFiles/sanitation_control_geneus.dir/rule
+
+.PHONY : sanitation_control_geneus
+
+# fast build rule for target.
+sanitation_control_geneus/fast:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f sanitation_control/CMakeFiles/sanitation_control_geneus.dir/build.make sanitation_control/CMakeFiles/sanitation_control_geneus.dir/build
+.PHONY : sanitation_control_geneus/fast
+
+# Convenience name for target.
+sanitation_control/CMakeFiles/sanitation_control_generate_messages_py.dir/rule:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f CMakeFiles/Makefile2 sanitation_control/CMakeFiles/sanitation_control_generate_messages_py.dir/rule
+.PHONY : sanitation_control/CMakeFiles/sanitation_control_generate_messages_py.dir/rule
+
+# Convenience name for target.
+sanitation_control_generate_messages_py: sanitation_control/CMakeFiles/sanitation_control_generate_messages_py.dir/rule
+
+.PHONY : sanitation_control_generate_messages_py
+
+# fast build rule for target.
+sanitation_control_generate_messages_py/fast:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f sanitation_control/CMakeFiles/sanitation_control_generate_messages_py.dir/build.make sanitation_control/CMakeFiles/sanitation_control_generate_messages_py.dir/build
+.PHONY : sanitation_control_generate_messages_py/fast
+
+# Convenience name for target.
+sanitation_control/CMakeFiles/sanitation_control_generate_messages.dir/rule:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f CMakeFiles/Makefile2 sanitation_control/CMakeFiles/sanitation_control_generate_messages.dir/rule
+.PHONY : sanitation_control/CMakeFiles/sanitation_control_generate_messages.dir/rule
+
+# Convenience name for target.
+sanitation_control_generate_messages: sanitation_control/CMakeFiles/sanitation_control_generate_messages.dir/rule
+
+.PHONY : sanitation_control_generate_messages
+
+# fast build rule for target.
+sanitation_control_generate_messages/fast:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f sanitation_control/CMakeFiles/sanitation_control_generate_messages.dir/build.make sanitation_control/CMakeFiles/sanitation_control_generate_messages.dir/build
+.PHONY : sanitation_control_generate_messages/fast
+
+# Convenience name for target.
+sanitation_control/CMakeFiles/_sanitation_control_generate_messages_check_deps_AddTwoInts.dir/rule:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f CMakeFiles/Makefile2 sanitation_control/CMakeFiles/_sanitation_control_generate_messages_check_deps_AddTwoInts.dir/rule
+.PHONY : sanitation_control/CMakeFiles/_sanitation_control_generate_messages_check_deps_AddTwoInts.dir/rule
+
+# Convenience name for target.
+_sanitation_control_generate_messages_check_deps_AddTwoInts: sanitation_control/CMakeFiles/_sanitation_control_generate_messages_check_deps_AddTwoInts.dir/rule
+
+.PHONY : _sanitation_control_generate_messages_check_deps_AddTwoInts
+
+# fast build rule for target.
+_sanitation_control_generate_messages_check_deps_AddTwoInts/fast:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f sanitation_control/CMakeFiles/_sanitation_control_generate_messages_check_deps_AddTwoInts.dir/build.make sanitation_control/CMakeFiles/_sanitation_control_generate_messages_check_deps_AddTwoInts.dir/build
+.PHONY : _sanitation_control_generate_messages_check_deps_AddTwoInts/fast
+
+# Convenience name for target.
+sanitation_control/CMakeFiles/sanitation_control_generate_messages_eus.dir/rule:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f CMakeFiles/Makefile2 sanitation_control/CMakeFiles/sanitation_control_generate_messages_eus.dir/rule
+.PHONY : sanitation_control/CMakeFiles/sanitation_control_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+sanitation_control_generate_messages_eus: sanitation_control/CMakeFiles/sanitation_control_generate_messages_eus.dir/rule
+
+.PHONY : sanitation_control_generate_messages_eus
+
+# fast build rule for target.
+sanitation_control_generate_messages_eus/fast:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f sanitation_control/CMakeFiles/sanitation_control_generate_messages_eus.dir/build.make sanitation_control/CMakeFiles/sanitation_control_generate_messages_eus.dir/build
+.PHONY : sanitation_control_generate_messages_eus/fast
+
+# Convenience name for target.
+sanitation_control/CMakeFiles/sanitation_control_gennodejs.dir/rule:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f CMakeFiles/Makefile2 sanitation_control/CMakeFiles/sanitation_control_gennodejs.dir/rule
+.PHONY : sanitation_control/CMakeFiles/sanitation_control_gennodejs.dir/rule
+
+# Convenience name for target.
+sanitation_control_gennodejs: sanitation_control/CMakeFiles/sanitation_control_gennodejs.dir/rule
+
+.PHONY : sanitation_control_gennodejs
+
+# fast build rule for target.
+sanitation_control_gennodejs/fast:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f sanitation_control/CMakeFiles/sanitation_control_gennodejs.dir/build.make sanitation_control/CMakeFiles/sanitation_control_gennodejs.dir/build
+.PHONY : sanitation_control_gennodejs/fast
+
+# Convenience name for target.
+sanitation_control/CMakeFiles/sanitation_control_gencpp.dir/rule:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f CMakeFiles/Makefile2 sanitation_control/CMakeFiles/sanitation_control_gencpp.dir/rule
+.PHONY : sanitation_control/CMakeFiles/sanitation_control_gencpp.dir/rule
+
+# Convenience name for target.
+sanitation_control_gencpp: sanitation_control/CMakeFiles/sanitation_control_gencpp.dir/rule
+
+.PHONY : sanitation_control_gencpp
+
+# fast build rule for target.
+sanitation_control_gencpp/fast:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f sanitation_control/CMakeFiles/sanitation_control_gencpp.dir/build.make sanitation_control/CMakeFiles/sanitation_control_gencpp.dir/build
+.PHONY : sanitation_control_gencpp/fast
+
+# Convenience name for target.
+sanitation_control/CMakeFiles/sanitation_control_generate_messages_lisp.dir/rule:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f CMakeFiles/Makefile2 sanitation_control/CMakeFiles/sanitation_control_generate_messages_lisp.dir/rule
+.PHONY : sanitation_control/CMakeFiles/sanitation_control_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+sanitation_control_generate_messages_lisp: sanitation_control/CMakeFiles/sanitation_control_generate_messages_lisp.dir/rule
+
+.PHONY : sanitation_control_generate_messages_lisp
+
+# fast build rule for target.
+sanitation_control_generate_messages_lisp/fast:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f sanitation_control/CMakeFiles/sanitation_control_generate_messages_lisp.dir/build.make sanitation_control/CMakeFiles/sanitation_control_generate_messages_lisp.dir/build
+.PHONY : sanitation_control_generate_messages_lisp/fast
+
+# Convenience name for target.
+sanitation_control/CMakeFiles/sanitation_control_generate_messages_cpp.dir/rule:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f CMakeFiles/Makefile2 sanitation_control/CMakeFiles/sanitation_control_generate_messages_cpp.dir/rule
+.PHONY : sanitation_control/CMakeFiles/sanitation_control_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+sanitation_control_generate_messages_cpp: sanitation_control/CMakeFiles/sanitation_control_generate_messages_cpp.dir/rule
+
+.PHONY : sanitation_control_generate_messages_cpp
+
+# fast build rule for target.
+sanitation_control_generate_messages_cpp/fast:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f sanitation_control/CMakeFiles/sanitation_control_generate_messages_cpp.dir/build.make sanitation_control/CMakeFiles/sanitation_control_generate_messages_cpp.dir/build
+.PHONY : sanitation_control_generate_messages_cpp/fast
+
+# Convenience name for target.
+sanitation_control/CMakeFiles/sanitation_control_genlisp.dir/rule:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f CMakeFiles/Makefile2 sanitation_control/CMakeFiles/sanitation_control_genlisp.dir/rule
+.PHONY : sanitation_control/CMakeFiles/sanitation_control_genlisp.dir/rule
+
+# Convenience name for target.
+sanitation_control_genlisp: sanitation_control/CMakeFiles/sanitation_control_genlisp.dir/rule
+
+.PHONY : sanitation_control_genlisp
+
+# fast build rule for target.
+sanitation_control_genlisp/fast:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f sanitation_control/CMakeFiles/sanitation_control_genlisp.dir/build.make sanitation_control/CMakeFiles/sanitation_control_genlisp.dir/build
+.PHONY : sanitation_control_genlisp/fast
+
+# Convenience name for target.
+sanitation_control/CMakeFiles/sanitation_control_generate_messages_nodejs.dir/rule:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f CMakeFiles/Makefile2 sanitation_control/CMakeFiles/sanitation_control_generate_messages_nodejs.dir/rule
+.PHONY : sanitation_control/CMakeFiles/sanitation_control_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+sanitation_control_generate_messages_nodejs: sanitation_control/CMakeFiles/sanitation_control_generate_messages_nodejs.dir/rule
+
+.PHONY : sanitation_control_generate_messages_nodejs
+
+# fast build rule for target.
+sanitation_control_generate_messages_nodejs/fast:
+	cd /home/ubuntu/Ubiquity-Pi/build && $(MAKE) -f sanitation_control/CMakeFiles/sanitation_control_generate_messages_nodejs.dir/build.make sanitation_control/CMakeFiles/sanitation_control_generate_messages_nodejs.dir/build
+.PHONY : sanitation_control_generate_messages_nodejs/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... install/strip"
-	@echo "... install/local"
-	@echo "... install"
 	@echo "... test"
+	@echo "... install/strip"
+	@echo "... install"
 	@echo "... list_install_components"
+	@echo "... sanitation_control_genpy"
+	@echo "... install/local"
+	@echo "... sanitation_control_geneus"
+	@echo "... sanitation_control_generate_messages_py"
+	@echo "... sanitation_control_generate_messages"
+	@echo "... _sanitation_control_generate_messages_check_deps_AddTwoInts"
+	@echo "... sanitation_control_generate_messages_eus"
+	@echo "... sanitation_control_gennodejs"
+	@echo "... sanitation_control_gencpp"
+	@echo "... sanitation_control_generate_messages_lisp"
+	@echo "... sanitation_control_generate_messages_cpp"
+	@echo "... sanitation_control_genlisp"
+	@echo "... rebuild_cache"
+	@echo "... sanitation_control_generate_messages_nodejs"
 .PHONY : help
 
 

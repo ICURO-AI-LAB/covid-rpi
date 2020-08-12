@@ -3,6 +3,6 @@ prefix=/home/ubuntu/Ubiquity-Pi/install
 Name: sanitation_control
 Description: Description of sanitation_control
 Version: 0.0.0
-Cflags: 
+Cflags: -I${prefix}/include
 Libs: -L${prefix}/lib 
 Requires: 
