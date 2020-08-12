@@ -45,7 +45,7 @@ def activateSprayer():
 	
 	#Set Duration Times
 	two_seconds = rospy.Duration.from_sec(2.)
-	five_seconds = rospy.Duration.from_sec(2.)
+	five_seconds = rospy.Duration.from_sec(5.)
 	fifteen_seconds = rospy.Duration.from_sec(15.)
 	twenty_seconds = rospy.Duration.from_sec(20.)
 	thirty_seconds = rospy.Duration.from_sec(30.)
