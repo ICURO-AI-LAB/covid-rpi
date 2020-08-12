@@ -9,7 +9,7 @@ from geometry_msgs.msg import PoseStamped # for our crude approach
 
 navGoalArray = []
 i = 0
-navPublisher = rospy.Publisher('test_nav_goal', PoseStamped, queue_size=1)
+navPublisher = rospy.Publisher('move_base_simple/goal', PoseStamped, queue_size=1)
 
 safe_spray_status = "Trigger 3"
 spraying_status = "Trigger 2"
@@ -37,9 +37,12 @@ def goodToSendGoal(current_spray_status,prev_spray_status):
 
 def sendNavGoal(navGoals):
 	global i
+	#rospy.sleep(2.5)	
+	#print('sent nav goal:')
+	#print(str(navGoals[i]))
+	#print('-----------------------')
 	navPublisher.publish(navGoals[i])
 	i = i + 1
-	print('sent nav goal:')
 
 def navGoalCallback(data):
 
@@ -58,21 +61,21 @@ def navGoalCallback(data):
 	# initialization
 	if ( i == 0 ):
 		sendNavGoal(navGoalArray)
-	elif goodToSendGoal(current_spray_status,prev_spray_status):
+	elif goodToSendGoal(current_spray_status,prev_spray_status) and i < 5:
 		sendNavGoal(navGoalArray)
 		# create move base goal
-	print('i: ' + str(i))
+	#print('i: ' + str(i))
 
 	prev_spray_status = current_spray_status
 	
 def send_nav_goals():
 	global navGoalArray
 
-	# populate the navGoalArray with goals
-	generateNavGoals(navGoalArray)
-	
 	rospy.init_node('send_nav_goals', anonymous=True)
 	rospy.Subscriber("/spray_status", String, navGoalCallback)	
+
+	# populate the navGoalArray with goals
+	generateNavGoals(navGoalArray)	
 	
 	#print('nav goals: ')
 	#for item in navGoalArray:
