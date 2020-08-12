@@ -98,32 +98,26 @@ def callback(data):
 		while( time_now < time_after_2secs ): #Time for full spraying actuation
 
 			time_now = rospy.Time.now()
-			if (physical_testing):
-				command = "a,1,1,1,1,1,1,0,0"
-			else:
-				# print('TRIGGER 1: PRE LOADING WATER')
-				command = "a,0,0,0,0,0,0,0,0"					
+			command = "a,1,1,1,1,1,1,0,0"
 
 			spray_status = "Trigger 1: Relays On, Loading Initial Water"
-			pub.publish(spray_status)		
-			ser.write(command.encode())
+			pub.publish(spray_status)
+			if physical_testing:		
+				ser.write(command.encode())
 			time_now = rospy.Time.now()
 			preLoaded = True	
 			
 	if ( current_state == NOT_GOAL and preLoaded ):
-		if (physical_testing):
-			command = "a,1,1,1,1,1,1,255,0"
-		else:
-			# print('TRIGGER 2: FIRING WATER')	
-			command = "a,0,0,0,0,0,0,0,0"
-
+		command = "a,1,1,1,1,1,1,255,0"
 		spray_status = "Trigger 2: Spraying Water!"
-		ser.write(command.encode())
+		if (physical_testing):
+			ser.write(command.encode())
 
 	if ( current_state == GOAL ):
 		command = "a,0,0,0,0,0,0,0,0"
 		spray_status = "Trigger 3: Both Spraying Motors Off"
-		ser.write(command.encode())
+		if physical_testing:
+			ser.write(command.encode())
 		# print('TRIGGER 3: DONE SPRAYING, AT GOAL')
 		preLoaded = False
 
@@ -133,7 +127,7 @@ def callback(data):
 	prev_state = current_state	
 
 		
-def goalControl():
+def continuous_spray_control():
 	rospy.init_node('continuous_spray_control', anonymous=True)
 	rospy.Subscriber("/move_base/status", GoalStatusArray, callback)	
 
@@ -141,7 +135,7 @@ def goalControl():
  
 if __name__ == '__main__':   
 	try:
-		goalControl()
+		continuous_spray_control()
 	except rospy.ROSInterruptException:
 		pass
 

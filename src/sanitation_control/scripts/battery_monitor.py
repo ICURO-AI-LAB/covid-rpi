@@ -57,7 +57,7 @@ def callback(magniBatMsg):
 		if(magniBatMsg.voltage > MAX_VOLTAGE):
 			battery_status = "-- Battery is Fully Charged --"
 			percentage = 100.0
-		elif (magniBatMsg.voltage < MIN_VOTLAGE):
+		elif (magniBatMsg.voltage < MIN_VOLTAGE):
 			battery_status = "-- Battery is Low. Please Charge --"
 		else:
 			battery_status = "-- Battery is Partially Charged --"

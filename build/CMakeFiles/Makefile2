@@ -447,8 +447,8 @@ clean: rqt_graph/CMakeFiles/run_tests_rqt_graph_nosetests.dir/clean
 # Target rules for target rqt_graph/CMakeFiles/_run_tests_rqt_graph_nosetests_test.dotcode_test.py.dir
 
 # All Build rule for target.
-rqt_graph/CMakeFiles/_run_tests_rqt_graph_nosetests_test.dotcode_test.py.dir/all: CMakeFiles/tests.dir/all
 rqt_graph/CMakeFiles/_run_tests_rqt_graph_nosetests_test.dotcode_test.py.dir/all: rqt_graph/CMakeFiles/clean_test_results_rqt_graph.dir/all
+rqt_graph/CMakeFiles/_run_tests_rqt_graph_nosetests_test.dotcode_test.py.dir/all: CMakeFiles/tests.dir/all
 	$(MAKE) -f rqt_graph/CMakeFiles/_run_tests_rqt_graph_nosetests_test.dotcode_test.py.dir/build.make rqt_graph/CMakeFiles/_run_tests_rqt_graph_nosetests_test.dotcode_test.py.dir/depend
 	$(MAKE) -f rqt_graph/CMakeFiles/_run_tests_rqt_graph_nosetests_test.dotcode_test.py.dir/build.make rqt_graph/CMakeFiles/_run_tests_rqt_graph_nosetests_test.dotcode_test.py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num= "Built target _run_tests_rqt_graph_nosetests_test.dotcode_test.py"

@@ -1,2 +1,2 @@
-custom_msgs:rqt_graph:sanitation_control
+custom_msgs:ros_tutorials/ros_tutorials:ros_tutorials/roscpp_tutorials:ros_tutorials/rospy_tutorials:ros_tutorials/turtlesim:rqt_graph:sanitation_control
 -DCATKIN_DEVEL_PREFIX=/home/ubuntu/Ubiquity-Pi/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Ubiquity-Pi/install -G Unix Makefiles
