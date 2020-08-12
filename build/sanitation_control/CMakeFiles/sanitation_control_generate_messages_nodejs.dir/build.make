@@ -53,15 +53,22 @@ CMAKE_BINARY_DIR = /home/ubuntu/Ubiquity-Pi/build
 # Include the progress variables for this target.
 include sanitation_control/CMakeFiles/sanitation_control_generate_messages_nodejs.dir/progress.make
 
+sanitation_control/CMakeFiles/sanitation_control_generate_messages_nodejs: /home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/sanitation_control/srv/trigger_text.js
 sanitation_control/CMakeFiles/sanitation_control_generate_messages_nodejs: /home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/sanitation_control/srv/AddTwoInts.js
 
 
+/home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/sanitation_control/srv/trigger_text.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/sanitation_control/srv/trigger_text.js: /home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/trigger_text.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from sanitation_control/trigger_text.srv"
+	cd /home/ubuntu/Ubiquity-Pi/build/sanitation_control && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/trigger_text.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p sanitation_control -o /home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/sanitation_control/srv
+
 /home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/sanitation_control/srv/AddTwoInts.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
 /home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/sanitation_control/srv/AddTwoInts.js: /home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/AddTwoInts.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from sanitation_control/AddTwoInts.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from sanitation_control/AddTwoInts.srv"
 	cd /home/ubuntu/Ubiquity-Pi/build/sanitation_control && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/AddTwoInts.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p sanitation_control -o /home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/sanitation_control/srv
 
 sanitation_control_generate_messages_nodejs: sanitation_control/CMakeFiles/sanitation_control_generate_messages_nodejs
+sanitation_control_generate_messages_nodejs: /home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/sanitation_control/srv/trigger_text.js
 sanitation_control_generate_messages_nodejs: /home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/sanitation_control/srv/AddTwoInts.js
 sanitation_control_generate_messages_nodejs: sanitation_control/CMakeFiles/sanitation_control_generate_messages_nodejs.dir/build.make
 

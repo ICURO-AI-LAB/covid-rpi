@@ -13,9 +13,6 @@ from std_msgs.msg import String
 
 ser = serial.Serial('/dev/ttyUSB0', baudrate=9600) # Set Serial Link
 
-TRUE = 1
-FALSE = 0
-
 NOT_GOAL = 'Not At Goal'
 GOAL = 'At Specified Goal'
 
@@ -24,8 +21,14 @@ current_state = GOAL
 
 preLoaded = False
 physical_testing = False
-
 goalCounter = 0
+
+def validSprayGoal():
+	global goalCounter
+	if ( goalCounter <= 2 or goalCounter == 3 or goalCounter == 7 ):
+		return True
+	else:
+		return False
 
 # takes in goal array msg, outputs whether we are at the goal or 
 # still moving
@@ -60,19 +63,20 @@ def callback(data):
 #		print(i)
 #		print(status_list[i])
 
-	
+	spray_status = "Trigger 3: Both Spraying Motors Off"
 	current_state = checkStatusArray(status_list)
 	# debugging print statements
 	#for status in status_list:
 	#	print(str(status.status))
 
-	#print('state: ' + current_state + ' ----- prev_state: ' + prev_state + ' ----- goalCounter: ' + str(goalCounter))	
+	#print('state: ' + current_state + ' -- prev_state: ' + prev_state + ' -- goalCounter: ' + str(goalCounter))	
 
 	# beginning the journey not preloaded water yet
 	if ( current_state != prev_state ):
 		goalCounter = goalCounter + 1	
-		
-	if ( current_state == NOT_GOAL and not preLoaded ):
+		print('goalCounter: ' + str(goalCounter) + 'validSprayGoal: ' + str(validSprayGoal()))
+			
+	if ( current_state == NOT_GOAL and not preLoaded and validSprayGoal() ):
 
 		#Set Duration Times
         	two_seconds = rospy.Duration.from_sec(2.)
@@ -107,7 +111,7 @@ def callback(data):
 			time_now = rospy.Time.now()
 			preLoaded = True	
 			
-	if ( current_state == NOT_GOAL and preLoaded ):
+	if ( current_state == NOT_GOAL and preLoaded and validSprayGoal() ):
 		command = "a,1,1,1,1,1,1,255,0"
 		spray_status = "Trigger 2: Spraying Water!"
 		if (physical_testing):

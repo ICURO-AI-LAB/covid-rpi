@@ -53,21 +53,29 @@ CMAKE_BINARY_DIR = /home/ubuntu/Ubiquity-Pi/build
 # Include the progress variables for this target.
 include sanitation_control/CMakeFiles/sanitation_control_generate_messages_py.dir/progress.make
 
+sanitation_control/CMakeFiles/sanitation_control_generate_messages_py: /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_control/srv/_trigger_text.py
 sanitation_control/CMakeFiles/sanitation_control_generate_messages_py: /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_control/srv/_AddTwoInts.py
 sanitation_control/CMakeFiles/sanitation_control_generate_messages_py: /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_control/srv/__init__.py
 
 
+/home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_control/srv/_trigger_text.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
+/home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_control/srv/_trigger_text.py: /home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/trigger_text.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV sanitation_control/trigger_text"
+	cd /home/ubuntu/Ubiquity-Pi/build/sanitation_control && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/trigger_text.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p sanitation_control -o /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_control/srv
+
 /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_control/srv/_AddTwoInts.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
 /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_control/srv/_AddTwoInts.py: /home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/AddTwoInts.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV sanitation_control/AddTwoInts"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV sanitation_control/AddTwoInts"
 	cd /home/ubuntu/Ubiquity-Pi/build/sanitation_control && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/AddTwoInts.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p sanitation_control -o /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_control/srv
 
 /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_control/srv/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_control/srv/__init__.py: /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_control/srv/_trigger_text.py
 /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_control/srv/__init__.py: /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_control/srv/_AddTwoInts.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python srv __init__.py for sanitation_control"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python srv __init__.py for sanitation_control"
 	cd /home/ubuntu/Ubiquity-Pi/build/sanitation_control && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_control/srv --initpy
 
 sanitation_control_generate_messages_py: sanitation_control/CMakeFiles/sanitation_control_generate_messages_py
+sanitation_control_generate_messages_py: /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_control/srv/_trigger_text.py
 sanitation_control_generate_messages_py: /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_control/srv/_AddTwoInts.py
 sanitation_control_generate_messages_py: /home/ubuntu/Ubiquity-Pi/devel/lib/python2.7/dist-packages/sanitation_control/srv/__init__.py
 sanitation_control_generate_messages_py: sanitation_control/CMakeFiles/sanitation_control_generate_messages_py.dir/build.make

@@ -13,7 +13,7 @@ def add_two_ints_client(x, y):
     try:
         add_two_ints = rospy.ServiceProxy('twilio_service', AddTwoInts)
         resp1 = add_two_ints(x, y)
-        return resp1.sum
+        return resp1.s
     except rospy.ServiceException as e:
         print("Service call failed: %s"%e)
 

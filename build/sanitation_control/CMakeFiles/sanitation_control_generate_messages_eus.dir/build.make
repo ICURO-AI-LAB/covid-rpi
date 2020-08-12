@@ -53,20 +53,27 @@ CMAKE_BINARY_DIR = /home/ubuntu/Ubiquity-Pi/build
 # Include the progress variables for this target.
 include sanitation_control/CMakeFiles/sanitation_control_generate_messages_eus.dir/progress.make
 
+sanitation_control/CMakeFiles/sanitation_control_generate_messages_eus: /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_control/srv/trigger_text.l
 sanitation_control/CMakeFiles/sanitation_control_generate_messages_eus: /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_control/srv/AddTwoInts.l
 sanitation_control/CMakeFiles/sanitation_control_generate_messages_eus: /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_control/manifest.l
 
 
+/home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_control/srv/trigger_text.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_control/srv/trigger_text.l: /home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/trigger_text.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from sanitation_control/trigger_text.srv"
+	cd /home/ubuntu/Ubiquity-Pi/build/sanitation_control && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/trigger_text.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p sanitation_control -o /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_control/srv
+
 /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_control/srv/AddTwoInts.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
 /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_control/srv/AddTwoInts.l: /home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/AddTwoInts.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from sanitation_control/AddTwoInts.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from sanitation_control/AddTwoInts.srv"
 	cd /home/ubuntu/Ubiquity-Pi/build/sanitation_control && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/AddTwoInts.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p sanitation_control -o /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_control/srv
 
 /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_control/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for sanitation_control"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for sanitation_control"
 	cd /home/ubuntu/Ubiquity-Pi/build/sanitation_control && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_control sanitation_control std_msgs
 
 sanitation_control_generate_messages_eus: sanitation_control/CMakeFiles/sanitation_control_generate_messages_eus
+sanitation_control_generate_messages_eus: /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_control/srv/trigger_text.l
 sanitation_control_generate_messages_eus: /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_control/srv/AddTwoInts.l
 sanitation_control_generate_messages_eus: /home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_control/manifest.l
 sanitation_control_generate_messages_eus: sanitation_control/CMakeFiles/sanitation_control_generate_messages_eus.dir/build.make

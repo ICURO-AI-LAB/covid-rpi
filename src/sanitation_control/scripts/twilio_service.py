@@ -46,7 +46,7 @@ from sanitation_control.srv import *
 
 def handle_add_two_ints(req):
 	print("Returning [%s + %s = %s]"%(req.a, req.b, (req.a + req.b)))
-	return AddTwoIntsResponse(req.a + req.b)
+	return AddTwoIntsResponse("Succeeded")
 	
 
 def twilio_service():	

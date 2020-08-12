@@ -53,17 +53,26 @@ CMAKE_BINARY_DIR = /home/ubuntu/Ubiquity-Pi/build
 # Include the progress variables for this target.
 include sanitation_control/CMakeFiles/sanitation_control_generate_messages_cpp.dir/progress.make
 
+sanitation_control/CMakeFiles/sanitation_control_generate_messages_cpp: /home/ubuntu/Ubiquity-Pi/devel/include/sanitation_control/trigger_text.h
 sanitation_control/CMakeFiles/sanitation_control_generate_messages_cpp: /home/ubuntu/Ubiquity-Pi/devel/include/sanitation_control/AddTwoInts.h
 
+
+/home/ubuntu/Ubiquity-Pi/devel/include/sanitation_control/trigger_text.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/ubuntu/Ubiquity-Pi/devel/include/sanitation_control/trigger_text.h: /home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/trigger_text.srv
+/home/ubuntu/Ubiquity-Pi/devel/include/sanitation_control/trigger_text.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+/home/ubuntu/Ubiquity-Pi/devel/include/sanitation_control/trigger_text.h: /opt/ros/kinetic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from sanitation_control/trigger_text.srv"
+	cd /home/ubuntu/Ubiquity-Pi/src/sanitation_control && /home/ubuntu/Ubiquity-Pi/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/trigger_text.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p sanitation_control -o /home/ubuntu/Ubiquity-Pi/devel/include/sanitation_control -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 /home/ubuntu/Ubiquity-Pi/devel/include/sanitation_control/AddTwoInts.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
 /home/ubuntu/Ubiquity-Pi/devel/include/sanitation_control/AddTwoInts.h: /home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/AddTwoInts.srv
 /home/ubuntu/Ubiquity-Pi/devel/include/sanitation_control/AddTwoInts.h: /opt/ros/kinetic/share/gencpp/msg.h.template
 /home/ubuntu/Ubiquity-Pi/devel/include/sanitation_control/AddTwoInts.h: /opt/ros/kinetic/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from sanitation_control/AddTwoInts.srv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/Ubiquity-Pi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from sanitation_control/AddTwoInts.srv"
 	cd /home/ubuntu/Ubiquity-Pi/src/sanitation_control && /home/ubuntu/Ubiquity-Pi/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/AddTwoInts.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p sanitation_control -o /home/ubuntu/Ubiquity-Pi/devel/include/sanitation_control -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 sanitation_control_generate_messages_cpp: sanitation_control/CMakeFiles/sanitation_control_generate_messages_cpp
+sanitation_control_generate_messages_cpp: /home/ubuntu/Ubiquity-Pi/devel/include/sanitation_control/trigger_text.h
 sanitation_control_generate_messages_cpp: /home/ubuntu/Ubiquity-Pi/devel/include/sanitation_control/AddTwoInts.h
 sanitation_control_generate_messages_cpp: sanitation_control/CMakeFiles/sanitation_control_generate_messages_cpp.dir/build.make
 

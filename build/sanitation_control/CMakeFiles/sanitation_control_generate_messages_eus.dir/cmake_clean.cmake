@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sanitation_control_generate_messages_eus"
+  "/home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_control/srv/trigger_text.l"
   "/home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_control/srv/AddTwoInts.l"
   "/home/ubuntu/Ubiquity-Pi/devel/share/roseus/ros/sanitation_control/manifest.l"
 )

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sanitation_control_generate_messages_lisp"
+  "/home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/sanitation_control/srv/trigger_text.lisp"
   "/home/ubuntu/Ubiquity-Pi/devel/share/common-lisp/ros/sanitation_control/srv/AddTwoInts.lisp"
 )
 

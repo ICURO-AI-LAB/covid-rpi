@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/AddTwoInts.srv"
+services_str = "/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/AddTwoInts.srv;/home/ubuntu/Ubiquity-Pi/src/sanitation_control/srv/trigger_text.srv"
 pkg_name = "sanitation_control"
 dependencies_str = "std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sanitation_control_generate_messages_nodejs"
+  "/home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/sanitation_control/srv/trigger_text.js"
   "/home/ubuntu/Ubiquity-Pi/devel/share/gennodejs/ros/sanitation_control/srv/AddTwoInts.js"
 )
 
