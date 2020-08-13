@@ -22,6 +22,8 @@ prev_state = GOAL
 current_state = GOAL
 goalCounter = 0
 
+physicalTesting = True
+
 # takes in goal array msg, outputs whether we are at the goal or 
 # still moving
 def checkStatusArray(status_list):
@@ -53,8 +55,8 @@ def callback(data):
 
 	if ( current_state != prev_state ):
 		goalCounter = goalCounter + 1
-	if ( goalCounter == 6 ) :
-		trigger_text_client()
+		if goalCounter == 6:
+			trigger_text_client()
 
 	if( (current_state != prev_state) and (current_state == GOAL)):
 			
@@ -79,18 +81,23 @@ def callback(data):
 		
 		while(time_now < time_after_7secs): #Time for full spraying actuation
 			time_now = rospy.Time.now()
-			#command = "a,1,1,1,1,1,1,0,0"
-			command = "a,0,0,0,0,0,0,0,0"
+
+			command = "a,1,1,1,1,1,1,0,0"
+			#command = "a,0,0,0,0,0,0,0,0"
 			spray_status = "Trigger 1"
+			if physicalTesting:
+				ser.write(command.encode())
+
 			pub.publish(spray_status)
-			#ser.write(command.encode())	
 			time_now = rospy.Time.now()
 
 	command = "a,0,0,0,0,0,0,0,0"
 	spray_status =  "Trigger 3"
+	if physicalTesting:
+		ser.write(command.encode())
+
 	#print command
 	pub.publish(spray_status + ' ' + str(current_state) )
-	#ser.write(command.encode())
 	prev_state = current_state	
 
 		

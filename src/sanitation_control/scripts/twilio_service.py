@@ -38,7 +38,7 @@ def callback(data):
 		voltage_string = str(voltage)
 		percentage_string = str(battery_percentage)
 		
-		system_string = "Hello. \n " + battery_status + "\n Battery Level: " + voltage_string[:5] + "V  \n" + "Battery Percentage: " + percentage_string[:5] + "%\n" + solution_status
+		system_string = "Hello. \n Sanitation Cycle Complete \n" + battery_status + "\n Battery Level: " + voltage_string[:5] + "V  \n" + "Battery Percentage: " + percentage_string[:5] + "%\n" + solution_status
 		
 		print system_string	
 	

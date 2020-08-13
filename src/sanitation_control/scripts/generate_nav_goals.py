@@ -49,7 +49,12 @@ def generateNavGoals(navGoalArray,robotType):
 		# waypoint 3B: for second tables
 		#navGoalArray.append(genPoseStamped( 4.130, -1.308, 0.0,   0.0, 0.0, -0.0457, 0.890, 3))
 		# waypoint 6: show off to the haters
-		navGoalArray.append(genPoseStamped( 5.143, -1.049, 0.0,   0.0, 0.0, -0.246, 0.969 ,4))
+		# navGoalArray.append(genPoseStamped( 5.143, -1.049, 0.0,   0.0, 0.0, -0.246, 0.969 ,4))
+		# waypoint 6: show off to the haters
+		navGoalArray.append(genPoseStamped( 4.349, -1.479, 0.0,   0.0, 0.0, -0.508, 0.862,3))
+
+
+
 	else:
 		print('specify robot type in generate Nav Goals!')
 		exit()
