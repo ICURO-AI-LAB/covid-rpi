@@ -115,6 +115,15 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+export ROS_PACKAGE_PATH=/home/ubuntu/Ubiquity-Pi/src:/opt/ros/kinetic/share
+export ROSLISP_PACKAGE_DIRECTORIES=/home/ubuntu/Ubiquity-Pi/devel/share/common-lisp
+
+source /opt/ros/kinetic/setup.bash
+source /home/ubuntu/catkin_ws/devel/setup.bash
+source /home/ubuntu/Ubiquity-Pi/devel/setup.bash
+source /etc/ubiquity/env.sh
+export ROS_PARALLEL_JOBS=-j1 # Limit the number of compile threads due to memory limits
 source /opt/ros/kinetic/setup.bash
 source /home/ubuntu/catkin_ws/devel/setup.bash
 source /etc/ubiquity/env.sh
@@ -123,6 +132,7 @@ export ROS_PARALLEL_JOBS=-j1 # Limit the number of compile threads due to memory
 sudo chmod 666 /dev/ttyUSB0
 sudo chmod 666 /dev/ttyUSB1
 sudo chmod 666 /dev/ttyUSB2
+                    
+export ROS_IP=10.0.0.140
 
-#export ROS_MASTER_URI=http://10.0.0.6:11311
-export ROS_MASTER_URI=http://10.0.0.236:11311
+#export ROS_MASTER_URI=http://10.0.0.236:11311

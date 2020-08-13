@@ -1,6 +1,8 @@
 #!/usr/bin/env python 
 
 # license removed for brevity
+import os
+import sys
 from twilio.rest import Client 
 import rospy
 from std_msgs.msg import String
@@ -9,9 +11,8 @@ from custom_msgs.msg import battery, solution, bat_and_sol
 
 voltage = 0
 percentage = 0
-solution_level = '0'
+#solution_level = '0'
 flag = 0
-
 
 
 def callback(data):
@@ -73,8 +74,8 @@ def twilio_test():
 	#rospy.Subscriber("/battery_level", battery, callback, sub_once)
 	rospy.Subscriber("/battery_and_solution", bat_and_sol, callback, sub_once)
 
-	global voltage
-	global percentage
+	#global voltage
+	#global percentage
 		
 	rospy.spin()
 
