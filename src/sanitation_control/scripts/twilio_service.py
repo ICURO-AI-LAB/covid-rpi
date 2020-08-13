@@ -1,7 +1,7 @@
 #!/usr/bin/env python 
 
 # license removed for brevity
-#from twilio.rest import Client 
+from twilio.rest import Client 
 import os
 import rospy
 from std_msgs.msg import String
@@ -31,10 +31,10 @@ def callback(data):
 
 
 	if not MSG_FLAG:	
-#		account = "ACd2ef8341685a82c7383519c77688b3c1"
-#               token = "0a8a9269227957cfdc4e35f328127860"		
+		account = "ACd2ef8341685a82c7383519c77688b3c1"
+                token = "0a8a9269227957cfdc4e35f328127860"		
 	
-#		client = Client(account,token)
+		client = Client(account,token)
 
 		voltage_string = str(voltage)
 		percentage_string = str(battery_percentage)
@@ -43,9 +43,9 @@ def callback(data):
 		
 		print system_string	
 	
-		#message = client.messages.create(to="+14084012774", from_="+16157518411", body=system_string) 
+		message = client.messages.create(to="+14084012774", from_="+16157518411", body=system_string) 
 			
-		#print(message.sid)
+		print(message.sid)
 		MSG_FLAG = True
 		TEXT_SENT = True
 
