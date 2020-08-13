@@ -28,11 +28,19 @@ def generateNavGoals(navGoalArray):
 
 	#for i in range(NUM_GOALS):
 	#	navGoalArray.append(genPoseStamped(0,0,0,0,0,0,0,i))
-		
-	# waypoint 2: first spray next to sexy robot
+	
+	
+	# waypoint 1: first spray before sexy robot
+	navGoalArray.append(genPoseStamped( -3.102, -1.482, 0.0,   0.0, 0.0, 0.304, 0.953 , 2))
+
+	## waypoint 1.5: first spray before sexy robot
+	#navGoalArray.append(genPoseStamped( -3.102, -1.482, 0.0,   0.0, 0.0, 0.304, 0.953 , 2))	
+
+	
+	# waypoint 2: next spray next to sexy robot
 	navGoalArray.append(genPoseStamped( -2.102, -1.482, 0.0,   0.0, 0.0, 0.304, 0.953 , 2))
 	# waypoint 3: facing closet door handle
-	navGoalArray.append(genPoseStamped( 2.968, -2.865, 0.0,   0.0, 0.0, 0.842, 0.539 , 3))
+	navGoalArray.append(genPoseStamped( 2.968, -3.65, 0.0,   0.0, 0.0, 0.842, 0.539 , 3))
 	# waypoint 4: beginning second spray
 	navGoalArray.append(genPoseStamped( 4.580, 0.665, 0.0,   0.0, 0.0, 0.969, 0.246 , 4))
 	# waypoint 5: end of second spray

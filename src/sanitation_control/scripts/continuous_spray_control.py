@@ -23,9 +23,16 @@ preLoaded = False
 physical_testing = False
 goalCounter = 0
 
+validGoalCount = [ 1 ,5 ,9 ]
+
+# return true if we are supposed to be spraying
+# sprays every other waypoint
 def validSprayGoal():
+
 	global goalCounter
-	if ( goalCounter <= 2 or goalCounter == 3 or goalCounter == 7 ):
+	global validGoalCount
+
+	if goalCounter in validGoalCount:
 		return True
 	else:
 		return False
@@ -35,14 +42,26 @@ def validSprayGoal():
 def checkStatusArray(status_list):
 	returnStatus = NOT_GOAL
 	length = len(status_list)
+	#if (length == 0):
+	#	return GOAL
+	#else:
+
+	#print('----')
+	#print(str(status_list))
+	#for status in status_list:
+	#	print(str(status.status))
+	#print('----')
+
 	if (length == 0):
 		return GOAL
 	else:
-		for status in status_list:
-			if status.status == 3:
-				returnStatus  = GOAL
-			else:
+		for status in status_list:	
+			if status.status != 3:
 				returnStatus = NOT_GOAL
+				return returnStatus
+			else:
+				returnStatus = GOAL
+
 	return returnStatus
 
 def callback(data):	
@@ -69,12 +88,13 @@ def callback(data):
 	#for status in status_list:
 	#	print(str(status.status))
 
-	#print('state: ' + current_state + ' -- prev_state: ' + prev_state + ' -- goalCounter: ' + str(goalCounter))	
-
 	# beginning the journey not preloaded water yet
 	if ( current_state != prev_state ):
 		goalCounter = goalCounter + 1	
-		print('goalCounter: ' + str(goalCounter) + 'validSprayGoal: ' + str(validSprayGoal()))
+		print( 'validSprayGoal: ' + str(validSprayGoal()))
+
+	print('state: ' + current_state + ' -- prev_state: ' + prev_state + ' -- goalCounter: ' + str(goalCounter))	
+
 			
 	if ( current_state == NOT_GOAL and not preLoaded and validSprayGoal() ):
 
@@ -105,6 +125,7 @@ def callback(data):
 			command = "a,1,1,1,1,1,1,0,0"
 
 			spray_status = "Trigger 1: Relays On, Loading Initial Water"
+			#print(spray_status)
 			pub.publish(spray_status)
 			if physical_testing:		
 				ser.write(command.encode())
@@ -124,6 +145,8 @@ def callback(data):
 			ser.write(command.encode())
 		# print('TRIGGER 3: DONE SPRAYING, AT GOAL')
 		preLoaded = False
+
+	print(spray_status)
 
 	# publish current status
 	pub.publish(spray_status)		
