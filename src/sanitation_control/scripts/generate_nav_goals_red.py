@@ -45,7 +45,7 @@ def generateNavGoals(navGoalArray,robotType):
 		# waypoint 1: next spray next to sexy robot
 		navGoalArray.append(genPoseStamped( -2.102, -1.482, 0.0,   0.0, 0.0, 0.304, 0.953 , 1))
 		# waypoint 2: for first tables
-		navGoalArray.append(genPoseStamped( 4.276, -1.107, 0.0,   0.0, 0.0, -0.044, 0.999, 2))
+		navGoalArray.append(genPoseStamped( 4.797, -1.1467, 0.0,   0.0, 0.0, -0.102, 0.995, 2))
 		# waypoint 3B: for second tables
 		navGoalArray.append(genPoseStamped( 4.130, -1.308, 0.0,   0.0, 0.0, -0.0457, 0.890, 3))
 		# waypoint 6: show off to the haters

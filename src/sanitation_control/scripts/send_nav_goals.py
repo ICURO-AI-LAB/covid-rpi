@@ -43,10 +43,10 @@ def navGoalCallback(data):
 	# check the status list
 	current_state = checkStatusArray(status_list)
 
-	print(str(current_state))
-	print(str(sleepCounter))
+	#print(str(current_state))
+	#print(str(sleepCounter))
 		
-	if current_state == GOAL and i < len(navGoalArray):
+	if current_state == GOAL  and i < len(navGoalArray):
 		sendNavGoal(navGoalArray)
 
 	prev_state = current_state
@@ -56,7 +56,10 @@ def send_nav_goals():
 	rospy.init_node('send_nav_goals', anonymous=True)
 
 	# populate the navGoalArray with goals
-	generateNavGoals(navGoalArray)	
+	generateNavGoals(navGoalArray,'johnny_boy')
+	rospy.sleep(2.5)
+	# SENDS ONE NAV GOAL 
+	#sendNavGoal(navGoalArray)
 
 	rospy.Subscriber("/move_base/status", GoalStatusArray, navGoalCallback)	
 	rospy.spin()

@@ -42,16 +42,6 @@ def validSprayGoal():
 def checkStatusArray(status_list):
 	returnStatus = NOT_GOAL
 	length = len(status_list)
-	#if (length == 0):
-	#	return GOAL
-	#else:
-
-	#print('----')
-	#print(str(status_list))
-	#for status in status_list:
-	#	print(str(status.status))
-	#print('----')
-
 	if (length == 0):
 		return GOAL
 	else:

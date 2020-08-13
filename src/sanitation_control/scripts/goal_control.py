@@ -29,13 +29,12 @@ def checkStatusArray(status_list):
 	if (length == 0):
 		return GOAL
 	else:
-		for status in status_list:
-			if status.status == 3:
-				returnStatus  = GOAL
-			else:
+		for status in status_list:	
+			if status.status != 3:
 				returnStatus = NOT_GOAL
-	return returnStatus
-
+				return returnStatus
+			else:
+				returnStatus = GOAL
 
 def callback(data):	
 	pub = rospy.Publisher('spray_status', String, queue_size=1)
@@ -74,7 +73,6 @@ def callback(data):
         	time_after_30secs = time_now + thirty_seconds
         	time_after_60secs = time_now + sixty_seconds
 
-		
 		rospy.sleep(.5)
 		
 		while(time_now < time_after_7secs): #Time for full spraying actuation
