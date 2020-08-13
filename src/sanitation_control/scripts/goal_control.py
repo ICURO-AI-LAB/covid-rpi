@@ -6,6 +6,7 @@ import time
 #import actionlib_msgs
 from actionlib_msgs.msg import GoalStatusArray
 from std_msgs.msg import String
+from twilio_client import trigger_text_client
 
 #Turned off command strings for testing
 
@@ -52,6 +53,8 @@ def callback(data):
 
 	if ( current_state != prev_state ):
 		goalCounter = goalCounter + 1
+	if ( goalCounter == 6 ) :
+		trigger_text_client()
 
 	if( (current_state != prev_state) and (current_state == GOAL)):
 			
@@ -76,18 +79,18 @@ def callback(data):
 		
 		while(time_now < time_after_7secs): #Time for full spraying actuation
 			time_now = rospy.Time.now()
-			command = "a,1,1,1,1,1,1,0,0"
-			#command = "a,0,0,0,0,0,0,0,0"
+			#command = "a,1,1,1,1,1,1,0,0"
+			command = "a,0,0,0,0,0,0,0,0"
 			spray_status = "Trigger 1"
 			pub.publish(spray_status)
-			ser.write(command.encode())	
+			#ser.write(command.encode())	
 			time_now = rospy.Time.now()
 
 	command = "a,0,0,0,0,0,0,0,0"
 	spray_status =  "Trigger 3"
 	#print command
 	pub.publish(spray_status + ' ' + str(current_state) )
-	ser.write(command.encode())
+	#ser.write(command.encode())
 	prev_state = current_state	
 
 		

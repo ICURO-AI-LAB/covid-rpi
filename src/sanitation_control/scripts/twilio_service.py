@@ -21,14 +21,13 @@ def callback(data):
 	global MSG_FLAG
 	global subscriber
 	
-	print "Callback called"	
+	#print "Callback called"	
 
 	time = data.runtime
 	voltage = data.voltage
 	battery_percentage = data.battery_percentage
 	battery_status = data.batStatus
 	solution_status = data.solStatus
-
 
 	if not MSG_FLAG:	
 		account = "ACd2ef8341685a82c7383519c77688b3c1"
@@ -50,10 +49,6 @@ def callback(data):
 		TEXT_SENT = True
 
 	subscriber.unregister()
-	#print("Returning [%s + %s = %s]"%(req.a, req.b, (req.a + req.b)))
-	#return AddTwoIntsResponse("Succeeded")
-	
-
 
 def handle_twilio_text(request):
 	global TEXT_SENT

@@ -8,8 +8,7 @@ import time
 from actionlib_msgs.msg import GoalStatus
 from actionlib_msgs.msg import GoalStatusArray
 from std_msgs.msg import String
-
-
+from twilio_client import trigger_text_client
 
 ser = serial.Serial('/dev/ttyUSB0', baudrate=9600) # Set Serial Link
 
@@ -78,10 +77,13 @@ def callback(data):
 	#for status in status_list:
 	#	print(str(status.status))
 
+
 	# beginning the journey not preloaded water yet
 	if ( current_state != prev_state ):
 		goalCounter = goalCounter + 1	
 		print( 'validSprayGoal: ' + str(validSprayGoal()))
+	if ( goalCounter == 10 ):
+		trigger_text_client()		
 
 	print('state: ' + current_state + ' -- prev_state: ' + prev_state + ' -- goalCounter: ' + str(goalCounter))	
 
