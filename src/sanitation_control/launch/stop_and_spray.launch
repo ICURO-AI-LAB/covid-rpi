@@ -3,10 +3,6 @@
 	<node name="battery_monitor" pkg="sanitation_control" type="battery_monitor.py"  output="screen"/>
 	<node name="solution_level" pkg="sanitation_control" type="solution_level.py"  output="screen"/>
 	--> 
-
 	<node name="goal_control" pkg="sanitation_control" type="goal_control.py"  output="screen"/>
-	<node name="send_nav_goals" pkg="sanitation_control" type="send_nav_goals_red.py"  output="screen"/>	
-
-
-	
+	<node name="send_nav_goals_red" pkg="sanitation_control" type="send_nav_goals_red.py"  output="screen"/>		
 </launch>

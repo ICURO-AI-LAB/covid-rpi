@@ -43,11 +43,11 @@ def generateNavGoals(navGoalArray,robotType):
 	
 	elif (robotType == 'johnny_red'):
 		# waypoint 1: next spray next to sexy robot
-		navGoalArray.append(genPoseStamped( -2.102, -1.482, 0.0,   0.0, 0.0, 0.304, 0.953 , 1))
+		navGoalArray.append(genPoseStamped( -1.804, -1.207, 0.0,   0.0, 0.0, 0.179, 0.984, 1))
 		# waypoint 2: for first tables
 		navGoalArray.append(genPoseStamped( 4.276, -1.107, 0.0,   0.0, 0.0, -0.044, 0.999, 2))
 		# waypoint 3B: for second tables
-		navGoalArray.append(genPoseStamped( 4.130, -1.308, 0.0,   0.0, 0.0, -0.0457, 0.890, 3))
+		#navGoalArray.append(genPoseStamped( 4.130, -1.308, 0.0,   0.0, 0.0, -0.0457, 0.890, 3))
 		# waypoint 6: show off to the haters
 		navGoalArray.append(genPoseStamped( 5.143, -1.049, 0.0,   0.0, 0.0, -0.246, 0.969 ,4))
 	else:

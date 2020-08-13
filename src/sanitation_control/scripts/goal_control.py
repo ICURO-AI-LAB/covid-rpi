@@ -14,8 +14,8 @@ ser = serial.Serial('/dev/ttyUSB0', baudrate=9600) # Set Serial Link
 TRUE = 1
 FALSE = 0
 
-NOT_GOAL = 0
-GOAL = 1
+NOT_GOAL = 'MOVING'
+GOAL = 'AT GOAL'
 
 prev_state = GOAL 
 current_state = GOAL
@@ -35,6 +35,7 @@ def checkStatusArray(status_list):
 				return returnStatus
 			else:
 				returnStatus = GOAL
+	return returnStatus
 
 def callback(data):	
 	pub = rospy.Publisher('spray_status', String, queue_size=1)
@@ -43,8 +44,6 @@ def callback(data):
 	global current_state
 	global GOAL
 	global NOT_GOAL 
-	#primary_counter = 0
-	#sub_counter = 0 
 	global goalCounter
 		
 	status_list = data.status_list
@@ -76,28 +75,18 @@ def callback(data):
 		rospy.sleep(.5)
 		
 		while(time_now < time_after_7secs): #Time for full spraying actuation
-              		if(time_now < time_after_2secs):
-                        	time_now = rospy.Time.now()
-                        	#command = "a,1,1,1,1,1,1,0,0"
-                                command = "a,0,0,0,0,0,0,0,0"
-				spray_status = "Trigger 1"
-                                pub.publish(spray_status)
-                                ser.write(command.encode())
-				
-               		else:
-                        	time_now = rospy.Time.now()
-                        	#command = "a,1,1,1,1,1,1,255,0"
-                                command = "a,0,0,0,0,0,0,0,0"
-				spray_status = "Trigger 2"
-                                pub.publish(spray_status)
-                                ser.write(command.encode())
-			
+			time_now = rospy.Time.now()
+			command = "a,1,1,1,1,1,1,0,0"
+			#command = "a,0,0,0,0,0,0,0,0"
+			spray_status = "Trigger 1"
+			pub.publish(spray_status)
+			ser.write(command.encode())	
 			time_now = rospy.Time.now()
 
 	command = "a,0,0,0,0,0,0,0,0"
 	spray_status =  "Trigger 3"
 	#print command
-	pub.publish(spray_status)
+	pub.publish(spray_status + ' ' + str(current_state) )
 	ser.write(command.encode())
 	prev_state = current_state	
 
@@ -105,7 +94,7 @@ def callback(data):
 def goalControl():
 	rospy.init_node('goal_control', anonymous=True)
 	rospy.Subscriber("/move_base/status", GoalStatusArray, callback)	
-
+	rospy.sleep(2.5)
 	rospy.spin()
  
 if __name__ == '__main__':   
