@@ -19,7 +19,7 @@ prev_state = GOAL
 current_state = GOAL
 
 preLoaded = False
-physical_testing = False
+physical_testing = True
 goalCounter = 0
 
 validGoalCount = [ 1 ,5 ,9 ]

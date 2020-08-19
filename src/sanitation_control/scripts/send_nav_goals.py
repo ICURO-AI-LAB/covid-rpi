@@ -29,6 +29,7 @@ def sendNavGoal(navGoals):
 	print(str(navGoals[i]))
 	print('-----------------------')
 	navPublisher.publish(navGoals[i])
+	#rospy.sleep(10.0)
 	i = i + 1
 
 def navGoalCallback(data):

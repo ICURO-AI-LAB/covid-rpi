@@ -62,7 +62,7 @@ def activateSprayer():
 	
 	rospy.sleep(.5)
 	
-	while(time_now < time_after_2secs): #Time for full spraying actuation
+	while(time_now < time_after_7secs): #Time for full spraying actuation
 		if (time_now < time_after_2secs):
 			print "Trigger 1	"
 			time_now = rospy.Time.now()
