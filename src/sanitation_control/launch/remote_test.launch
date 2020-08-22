@@ -1,0 +1,15 @@
+<launch>
+	 <machine
+    		name="tegra_boy"
+    		address="10.0.0.17"
+   		 user="<nvidia>"
+    		password="nvidia"
+    		timeout="10"
+    		env-loader="/home/nvidia/catkin_ws/devel/remote_env_loader.sh"
+  	/>
+
+	<include file="/launch/amcl.launch" />
+
+
+
+</launch>

@@ -1,8 +1,0 @@
-# goal
-geometry_msgs/PoseStamped poseGoal
----
-# result
-string result
----
-# feedback
-string progress

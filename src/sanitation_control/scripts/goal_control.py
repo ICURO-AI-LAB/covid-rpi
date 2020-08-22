@@ -22,7 +22,7 @@ prev_state = GOAL
 current_state = GOAL
 goalCounter = 0
 
-physicalTesting = True
+physicalTesting = False
 
 # takes in goal array msg, outputs whether we are at the goal or 
 # still moving
@@ -41,7 +41,6 @@ def checkStatusArray(status_list):
 	return returnStatus
 
 def callback(data):	
-	pub = rospy.Publisher('spray_status', String, queue_size=1)
 
 	global prev_state
 	global current_state
@@ -83,7 +82,6 @@ def callback(data):
 			time_now = rospy.Time.now()
 
 			command = "a,1,1,1,1,1,1,0,0"
-			#command = "a,0,0,0,0,0,0,0,0"
 			spray_status = "Trigger 1"
 			if physicalTesting:
 				ser.write(command.encode())
@@ -102,6 +100,7 @@ def callback(data):
 
 		
 def goalControl():
+	pub = rospy.Publisher('spray_status', String, queue_size=1)
 	rospy.init_node('goal_control', anonymous=True)
 	rospy.Subscriber("/move_base/status", GoalStatusArray, callback)	
 	rospy.sleep(2.5)
