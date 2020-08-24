@@ -10,7 +10,7 @@ from twilio_client import trigger_text_client
 
 #Turned off command strings for testing
 
-ser = serial.Serial('/dev/ttyUSB0', baudrate=9600) # Set Serial Link
+ser = serial.Serial('/dev/ttyUSB_ARDUINO', baudrate=9600) # Set Serial Link
 
 TRUE = 1
 FALSE = 0

@@ -10,7 +10,7 @@ from actionlib_msgs.msg import GoalStatusArray
 from std_msgs.msg import String
 from twilio_client import trigger_text_client
 
-ser = serial.Serial('/dev/ttyUSB0', baudrate=9600) # Set Serial Link
+ser = serial.Serial('/dev/ttyUSB_ARDUINO', baudrate=9600) # Set Serial Link
 
 NOT_GOAL = 'Not At Goal'
 GOAL = 'At Specified Goal'
