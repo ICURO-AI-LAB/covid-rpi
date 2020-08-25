@@ -14,6 +14,7 @@ filter_size = 20
 v_filter = [0]*filter_size 
 
 MAX_VOLTAGE = 26.7
+WARNING_VOLTAGE = 24
 MIN_VOLTAGE = 22
 WATER_PIN_NO = 16
 
@@ -30,6 +31,7 @@ def callback(data):
 	global v_filter
 	global filter_size
 	global MAX_VOLTAGE
+	global WARNING_VOLTAGE
 	global MIN_VOLTAGE	
 
 	# create bat_and_sol message type
@@ -57,7 +59,9 @@ def callback(data):
 			battery_status = "-- Battery is Fully Charged --"
 			percentage = 100.0
 		elif (data.voltage < MIN_VOLTAGE):
-			battery_status = "-- Battery is Low. Please Charge --"
+			battery_status = "-- Battery is Critically Low. Please Charge Now --"
+		elif(data.voltage < WARNING_VOLTAGE):
+			battery_status = "-- Battery is Low. Please Charge Soon --"
 		else:
 			battery_status = "-- Battery is Partially Charged --"
 
