@@ -23,8 +23,9 @@ navGoalArray = []
 i = 0
 navPublisher = rospy.Publisher('move_base_simple/goal', PoseStamped, queue_size=1)
 
+# check string for sprayer off
 def goodSendFlag(data):
-	if 'Trigger 3' in data and 'GOAL' in data:
+	if 'SPRAYER OFF' in str(data) and 'GOAL' in data:
 		sendGoalFlag = True		
 	else:
 		sendGoalFlag = False
@@ -49,11 +50,10 @@ def navGoalCallback(data):
 	global current_state
 	global sleepCounter 
 	# get the goal array status list	
-	data = str(data)
+	# data = str(data)
 	current_state = data
-		
-	#print(str(goodSendFlag(data)))
 
+	# send goals when the sprayer is off and we are at the goal		
 	if goodSendFlag(data) and current_state != prev_state and i < len(navGoalArray):
 		sendNavGoal(navGoalArray)
 
