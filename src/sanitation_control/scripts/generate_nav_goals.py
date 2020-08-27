@@ -9,7 +9,7 @@ NUM_GOALS = 5
 
 def genPoseStamped(px,py,pz,ox,oy,oz,ow,i):
 	nav_goal = PoseStamped()
-	nav_goal.header.frame_id = '/map'
+	nav_goal.header.frame_id = 'map'
 	nav_goal.header.seq = i
 	nav_goal.header.stamp = rospy.Time.now()
 	nav_goal.pose.position.x = px
