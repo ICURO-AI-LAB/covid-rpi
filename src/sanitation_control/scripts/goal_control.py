@@ -23,6 +23,7 @@ global pub
 prev_state = GOAL 
 current_state = GOAL
 numSprayPoints = 3 # number of waypoints
+zonesCompleted = 0
 numGoals = numSprayPoints * 2
 goalCounter = 0  
 goHomeFlag = False
@@ -50,6 +51,7 @@ def launchCmdCheck(data):
 	global goHomeFlag
 	global pub
 	global goalCounter
+	global zonesCompleted 
 	if 'home' in str(data):
 		goHomeFlag = True
 		# going home protocol
@@ -58,11 +60,13 @@ def launchCmdCheck(data):
 		pub.publish(spray_status + ' ' + str(current_state) + ' returning home' )
 		# go home action
 		goalCounter = 0
+		zonesCompleted = 0
 		go_home_client()
 		
 	if 'protocol' in str(data):
 		print('received launch protocol')
 		goalCounter = 0
+		zonesCompleted = 0
 		goHomeFlag = False
 
 # turn on and turn off relays return a spray status string
@@ -89,6 +93,7 @@ def executeStopSpraySM(data):
 	global goalCounter
 	global goHomeFlag
 	global pub
+	global zonesCompleted
 
 	spray_status = ''
 	status_list = data.status_list	
@@ -129,13 +134,15 @@ def executeStopSpraySM(data):
 			while(time_now < time_after_7secs): #Time for full spraying actuation
 				time_now = rospy.Time.now()
 				spray_status = turnOnRelays()
-				pub.publish(spray_status)
+				pub.publish(spray_status + ' ' + str(current_state) + ' ' + str(zonesCompleted))
 				time_now = rospy.Time.now()
+
+			zonesCompleted = zonesCompleted + 1
+
 		
 	spray_status = spray_status + turnOffRelays()
 	#print command
-	pub.publish(spray_status + ' ' + str(current_state) )
-
+	pub.publish(spray_status + ' ' + str(current_state) + ' ' +  str(zonesCompleted))
 	prev_state = current_state	
 		
 def goalControl():
