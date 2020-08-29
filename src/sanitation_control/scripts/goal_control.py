@@ -13,9 +13,6 @@ from std_msgs.msg import String
 
 ser = serial.Serial('/dev/ttyUSB_ARDUINO', baudrate=9600) # Set Serial Link
 
-TRUE = 1
-FALSE = 0
-
 NOT_GOAL = 'MOVING'
 GOAL = 'AT GOAL'
 
@@ -27,7 +24,7 @@ zonesCompleted = 0
 numGoals = numSprayPoints * 2
 goalCounter = 0  
 goHomeFlag = False
-physicalTesting = False
+physicalTesting = True
 
 
 # takes in goal array msg, outputs whether we are at the goal or 
@@ -134,7 +131,7 @@ def executeStopSpraySM(data):
 			while(time_now < time_after_7secs): #Time for full spraying actuation
 				time_now = rospy.Time.now()
 				spray_status = turnOnRelays()
-				pub.publish(spray_status + ' ' + str(current_state) + ' ' + str(zonesCompleted))
+				pub.publish(spray_status + ' ' + str(current_state) + ' ' + str(zonesCompleted) + ' ')
 				time_now = rospy.Time.now()
 
 			zonesCompleted = zonesCompleted + 1
@@ -142,7 +139,7 @@ def executeStopSpraySM(data):
 		
 	spray_status = spray_status + turnOffRelays()
 	#print command
-	pub.publish(spray_status + ' ' + str(current_state) + ' ' +  str(zonesCompleted))
+	pub.publish(spray_status + ' ' + str(current_state) + ' ' +  str(zonesCompleted) + ' ')
 	prev_state = current_state	
 		
 def goalControl():

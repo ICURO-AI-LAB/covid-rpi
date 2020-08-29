@@ -6,10 +6,10 @@
 	<node name="solution_level" pkg="sanitation_control" type="bat_and_sol_monitor.py"  output="screen"/>
 	-->
 
-	<node name="bat_and_sol" pkg="sanitation_control" type="bat_and_sol_monitor.py"  output="screen"/>
+	<!-- <node name="bat_and_sol" pkg="sanitation_control" type="bat_and_sol_monitor.py"  output="screen"/> -->
 	<node name="continuous_spray_control" pkg="sanitation_control" type="continuous_spray_control.py"  output="screen"/>
 	<node name="send_nav_goals" pkg="sanitation_control" type="send_nav_goals.py"  output="screen"/>	
-	<node name="twilio_service" pkg="sanitation_control" type="twilio_service.py"  output="screen"/>	
+	<!-- <node name="twilio_service" pkg="sanitation_control" type="twilio_service.py"  output="screen"/> -->	
 
 	
 </launch>
