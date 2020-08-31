@@ -36,8 +36,10 @@ def launchCmdCheckNavGoals(data):
 	global protocolSent
         if 'protocol' in str(data):
                 i = 0
+                sendNavGoal(navGoalArray)
+        elif 'home' in str(data):
+                i = 0
                 #sendNavGoal(navGoalArray)
-
 
 def sendNavGoal(navGoals):
 	global i
