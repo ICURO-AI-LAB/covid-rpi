@@ -13,7 +13,7 @@ from continuous_spray_control import checkStatusArray
 GOAL = 'GOAL'
 NOT_GOAL = 'MOVING'
 
-prev_state = NOT_GOAL
+prev_state = GOAL
 current_state = GOAL
 goalCounter = 0
 sleepCounter = 0
@@ -22,7 +22,6 @@ sleepCounter = 0
 navGoalArray = []
 i = 0
 navPublisher = rospy.Publisher('move_base_simple/goal', PoseStamped, queue_size=1)
-start_again = False
 
 # check string for sprayer off
 def goodSendFlag(data):
@@ -35,12 +34,12 @@ def goodSendFlag(data):
 	return sendGoalFlag
 
 # check the launch cmds set goal counter to 0
+# if we get the command for protocol send the goal 
+
 def launchCmdCheckNavGoals(data):
 	global i
-	global start_again
 	if 'protocol' in str(data):
 		i = 0
-		start_again = True
 		sendNavGoal(navGoalArray)
 
 def sendNavGoal(navGoals):
@@ -61,7 +60,6 @@ def navGoalCallback(data):
 	global prev_state
 	global current_state
 	global sleepCounter 
-	global start_again
 	# get the goal array status list	
 	# data = str(data)
 	current_state = data
