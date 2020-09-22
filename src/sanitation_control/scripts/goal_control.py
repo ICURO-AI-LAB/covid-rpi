@@ -24,7 +24,7 @@ zonesCompleted = 0
 numGoals = numSprayPoints * 2
 goalCounter = 0  
 goHomeFlag = False
-physicalTesting = True
+physicalTesting = False
 
 
 # takes in goal array msg, outputs whether we are at the goal or 
